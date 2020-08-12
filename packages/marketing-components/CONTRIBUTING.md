@@ -64,7 +64,7 @@ To run the docs environment locally, run `docs` **from the root of the monorepo*
 
 # How is it built?
 
-Our UMD bundle is generated using Rollup, our ES just uses Babel.
+Our ES just uses Babel.
 
 When `yarn build` runs, a file named `stats.html` is generated in the root of the component folder. This can be inspected to gather more info about the bundle.
 

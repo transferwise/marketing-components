@@ -3,7 +3,7 @@
   "version": "27.14.0",
   "description": "TransferWise marketing components",
   "license": "Apache-2.0",
-  "main": "./build/es/polyfill/index.js",
+  "main": "./build/es/no-polyfill/index.js",
   "sideEffects": [
     "*.css"
   ],
