@@ -1,20 +1,3 @@
-const esConfig = {
-  presets: [
-    [
-      '@babel/preset-env',
-      {
-        useBuiltIns: 'usage',
-        corejs: '3.0.0',
-        // targets: {
-        //   browsers: please check browserlistrc
-        // },
-        modules: false,
-      },
-    ],
-    ['minify', { builtIns: false, mangle: { exclude: { separators: true } } }],
-  ],
-};
-
 const esConfigNoPolyfill = {
   presets: [
     ['@babel/preset-env', { useBuiltIns: false, modules: false }],
@@ -46,7 +29,6 @@ module.exports = {
   ],
   env: {
     test: testConfig,
-    es: esConfig,
     'es-nopolyfill': esConfigNoPolyfill,
   },
 };

@@ -13,8 +13,6 @@ describe('Avatar', () => {
       </Avatar>,
     );
 
-    expect(getByText('😎').parentElement.parentElement).toHaveClass(
-      'avatar avatar--thumbnail avatar--md',
-    );
+    expect(getByText('😎').parentElement.parentElement).toHaveClass('avatar avatar--thumbnail');
   });
 });

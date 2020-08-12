@@ -3721,15 +3721,10 @@
   resolved "https://registry.yarnpkg.com/@transferwise/neptune-tokens/-/neptune-tokens-0.1.0.tgz#0d5080c00a0dc2c4034b97da40a08655368391a9"
   integrity sha512-XbLXGGO53p/ISPWQC92Jju80MrMH9LhNs1Fuz1u52Dgzsi67EsFJGDVTgIc24poVpmxsvYyV1kOOM1jDJgeDIw==
 
-"@transferwise/test-config@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@transferwise/test-config/-/test-config-1.0.3.tgz#94bc98f41d494fdddf47f961e7ec2b85b654248b"
-  integrity sha512-Kh7nCY2lq2uF9XEDRNVjYD0ydA5GOQSZZsYd/4RaRMjL0Y/FK1s8PecWg1XVeSinfBeVmy6iFCiGdJF3d8f7mA==
-
-"@transferwise/test-config@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@transferwise/test-config/-/test-config-1.0.4.tgz#8b8de984b5acfd1618c400785d18e1d767be8961"
-  integrity sha512-OyxETQ9m//ca4K35TgqCHdEl9f6jA+oEFeTl4eaRdrczBs7CSmu0MTukohneGIRCC+rYx/KpYbNdnTtTAXgGDw==
+"@transferwise/test-config@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@transferwise/test-config/-/test-config-1.0.5.tgz#72b4520f605aad65d7a54df4da43336c9be13acd"
+  integrity sha512-kc8WLESNBekTNSM1cuXnmZ3nLXtgNZNQUsRKAqqG7qJNsXBLoW/zotTVG2vtA/zRcQDhb8qAlEwih5ipQdnL+g==
   dependencies:
     "@testing-library/jest-dom" "^5.7.0"
     "@testing-library/react" "^10.0.4"
@@ -6849,11 +6844,6 @@ core-js@^3.0.1, core-js@^3.0.4:
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.1.tgz#39d5e2e346258cc01eb7d44345b1c3c014ca3f05"
   integrity sha512-186WjSik2iTGfDjfdCZAxv2ormxtKgemjC3SI6PL31qOA0j5LhTDVjHChccoc7brwLvpvLPiMyRlcO88C4l1QQ==
-
-core-js@^3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
-  integrity sha512-vZVEEwZoIsI+vPEuoF9Iqf5H7/M3eeQqWlQnYa8FSKKePuYTf5MWnxb5SDAzCa60b3JBRS5g9b+Dq7b1y/RCrA==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
