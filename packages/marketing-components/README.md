@@ -41,4 +41,4 @@ Visit the [docs](https://transferwise.github.io/marketing-components) for inform
 
 ## Contributing
 
-We love contribution! 🙏 Read [the guide](https://github.com/transferwise/marketing-components/blob/master/packages/marketing-components/CONTRIBUTING.md) to get started.
+We love contribution! 🙏 Read [the guide](https://github.com/transferwise/marketing-components/blob/main/packages/marketing-components/CONTRIBUTING.md) to get started.
