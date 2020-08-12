@@ -32,7 +32,7 @@ class MyApp extends App {
     return (
       <>
         <Head>
-          <title>Neptune Design System — TransferWise</title>
+          <title>Marketing Components — TransferWise</title>
         </Head>
 
         <Layout>
