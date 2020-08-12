@@ -3759,8 +3759,10 @@
   resolved "https://registry.yarnpkg.com/@transferwise/less-config/-/less-config-1.0.4.tgz#0052d39dbd4f41bbda5341041b60daed39034527"
   integrity sha512-vZYjyQwKrWMbHuiq6Vc9urlZHG/OkYQMg82PdSHbVUbohWbG4XQQAd4XI5eKElLVRY2WvY5tuk0MLZhuyWZhiQ==
 
-"@transferwise/less-config@file:../neptune-web/packages/less-config":
-  version "1.0.4"
+"@transferwise/less-config@^1.0.5":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@transferwise/less-config/-/less-config-2.0.2.tgz#9d21ec422e8af5727e39085afd90ac6a234e49eb"
+  integrity sha512-Ci1ZjGcOgdYGcADCDXu7o8dTu6VwyTclOHg4mKeUM1OH8jYHK8BI2pHJM+BLWe3W5H45GY3Ed73JQ4howBd60A==
   dependencies:
     "@arshaw/postcss-custom-properties" "^9.1.1"
     autoprefixer "^9.7.6"
@@ -3808,8 +3810,10 @@
   resolved "https://registry.yarnpkg.com/@transferwise/test-config/-/test-config-1.0.3.tgz#94bc98f41d494fdddf47f961e7ec2b85b654248b"
   integrity sha512-Kh7nCY2lq2uF9XEDRNVjYD0ydA5GOQSZZsYd/4RaRMjL0Y/FK1s8PecWg1XVeSinfBeVmy6iFCiGdJF3d8f7mA==
 
-"@transferwise/test-config@file:../neptune-web/packages/test-config":
-  version "1.0.3"
+"@transferwise/test-config@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@transferwise/test-config/-/test-config-1.0.4.tgz#8b8de984b5acfd1618c400785d18e1d767be8961"
+  integrity sha512-OyxETQ9m//ca4K35TgqCHdEl9f6jA+oEFeTl4eaRdrczBs7CSmu0MTukohneGIRCC+rYx/KpYbNdnTtTAXgGDw==
   dependencies:
     "@testing-library/jest-dom" "^5.7.0"
     "@testing-library/react" "^10.0.4"

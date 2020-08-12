@@ -18,60 +18,16 @@ export default [
   {
     title: 'Getting started',
     dir: 'about',
-    fileOrder: ['Home', 'Setup', 'BrowserSupport', 'Versioning', 'Contributing'],
+    fileOrder: ['Home'],
   },
-  {
-    title: 'Styles',
-    dir: 'styles',
-    children: [
-      {
-        title: 'Tokens',
-        dir: 'styles/tokens',
-        fileOrder: ['Colors', 'Spacing', 'Breakpoints'],
-      },
-      {
-        title: 'Core',
-        dir: 'styles/core',
-        fileOrder: ['Typography'],
-      },
-      {
-        title: 'Addons',
-        dir: 'styles/addons',
-        fileOrder: ['BackgroundUtilities', 'DisplayUtilities', 'SpacingUtilities'],
-      },
-    ],
-  },
+
   {
     title: 'Components',
     dir: 'components',
     children: [
       {
-        title: 'Inputs',
-        dir: 'components/inputs',
-      },
-      {
         title: 'Content',
         dir: 'components/content',
-      },
-      {
-        title: 'Alerts / Info',
-        dir: 'components/alerts',
-      },
-      {
-        title: 'Navigation',
-        dir: 'components/navigation',
-      },
-      {
-        title: 'Progress',
-        dir: 'components/progress',
-      },
-      {
-        title: 'Overlays',
-        dir: 'components/overlays',
-      },
-      {
-        title: 'Dynamic Forms',
-        dir: 'components/dynamicForms',
       },
     ],
     searchable: true,

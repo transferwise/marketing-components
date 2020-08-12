@@ -25,7 +25,7 @@ module.exports = () =>
         withCSS(
           withMDX({
             transpileModules: [
-              '@transferwise/dynamic-flows',
+              '@transferwise/marketing-components',
               'buble',
               'regexpu-core',
               'unicode-match-property-ecmascript',
