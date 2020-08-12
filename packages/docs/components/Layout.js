@@ -9,7 +9,7 @@ import sections from '../utils/sections';
 import Sidebar from './Sidebar';
 import ThreeColumnLayout from './layout/threeColumnLayout';
 
-const githubURL = `https://github.com/transferwise/marketing-components/edit/master/packages/docs/pages`;
+const githubURL = `https://github.com/transferwise/marketing-components/edit/main/packages/docs/pages`;
 
 const Layout = ({ children, router: { pathname } }) => {
   const pathParts = pathname.split('/');

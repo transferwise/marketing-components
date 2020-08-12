@@ -8,4 +8,4 @@ This is the Marketing Components Documentation website. See the [live site](http
 
 ## Contributing
 
-We love contribution! 🙏 Read [the guide](https://github.com/transferwise/marketing-components/blob/master/CONTRIBUTING.md) to get started.
+We love contribution! 🙏 Read [the guide](https://github.com/transferwise/marketing-components/blob/main/CONTRIBUTING.md) to get started.

@@ -15,7 +15,7 @@ const pageExtensions = ['js', 'mdx'];
 const branch = process.env.CIRCLE_BRANCH;
 const assetPrefix =
   process.env.NODE_ENV === 'production'
-    ? `/marketing-components${branch !== 'master' ? `/branch/${branch}` : ''}`
+    ? `/marketing-components${branch !== 'main' ? `/branch/${branch}` : ''}`
     : '';
 
 module.exports = () =>
