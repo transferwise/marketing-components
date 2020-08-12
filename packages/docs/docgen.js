@@ -6,13 +6,10 @@ const glob = require('glob');
 
 const data = {};
 
-const files = glob.sync(`../components/src/**/*.{js,jsx}`, {
+const files = glob.sync(`../marketing-components/src/**/*.{js,jsx}`, {
   ignore: [
-    '../components/src/**/*.{spec,docs}.js',
-    '../components/src/**/index.js',
-    '../components/src/common/**/*.{js,jsx}',
-    '../components/src/dateInput/utils/**/*.{js,jsx}',
-    '../components/src/flowNavigation/avatar/*.js',
+    '../marketing-components/src/**/*.{spec,docs,story}.js',
+    '../marketing-components/src/**/index.js',
   ],
 });
 const metadata = {};

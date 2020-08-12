@@ -1,10 +1,10 @@
 [![CircleCI](https://circleci.com/gh/transferwise/marketing-components.svg?style=shield)](https://circleci.com/gh/transferwise/marketing-components)
 
-# Neptune Web Docs
+# Marketing Components Docs
 
-Neptune is the Design System built by and used at TransferWise. Neptune Web is the Neptune framework for Web. Neptune Web provides a way to build high quality, consistent user experiences on the web with ease.
+Marketing Components is built by and used at TransferWise. Marketing Components provides a way to build high quality, consistent user experiences on the web with ease.
 
-This is the Neptune Web Documentation website. See the [live site](https://transferwise.github.io/marketing-components)
+This is the Marketing Components Documentation website. See the [live site](https://transferwise.github.io/marketing-components)
 
 ## Contributing
 

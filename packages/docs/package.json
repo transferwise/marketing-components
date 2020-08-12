@@ -1,7 +1,7 @@
 {
-  "name": "@transferwise/neptune-docs",
-  "version": "4.7.0",
-  "description": "TransferWise Design System",
+  "name": "@transferwise/marketing-docs",
+  "version": "1.0.0",
+  "description": "TransferWise Marketing Components",
   "main": "index.js",
   "private": true,
   "scripts": {
@@ -36,7 +36,7 @@
     "@mapbox/rehype-prism": "^0.4.0",
     "@mdx-js/loader": "^1.5.8",
     "@next/mdx": "^9.0.5",
-    "@transferwise/marketing-components": "^27.14.0",
+    "@transferwise/marketing-components": "^1.0.0",
     "@transferwise/test-config": "^1.0.5",
     "@zeit/next-css": "^1.0.1",
     "bootstrap": "github:transferwise/bootstrap#semver:^5.20.0",

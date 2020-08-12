@@ -4,7 +4,7 @@ const { capitalizeFirstLetter } = require('@transferwise/files-scaffold/utils/in
 
 module.exports = {
   type: 'docs',
-  path: 'packages/docs/pages/components',
+  path: 'packages/docs/pages/components/content',
   ext: 'mdx',
   createDir: false,
   name: (name) => capitalizeFirstLetter(name),
