@@ -8,9 +8,9 @@ module.exports = {
   ext: 'mdx',
   createDir: false,
   name: (name) => capitalizeFirstLetter(name),
-  template: (name) => `import { LiveEditorBlock, GeneratePropsTable } from '../../utils';
+  template: (name) => `import { LiveEditorBlock, GeneratePropsTable } from '../../../utils';
 import { ${capitalizeFirstLetter(name)} } from '@transferwise/marketing-components';
-import code from '../../liveEditorCode/${name}.code';
+import code from '../../../liveEditorCode/${name}.code';
 
 <LiveEditorBlock code={code} scope={{ ${capitalizeFirstLetter(name)} }} />
 <GeneratePropsTable componentName="${capitalizeFirstLetter(name)}" />
