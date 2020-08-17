@@ -19,17 +19,8 @@ export const basic = () => {
     },
     Avatar.Type.EMOJI,
   );
-  const size = radios(
-    'size',
-    {
-      Small: Avatar.Size.SMALL,
-      Medium: Avatar.Size.MEDIUM,
-      Large: Avatar.Size.LARGE,
-    },
-    Avatar.Size.MEDIUM,
-  );
+
   const outlined = boolean('outlined', true);
-  const theme = select('Theme', [Avatar.Theme.LIGHT, Avatar.Theme.DARK], Avatar.Theme.LIGHT);
   const backgroundColor = text('Background colour', '');
   const avatarContent = text('avatarContent', '✈️');
   const sampleImage = boolean('Use image as content?', false);
@@ -39,13 +30,7 @@ export const basic = () => {
   );
 
   return (
-    <Avatar
-      size={size}
-      type={type}
-      outlined={outlined}
-      theme={theme}
-      backgroundColor={backgroundColor}
-    >
+    <Avatar type={type} outlined={outlined} backgroundColor={backgroundColor}>
       {sampleImage ? <img src={sampleImageUrl} alt="" /> : avatarContent}
     </Avatar>
   );
