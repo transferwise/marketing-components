@@ -1,0 +1,20 @@
+import { LiveEditorBlock, GeneratePropsTable } from '../../../utils';
+import { VideoModal } from '@transferwise/marketing-components';
+import code from '../../../liveEditorCode/VideoModal.code';
+
+Low level, video friendly modal component
+
+Typically, you avoid using the VideoModal component directly, and instead use [YouTubeVideoModal](/components/content/YouTubeVideoModal).
+
+If you're using a different video host, we recommend you contribute that component here.
+
+Animates the video in, which requires you to give the modal a poster, which is a temporary image shown before the animation has completed. This is to avoid jank while the animation is taking place and the video is loading.
+
+**Note:** To use this component in your application, you need to install [neptune-css](https://transferwise.github.io/neptune-web/about/Setup) and [@transferwise/icons@1.5.0](https://github.com/transferwise/icons)
+
+<LiveEditorBlock code={code} scope={{ VideoModal }} />
+<GeneratePropsTable componentName="VideoModal" />
+
+export const meta = {
+  name: 'VideoModal',
+};
