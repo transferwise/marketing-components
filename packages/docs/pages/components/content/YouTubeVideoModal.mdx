@@ -1,0 +1,18 @@
+import { LiveEditorBlock, GeneratePropsTable } from '../../../utils';
+import { YouTubeVideoModal } from '@transferwise/marketing-components';
+import code from '../../../liveEditorCode/YouTubeVideoModal.code';
+
+Modal component for showing YouTube videos
+
+Per VideoModal's documentation, it will automatically fetch a poster from YouTube if you don't provide one.
+
+Used on [transferwise.com](https://transferwise.com).
+
+**Note:** To use this component in your application, you need to install [neptune-css](https://transferwise.github.io/neptune-web/about/Setup) and [@transferwise/icons@1.5.0](https://github.com/transferwise/icons)
+
+<LiveEditorBlock code={code} scope={{ YouTubeVideoModal }} />
+<GeneratePropsTable componentName="YouTubeVideoModal" />
+
+export const meta = {
+  name: 'YouTubeVideoModal',
+};
