@@ -19,7 +19,20 @@ describe('Server side rendering', () => {
 
   // stick all possible properties we might need to render all components in here
   const allProps = {
-    content: 'world',
+    title: 'title',
+    posterUrl: 'posterUrl',
+    onDismiss: jest.fn(),
+    children: <span />,
+    videoId: '1',
+    translations: {
+      title: '',
+      poster: {
+        alt: '',
+      },
+      close: {
+        ariaLabel: '',
+      },
+    },
   };
 
   componentNames.forEach((componentName) => {
