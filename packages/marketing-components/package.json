@@ -48,15 +48,20 @@
     "@transferwise/less-config": "^2.0.2",
     "@transferwise/test-config": "^1.0.5",
     "babel-loader": "^8.1.0",
-    "babel-preset-minify": "^0.5.1"
+    "babel-preset-minify": "^0.5.1",
+    "mock-raf": "^1.0.1"
   },
   "peerDependencies": {
+    "@transferwise/icons": "^2.4.1",
+    "@transferwise/neptune-css": "^2.1.2",
     "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
   "dependencies": {
-    "classnames": "^2.2.6"
+    "@reach/dialog": "^0.10.5",
+    "classnames": "^2.2.6",
+    "react-spring": "^8.0.27"
   },
   "resolutions": {
     "@storybook/**/kind-of": "^6.0.3"
