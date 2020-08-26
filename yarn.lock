@@ -3709,11 +3709,6 @@
   resolved "https://registry.yarnpkg.com/@transferwise/icons/-/icons-2.4.1.tgz#1614d4d3fbbb631a89ed24be7c7a422c03308ade"
   integrity sha512-qwIjbQPtsLcC4nBPrX16Nw4oQS46yptvU/3Ek65fp/VB/x6jgwAEp6esHnKH9cz7mSs5+DW1CQROlWaC6Ysl+A==
 
-"@transferwise/less-config@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@transferwise/less-config/-/less-config-1.0.4.tgz#0052d39dbd4f41bbda5341041b60daed39034527"
-  integrity sha512-vZYjyQwKrWMbHuiq6Vc9urlZHG/OkYQMg82PdSHbVUbohWbG4XQQAd4XI5eKElLVRY2WvY5tuk0MLZhuyWZhiQ==
-
 "@transferwise/less-config@^2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@transferwise/less-config/-/less-config-2.0.2.tgz#9d21ec422e8af5727e39085afd90ac6a234e49eb"
