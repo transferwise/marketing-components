@@ -1,0 +1,10 @@
+import { LiveEditorBlock, GeneratePropsTable } from '../../../utils';
+import { TrustElement } from '@transferwise/marketing-components';
+import code from '../../../liveEditorCode/trustElement.code';
+
+<LiveEditorBlock code={code} scope={{ TrustElement }} />
+<GeneratePropsTable componentName="TrustElement" />
+
+export const meta = {
+  name: 'TrustElement',
+};
