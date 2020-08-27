@@ -29,7 +29,7 @@ lerna-debug.log
 
 # CSS
 dist
-
+*.css
 packages/css/pages/styles
 
 # docs
