@@ -7587,6 +7587,16 @@ deploy-to-github-pages@1.0.0-beta.5:
     gh-pages "^2.0.1"
     shelljs "^0.8.2"
 
+deploy-to-github-pages@^1.0.0-beta.1:
+  version "1.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/deploy-to-github-pages/-/deploy-to-github-pages-1.0.0-beta.1.tgz#e1eff91ee7f7bb7bf0ae7ce0449263c6bddaecce"
+  integrity sha512-fz+5C76flV+g0n9F7jnF7I8G+nktcc033FGe64516p8s47NpKUkr6umd1xzJVaUkStDEwfkRRflKSbcGUfLlNw==
+  dependencies:
+    "@octokit/rest" "^15.15.1"
+    commander "^2.19.0"
+    gh-pages "^2.0.1"
+    shelljs "^0.8.2"
+
 deprecation@^2.0.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/deprecation/-/deprecation-2.3.1.tgz#6368cbdb40abf3373b525ac87e4a260c3a700919"
