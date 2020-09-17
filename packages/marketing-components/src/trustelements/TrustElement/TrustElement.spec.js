@@ -1,13 +1,12 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import TrustElement from './TrustElement';
-import SampleSvg from './sample.svg';
 
 describe('Trust Element', () => {
   it('should not add the animate css initially', () => {
     const { getByTestId } = render(
       <TrustElement
-        src={SampleSvg}
+        src="SampleSvg"
         alt="fcaAltText"
         title="title"
         linkText="linkText"
@@ -23,7 +22,7 @@ describe('Trust Element', () => {
   it('should add the animate css on mouse enter event', () => {
     const { getByTestId } = render(
       <TrustElement
-        src={SampleSvg}
+        src="SampleSvg"
         alt="fcaAltText"
         title="title"
         linkText="linkText"
@@ -43,7 +42,7 @@ describe('Trust Element', () => {
   it('should add the animate css on focus', () => {
     const { getByTestId, getByText } = render(
       <TrustElement
-        src={SampleSvg}
+        src="SampleSvg"
         alt="fcaAltText"
         title="title"
         linkText="linkText"
@@ -64,7 +63,7 @@ describe('Trust Element', () => {
 
   it('does not create cta when href is not passed', () => {
     const { queryByText } = render(
-      <TrustElement src={SampleSvg} alt="fcaAltText" title="title" linkText="linkText" />,
+      <TrustElement src="SampleSvg" alt="fcaAltText" title="title" linkText="linkText" />,
     );
 
     expect(queryByText('linkText')).toBeNull();
@@ -72,7 +71,7 @@ describe('Trust Element', () => {
 
   it('does not create cta when linkText is not passed', () => {
     const { container } = render(
-      <TrustElement src={SampleSvg} alt="fcaAltText" title="title" href="href" />,
+      <TrustElement src="SampleSvg" alt="fcaAltText" title="title" href="href" />,
     );
     expect(container.querySelector('a')).toBeNull();
   });
@@ -80,7 +79,7 @@ describe('Trust Element', () => {
   it('creates cta when both href and linkText are passed', () => {
     const { queryByText } = render(
       <TrustElement
-        src={SampleSvg}
+        src="SampleSvg"
         alt="fcaAltText"
         title="title"
         linkText="linkText"
@@ -94,7 +93,7 @@ describe('Trust Element', () => {
   it('Sets the target to _self in case of a # href', () => {
     const { queryByText } = render(
       <TrustElement
-        src={SampleSvg}
+        src="SampleSvg"
         alt="fcaAltText"
         title="title"
         linkText="linkText"
@@ -108,7 +107,7 @@ describe('Trust Element', () => {
   it('Sets the target to _blank in case of a different href', () => {
     const { queryByText } = render(
       <TrustElement
-        src={SampleSvg}
+        src="SampleSvg"
         alt="fcaAltText"
         title="title"
         linkText="linkText"

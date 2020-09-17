@@ -2,10 +2,14 @@ import React from 'react';
 import Types from 'prop-types';
 
 import TrustElement from '../TrustElement';
-import FCAIllustration from './FCAIllustration.svg';
 
 const FCARegulated = ({ title, linkText, href }) => (
-  <TrustElement src={FCAIllustration} title={title} linkText={linkText} href={href} />
+  <TrustElement
+    src="https://transferwise.com/public-resources/assets/marketing-components/illustrations/FCA.svg"
+    title={title}
+    linkText={linkText}
+    href={href}
+  />
 );
 FCARegulated.propTypes = {
   title: Types.string.isRequired,
