@@ -33,6 +33,9 @@ describe('Server side rendering', () => {
         ariaLabel: '',
       },
     },
+    linkText: 'linkText',
+    alt: 'altText',
+    href: 'url',
   };
 
   componentNames.forEach((componentName) => {
