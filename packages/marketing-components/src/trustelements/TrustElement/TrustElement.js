@@ -47,7 +47,7 @@ const TrustElement = ({ title, alt, linkText, href, src, shouldAnimate }) => {
 const isAnchorUrl = (url) => url[0] === '#';
 
 TrustElement.propTypes = {
-  src: Types.node.isRequired,
+  src: Types.oneOfType([Types.element, Types.string]).isRequired,
   alt: Types.string,
   title: Types.string.isRequired,
   linkText: Types.string,
