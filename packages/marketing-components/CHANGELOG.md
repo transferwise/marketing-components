@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@1.2.0...@transferwise/marketing-components@1.3.0) (2020-09-23)
+
+
+### Features
+
+* added Trustpilot component ([#14](https://github.com/transferwise/marketing-components/issues/14)) ([de43a8a](https://github.com/transferwise/marketing-components/commit/de43a8afffb27c41c81b3581097451b5d8562f24))
+
+
+
+
+
 # [1.2.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@1.1.0...@transferwise/marketing-components@1.2.0) (2020-09-17)
 
 
