@@ -22,9 +22,7 @@ const TrustElement = ({ title, alt, linkText, href, src, shouldAnimate }) => {
       data-testid="trust-element-container"
     >
       {shouldAnimate ? (
-        <div className="tw-trust-element__svg_container">
-          <img className="tw-trust-element__image" src={src} alt={alt} />
-        </div>
+        <div className="tw-trust-element__svg_container">{src}</div>
       ) : (
         <img className="tw-trust-element__image" src={src} alt={alt} />
       )}
@@ -49,7 +47,7 @@ const TrustElement = ({ title, alt, linkText, href, src, shouldAnimate }) => {
 const isAnchorUrl = (url) => url[0] === '#';
 
 TrustElement.propTypes = {
-  src: Types.string.isRequired,
+  src: Types.oneOfType([Types.element, Types.string]).isRequired,
   alt: Types.string,
   title: Types.string.isRequired,
   linkText: Types.string,

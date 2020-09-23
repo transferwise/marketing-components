@@ -2,6 +2,13 @@ import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import TrustElement from './TrustElement';
 
+const SvgAsComponent = (
+  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <title>Svg as component</title>
+    <circle cx="50" cy="50" r="50" />
+  </svg>
+);
+
 describe('Trust Element', () => {
   it('should not add the animate css initially', () => {
     const { getByTestId } = render(
@@ -116,5 +123,19 @@ describe('Trust Element', () => {
     );
 
     expect(queryByText('linkText').target).toBe('_blank');
+  });
+
+  it('renders the svg as component', () => {
+    const { queryByTitle } = render(
+      <TrustElement
+        src={SvgAsComponent}
+        title="title"
+        linkText="linkText"
+        href="#some-id"
+        shouldAnimate
+      />,
+    );
+
+    expect(queryByTitle('Svg as component')).toBeInTheDocument();
   });
 });
