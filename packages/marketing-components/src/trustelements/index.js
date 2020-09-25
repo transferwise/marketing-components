@@ -17,3 +17,4 @@ export { default as StraitsTimes } from './StraitsTimes';
 export { default as Trustpilot } from './Trustpilot';
 export { default as TrustpilotUS } from './TrustpilotUs';
 export { default as TUVApproved } from './TUVApproved';
+export { default as FPXPay } from './FPXPay';

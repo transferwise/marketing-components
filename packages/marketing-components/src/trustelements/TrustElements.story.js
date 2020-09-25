@@ -20,6 +20,7 @@ import {
   Trustpilot,
   TrustpilotUS,
   TUVApproved,
+  FPXPay,
 } from './';
 
 export default {
@@ -174,6 +175,7 @@ export const FCARegulatedElement = () => {
   );
 };
 
+
 export const FINTRACRegulatedElement = () => {
   return (
     <div className="row">
@@ -290,7 +292,7 @@ export const StraitsTimesElement = () => {
   );
 };
 
-export const TrustpilotElement = () => {
+export const TrustpilotRating = () => {
   return (
     <div className="row">
       <div className="col col-xs-offset-4 col-xs-4">
@@ -326,6 +328,30 @@ export const TUVApprovedElement = () => {
           title={text('Title', 'TÜV approved')}
           linkText={text('LinkText', 'The report')}
           href={text('Link Url', 'https://transferwise.com/gb/blog/transferwise-tuv-audit-2019')}
+          />
+      </div>
+    </div>
+  );
+};
+
+export const FPXPayElement = () => {
+  return (
+    <div className="row">
+      <span>
+        {' '}
+        <b>
+          NOTE: The background color is needed to highlight the image. Not part of the component
+        </b>
+      </span>
+      <br />
+      <div className="col col-xs-offset-4 col-xs-4" style={{ background: '#b8d6cb' }}>
+        <FPXPay
+          title={text('Title', 'Pay with FPX, bank transfer, or debit card')}
+          linkText={text('LinkText', 'Learn more')}
+          href={text(
+            'Link Url',
+            'https://transferwise.com/my/blog/instant-payments-with-fpx-on-transferwise',
+          )}
         />
       </div>
     </div>

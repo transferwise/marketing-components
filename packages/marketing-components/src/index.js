@@ -20,4 +20,5 @@ export {
   Trustpilot,
   TrustpilotUS,
   TUVApproved,
+  FPXPay,
 } from './trustelements';
