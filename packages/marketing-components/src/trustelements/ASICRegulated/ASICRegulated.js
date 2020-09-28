@@ -2,7 +2,7 @@ import React from 'react';
 import Types from 'prop-types';
 
 import TrustElement from '../TrustElement';
-import SecurityIllustration from '../securityillustration';
+import SecurityIllustration from '../SecurityIllustration';
 
 const ASICRegulated = ({ title, linkText, href }) => (
   <TrustElement
