@@ -1,4 +1,5 @@
 import React from 'react';
+import { withKnobs, text } from '@storybook/addon-knobs';
 import {
   ASICRegulated,
   CanstarAward,
@@ -9,20 +10,41 @@ import {
   Trustpilot,
   TUVApproved,
 } from './';
-import { withKnobs, text } from '@storybook/addon-knobs';
 
 export default {
   title: 'TrustElements',
   decorators: [withKnobs],
+  parameters: {
+    knobs: {
+      escapeHTML: false,
+    },
+  },
 };
 
 export const ASICRegulatedElement = () => {
   return (
+      <div className="row">
+        <div className="col col-xs-offset-4 col-xs-4">
+          <ASICRegulated
+              title={text('Title', 'ASIC regulated')}
+              linkText={text('LinkText', 'Learn More')}
+              href={text(
+                  'Link Url',
+                  'https://transferwise.com/help/article/1870573/security/security-and-regulatory-information',
+              )}
+          />
+        </div>
+      </div>
+  );
+};
+
+export const FCARegulatedTE = () => {
+  return (
     <div className="row">
       <div className="col col-xs-offset-4 col-xs-4">
-        <ASICRegulated
-          title={text('Title', 'ASIC regulated')}
-          linkText={text('LinkText', 'Learn More')}
+        <FCA
+          title={text('Title', 'FCA regulated')}
+          linkText={text('LinkText', 'Learn more')}
           href={text(
             'Link Url',
             'https://transferwise.com/help/article/1870573/security/security-and-regulatory-information',
@@ -35,11 +57,28 @@ export const ASICRegulatedElement = () => {
 
 export const CanstarAwardTE = () => {
   return (
+      <div className="row">
+        <div className="col col-xs-offset-5 col-xs-2">
+          <CanstarAward
+              title={text('Title', 'Awarded 5 stars for international money transfers')}
+              linkText={text('LinkText', 'Read the full report')}
+              href={text(
+                  'Link Url',
+                  'https://transferwise.com/help/article/1870573/security/security-and-regulatory-information',
+              )}
+          />
+        </div>
+      </div>
+  );
+};
+
+export const FSRAApproved = () => {
+  return (
     <div className="row">
-      <div className="col col-xs-offset-5 col-xs-2">
-        <CanstarAward
-          title={text('Title', 'Awarded 5 stars for international money transfers')}
-          linkText={text('LinkText', 'Read the full report')}
+      <div className="col col-xs-offset-4 col-xs-4">
+        <FSRA
+          title={text('Title', "Regulated by ADGM's Financial Services Regulatory Authority")}
+          linkText={text('LinkText', 'Learn more')}
           href={text(
             'Link Url',
             'https://transferwise.com/help/article/1870573/security/security-and-regulatory-information',

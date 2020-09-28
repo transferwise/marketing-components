@@ -6,3 +6,4 @@ export { default as Mitsui } from './Mitsui';
 export { default as StraitsTimes } from './StraitsTimes';
 export { default as Trustpilot } from './Trustpilot';
 export { default as TUVApproved } from './TUVApproved';
+export { default as FSRAApproved } from './FSRAApproved';
