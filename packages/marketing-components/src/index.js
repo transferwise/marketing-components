@@ -10,4 +10,5 @@ export {
   Mitsui,
   StraitsTimes,
   TUVApproved,
+  TrustpilotUS,
 } from './trustelements';
