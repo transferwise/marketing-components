@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.7.0...@transferwise/marketing-docs@1.8.0) (2020-09-29)
+
+
+### Features
+
+* Added trust elements using SecurityIllustration ([#22](https://github.com/transferwise/marketing-components/issues/22)) ([6aefb21](https://github.com/transferwise/marketing-components/commit/6aefb21abec2a5587ef64e6a1949796f371aece2))
+
+
+
+
+
 # [1.7.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.6.0...@transferwise/marketing-docs@1.7.0) (2020-09-29)
 
 
