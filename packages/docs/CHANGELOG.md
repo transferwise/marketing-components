@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.3.0...@transferwise/marketing-docs@1.4.0) (2020-09-29)
+
+
+### Features
+
+* Added Canstar award trustelement  ([#15](https://github.com/transferwise/marketing-components/issues/15)) ([a0dbe09](https://github.com/transferwise/marketing-components/commit/a0dbe097c4c79a8abd67b8d2f2745d6de3e8381c))
+
+
+
+
+
 # [1.3.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.2.0...@transferwise/marketing-docs@1.3.0) (2020-09-23)
 
 
