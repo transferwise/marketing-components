@@ -1,1 +1,1 @@
-export {default} from './ASICRegulated'
+export { default } from './ASICRegulated';

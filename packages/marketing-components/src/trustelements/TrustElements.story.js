@@ -1,6 +1,7 @@
 import React from 'react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import { FCARegulated as FCA, CanstarAward as Canstar, Trustpilot, ASICRegulated } from './';
+
 export default {
   title: 'TrustElements',
   decorators: [withKnobs],
@@ -61,7 +62,10 @@ export const ASICRegulatedElement = () => {
         <ASICRegulated
           title={text('Title', 'ASIC regulated')}
           linkText={text('LinkText', 'Learn More')}
-          href={text('Link Url', 'https://transferwise.com/help/article/1870573/security/security-and-regulatory-information')}
+          href={text(
+            'Link Url',
+            'https://transferwise.com/help/article/1870573/security/security-and-regulatory-information',
+          )}
         />
       </div>
     </div>

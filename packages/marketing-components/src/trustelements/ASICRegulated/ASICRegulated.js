@@ -15,10 +15,9 @@ const ASICRegulated = ({ title, linkText, href }) => (
 );
 
 ASICRegulated.propTypes = {
-    title: Types.string.isRequired,
-    linkText: Types.string.isRequired,
-    href: Types.string.isRequired,
-  };
-  
+  title: Types.string.isRequired,
+  linkText: Types.string.isRequired,
+  href: Types.string.isRequired,
+};
 
 export default ASICRegulated;
