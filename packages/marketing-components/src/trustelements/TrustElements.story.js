@@ -2,10 +2,20 @@ import React from 'react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import {
   ASICRegulated,
+  BirlesikOdemeRegulated,
+  BNMApproved,
+  BrazilianCorrespondent,
+  CAndEDRegulated,
   CanstarAward,
   Customers,
+  DIARegulated,
   FCARegulated,
+  FINTRACRegulated,
+  FSRAApproved,
+  JPFSARegulated,
+  MASRegulated,
   Mitsui,
+  Safe,
   StraitsTimes,
   Trustpilot,
   TrustpilotUS,
@@ -39,16 +49,28 @@ export const ASICRegulatedElement = () => {
   );
 };
 
-export const FCARegulatedTE = () => {
+export const BirlesikOdemeRegulatedElement = () => {
   return (
     <div className="row">
       <div className="col col-xs-offset-4 col-xs-4">
-        <FCARegulated
-          title={text('Title', 'FCA regulated')}
+        <BirlesikOdemeRegulated
+          title={text('Title', 'Transactions processed by Birlesik Ödeme Hizmetleri')}
+        />
+      </div>
+    </div>
+  );
+};
+
+export const BNMApprovedElement = () => {
+  return (
+    <div className="row">
+      <div className="col col-xs-offset-5 col-xs-2">
+        <BNMApproved
+          title={text('Title', 'Approved in Malaysia')}
           linkText={text('LinkText', 'Learn more')}
           href={text(
             'Link Url',
-            'https://transferwise.com/help/article/1870573/security/security-and-regulatory-information',
+            'https://transferwise.com/help/articles/2932693/how-is-transferwise-regulated-in-each-country',
           )}
         />
       </div>
@@ -56,7 +78,38 @@ export const FCARegulatedTE = () => {
   );
 };
 
-export const CanstarAwardTE = () => {
+export const BrazilianCorrespondentElement = () => {
+  return (
+    <div className="row">
+      <div className="col col-xs-offset-5 col-xs-2">
+        <BrazilianCorrespondent
+          title={text('Title', 'Acting as exchange correspondents of Brazilian banks')}
+          linkText={text('LinkText', 'Learn more')}
+          href={text('Link Url', 'https://transferwise.com/br#br-partners')}
+        />
+      </div>
+    </div>
+  );
+};
+
+export const CAndEDRegulatedElement = () => {
+  return (
+    <div className="row">
+      <div className="col col-xs-offset-5 col-xs-2">
+        <CAndEDRegulated
+          title={text('Title', 'C&ED regulated')}
+          linkText={text('LinkText', 'Learn more')}
+          href={text(
+            'Link Url',
+            'https://transferwise.com/help/articles/2932693/how-is-transferwise-regulated-in-each-country',
+          )}
+        />
+      </div>
+    </div>
+  );
+};
+
+export const CanstarAwardElement = () => {
   return (
     <div className="row">
       <div className="col col-xs-offset-5 col-xs-2">
@@ -73,7 +126,72 @@ export const CanstarAwardTE = () => {
   );
 };
 
-export const FSRAApproved = () => {
+export const CustomersElement = () => {
+  return (
+    <div className="row">
+      <div className="col col-xs-offset-4 col-xs-4">
+        <Customers
+          title={text('Title', 'Over 8 million customers')}
+          linkText={text('LinkText', 'Read on Trustpilot')}
+          href={text('Link Url', 'https://www.trustpilot.com/review/transferwise.com')}
+        />
+      </div>
+    </div>
+  );
+};
+
+export const DIARegulatedElement = () => {
+  return (
+    <div className="row">
+      <div className="col col-xs-offset-5 col-xs-2">
+        <DIARegulated
+          title={text('Title', 'DIA regulated')}
+          linkText={text('LinkText', 'Learn more')}
+          href={text(
+            'Link Url',
+            'https://transferwise.com/help/articles/2932693/how-is-transferwise-regulated-in-each-country',
+          )}
+        />
+      </div>
+    </div>
+  );
+};
+
+export const FCARegulatedElement = () => {
+  return (
+    <div className="row">
+      <div className="col col-xs-offset-4 col-xs-4">
+        <FCARegulated
+          title={text('Title', 'FCA regulated')}
+          linkText={text('LinkText', 'Learn more')}
+          href={text(
+            'Link Url',
+            'https://transferwise.com/help/article/1870573/security/security-and-regulatory-information',
+          )}
+        />
+      </div>
+    </div>
+  );
+};
+
+export const FINTRACRegulatedElement = () => {
+  return (
+    <div className="row">
+      <div className="col col-xs-offset-5 col-xs-2">
+        <FINTRACRegulated
+          title={text('Title', 'FINTRAC regulated')}
+          linkText={text('LinkText', 'Learn more')}
+          href={text(
+            'Link Url',
+            'https://transferwise.com/help/articles/2932693/how-is-transferwise-regulated-in-each-country',
+          )}
+        />
+      </div>
+    </div>
+  );
+};
+
+export const FSRAApprovedElement = () => {
   return (
     <div className="row">
       <div className="col col-xs-offset-4 col-xs-4">
@@ -90,21 +208,38 @@ export const FSRAApproved = () => {
   );
 };
 
-export const CustomersTE = () => {
+export const JPFSARegulatedElement = () => {
   return (
     <div className="row">
-      <div className="col col-xs-offset-4 col-xs-4">
-        <Customers
-          title={text('Title', 'Over 8 million customers')}
-          linkText={text('LinkText', 'Read on Trustpilot')}
-          href={text('Link Url', 'https://www.trustpilot.com/review/transferwise.com')}
+      <div className="col col-xs-offset-5 col-xs-2">
+        <JPFSARegulated
+          title={text('Title', 'Japanese FSA regulated')}
+          linkText={text('LinkText', 'Learn more')}
+          href={text('Link Url', 'https://transferwise.com/jp/terms-of-use-english')}
         />
       </div>
     </div>
   );
 };
 
-export const MitsuiTE = () => {
+export const MASRegulatedElement = () => {
+  return (
+    <div className="row">
+      <div className="col col-xs-offset-5 col-xs-2">
+        <MASRegulated
+          title={text('Title', 'Regulated by the Monetary Authority of Singapore (MAS)')}
+          linkText={text('LinkText', 'Learn more')}
+          href={text(
+            'Link Url',
+            'https://transferwise.com/help/articles/2932693/how-is-transferwise-regulated-in-each-country',
+          )}
+        />
+      </div>
+    </div>
+  );
+};
+
+export const MitsuiElement = () => {
   return (
     <div className="row">
       <div className="col col-xs-offset-4 col-xs-4">
@@ -121,7 +256,24 @@ export const MitsuiTE = () => {
   );
 };
 
-export const StraitsTimesTE = () => {
+export const SafeElement = () => {
+  return (
+    <div className="row">
+      <div className="col col-xs-offset-5 col-xs-2">
+        <Safe
+          title={text('Title', 'Is TransferWise safe?')}
+          linkText={text('LinkText', 'Yes, here’s why')}
+          href={text(
+            'Link Url',
+            'https://transferwise.com/help/articles/2932693/how-is-transferwise-regulated-in-each-country',
+          )}
+        />
+      </div>
+    </div>
+  );
+};
+
+export const StraitsTimesElement = () => {
   return (
     <div className="row">
       <div className="col col-xs-offset-4 col-xs-4">
@@ -138,7 +290,7 @@ export const StraitsTimesTE = () => {
   );
 };
 
-export const TrustpilotTE = () => {
+export const TrustpilotElement = () => {
   return (
     <div className="row">
       <div className="col col-xs-offset-4 col-xs-4">
@@ -152,22 +304,7 @@ export const TrustpilotTE = () => {
   );
 };
 
-export const TUVApprovedTE = () => {
-  return (
-    <div className="row">
-      <div className="col col-xs-offset-4 col-xs-4">
-        <TUVApproved
-          title={text('Title', 'TÜV approved')}
-          linkText={text('LinkText', 'The report')}
-          href={text('Link Url', 'https://transferwise.com/gb/blog/transferwise-tuv-audit-2019')}
-        />
-      </div>
-    </div>
-  );
-};
-
-// eslint-disable-next-line camelcase
-export const Trustpilot_US_Rating = () => {
+export const TrustpilotUSElement = () => {
   return (
     <div className="row">
       <div className="col col-xs-offset-4 col-xs-4">
@@ -175,6 +312,20 @@ export const Trustpilot_US_Rating = () => {
           title={text('Title', 'Millions of happy customers')}
           linkText={text('LinkText', 'See what they have to say')}
           href={text('Link Url', 'https://www.trustpilot.com/review/transferwise.com')}
+        />
+      </div>
+    </div>
+  );
+};
+
+export const TUVApprovedElement = () => {
+  return (
+    <div className="row">
+      <div className="col col-xs-offset-4 col-xs-4">
+        <TUVApproved
+          title={text('Title', 'TÜV approved')}
+          linkText={text('LinkText', 'The report')}
+          href={text('Link Url', 'https://transferwise.com/gb/blog/transferwise-tuv-audit-2019')}
         />
       </div>
     </div>
