@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.4.0...@transferwise/marketing-docs@1.5.0) (2020-09-29)
+
+
+### Features
+
+* ASIC Regulated trust element ([#17](https://github.com/transferwise/marketing-components/issues/17)) ([cbf7d55](https://github.com/transferwise/marketing-components/commit/cbf7d55f1dc5f84d83a83177e25337641f037746))
+
+
+
+
+
 # [1.4.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.3.0...@transferwise/marketing-docs@1.4.0) (2020-09-29)
 
 
