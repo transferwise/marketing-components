@@ -1,4 +1,5 @@
 import React from 'react';
+import { withKnobs, text } from '@storybook/addon-knobs';
 import {
   ASICRegulated,
   CanstarAward,
@@ -7,13 +8,18 @@ import {
   Mitsui,
   StraitsTimes,
   Trustpilot,
+  TrustpilotUS,
   TUVApproved,
 } from './';
-import { withKnobs, text } from '@storybook/addon-knobs';
 
 export default {
   title: 'TrustElements',
   decorators: [withKnobs],
+  parameters: {
+    knobs: {
+      escapeHTML: false,
+    },
+  },
 };
 
 export const ASICRegulatedElement = () => {
@@ -23,6 +29,23 @@ export const ASICRegulatedElement = () => {
         <ASICRegulated
           title={text('Title', 'ASIC regulated')}
           linkText={text('LinkText', 'Learn More')}
+          href={text(
+            'Link Url',
+            'https://transferwise.com/help/article/1870573/security/security-and-regulatory-information',
+          )}
+        />
+      </div>
+    </div>
+  );
+};
+
+export const FCARegulatedTE = () => {
+  return (
+    <div className="row">
+      <div className="col col-xs-offset-4 col-xs-4">
+        <FCARegulated
+          title={text('Title', 'FCA regulated')}
+          linkText={text('LinkText', 'Learn more')}
           href={text(
             'Link Url',
             'https://transferwise.com/help/article/1870573/security/security-and-regulatory-information',
@@ -50,6 +73,23 @@ export const CanstarAwardTE = () => {
   );
 };
 
+export const FSRAApproved = () => {
+  return (
+    <div className="row">
+      <div className="col col-xs-offset-4 col-xs-4">
+        <FSRAApproved
+          title={text('Title', "Regulated by ADGM's Financial Services Regulatory Authority")}
+          linkText={text('LinkText', 'Learn more')}
+          href={text(
+            'Link Url',
+            'https://transferwise.com/help/article/1870573/security/security-and-regulatory-information',
+          )}
+        />
+      </div>
+    </div>
+  );
+};
+
 export const CustomersTE = () => {
   return (
     <div className="row">
@@ -58,23 +98,6 @@ export const CustomersTE = () => {
           title={text('Title', 'Over 8 million customers')}
           linkText={text('LinkText', 'Read on Trustpilot')}
           href={text('Link Url', 'https://www.trustpilot.com/review/transferwise.com')}
-        />
-      </div>
-    </div>
-  );
-};
-
-export const FCARegulatedTE = () => {
-  return (
-    <div className="row">
-      <div className="col col-xs-offset-4 col-xs-4">
-        <FCARegulated
-          title={text('Title', 'FCA regulated')}
-          linkText={text('LinkText', 'Learn more')}
-          href={text(
-            'Link Url',
-            'https://transferwise.com/help/article/1870573/security/security-and-regulatory-information',
-          )}
         />
       </div>
     </div>
@@ -137,6 +160,21 @@ export const TUVApprovedTE = () => {
           title={text('Title', 'TÜV approved')}
           linkText={text('LinkText', 'The report')}
           href={text('Link Url', 'https://transferwise.com/gb/blog/transferwise-tuv-audit-2019')}
+        />
+      </div>
+    </div>
+  );
+};
+
+// eslint-disable-next-line camelcase
+export const Trustpilot_US_Rating = () => {
+  return (
+    <div className="row">
+      <div className="col col-xs-offset-4 col-xs-4">
+        <TrustpilotUS
+          title={text('Title', 'Millions of happy customers')}
+          linkText={text('LinkText', 'See what they have to say')}
+          href={text('Link Url', 'https://www.trustpilot.com/review/transferwise.com')}
         />
       </div>
     </div>
