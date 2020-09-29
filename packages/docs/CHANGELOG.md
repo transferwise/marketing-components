@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.6.0...@transferwise/marketing-docs@1.7.0) (2020-09-29)
+
+
+### Features
+
+* Adding FSRAApproved and TrustpilotUS award element ([#18](https://github.com/transferwise/marketing-components/issues/18)) ([b708f95](https://github.com/transferwise/marketing-components/commit/b708f950b44246dbc3f305d6e7e2d4e84ee9a3e4))
+
+
+
+
+
 # [1.6.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.5.0...@transferwise/marketing-docs@1.6.0) (2020-09-29)
 
 
