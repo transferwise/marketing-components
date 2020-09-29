@@ -1,14 +1,23 @@
 export { default as VideoModal } from './videomodal';
 export { default as YouTubeVideoModal } from './youtubevideomodal';
 export {
-  FCARegulated,
-  Trustpilot,
-  FSRAApproved,
-  CanstarAward,
   ASICRegulated,
+  BirlesikOdemeRegulated,
+  BNMApproved,
+  BrazilianCorrespondent,
+  CAndEDRegulated,
+  CanstarAward,
   Customers,
+  DIARegulated,
+  FCARegulated,
+  FINTRACRegulated,
+  FSRAApproved,
+  JPFSARegulated,
+  MASRegulated,
   Mitsui,
+  Safe,
   StraitsTimes,
-  TUVApproved,
+  Trustpilot,
   TrustpilotUS,
+  TUVApproved,
 } from './trustelements';
