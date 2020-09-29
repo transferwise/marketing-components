@@ -1,8 +1,6 @@
 () => {
     return (
         <>
-        <span> <b>NOTE: The background color is needed to highlight the image. Not part of the component</b></span>
-
         <div style={{background: '#b8d6cb'}}>
             <FPXPay
             title="Pay with FPX, bank transfer, or debit card"

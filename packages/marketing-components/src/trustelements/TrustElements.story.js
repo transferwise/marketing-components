@@ -175,7 +175,6 @@ export const FCARegulatedElement = () => {
   );
 };
 
-
 export const FINTRACRegulatedElement = () => {
   return (
     <div className="row">
@@ -328,7 +327,7 @@ export const TUVApprovedElement = () => {
           title={text('Title', 'TÜV approved')}
           linkText={text('LinkText', 'The report')}
           href={text('Link Url', 'https://transferwise.com/gb/blog/transferwise-tuv-audit-2019')}
-          />
+        />
       </div>
     </div>
   );
@@ -338,7 +337,6 @@ export const FPXPayElement = () => {
   return (
     <div className="row">
       <span>
-        {' '}
         <b>
           NOTE: The background color is needed to highlight the image. Not part of the component
         </b>
