@@ -1,8 +1,1 @@
-() => (
-  <AppStoreBadge
-    locale="gb"
-    language="en"
-    centered={false}
-    alt="Download from the Apple App Store"
-  />
-);
+() => <AppStoreBadge locale="gb" language="en" alt="Download from the Apple App Store" />;
