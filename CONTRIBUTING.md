@@ -5,7 +5,7 @@ Follow the instructions below to get started. Branch from `main`, and submit a p
 ## Things to know
 
 - All commit messages must follow the conventional commit format. [Read below](#versioning-and-commit-lint) if you are unfamiliar with the standard or the available types.
-- You must restrict your commits to one package at a time: e.g. don't make one commit that changes files inside `components` and `css` - it impacts how versions are bumped.
+- You must restrict your commits to one package at a time: e.g. don't make one commit that changes files inside `marketing-components` and `css` - it impacts how versions are bumped.
 - We use `yarn`: these instructions presume you have this installed.
 
 ## Get started
@@ -22,10 +22,10 @@ git clone git@github.com:transferwise/marketing-components.git && cd marketing-c
 
 ## Where should I run commands from?
 
-Almost always from within the package you're working in. For example, if you're making changes to `components`, run your yarn commands from that package:
+Almost always from within the package you're working in. For example, if you're making changes to `marketing-components`, run your yarn commands from that package:
 
 ```
-cd packages/components
+cd packages/marketing-components
 yarn dev
 ```
 

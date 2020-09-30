@@ -36,6 +36,8 @@ describe('Server side rendering', () => {
     linkText: 'linkText',
     alt: 'altText',
     href: 'url',
+    language: 'language',
+    locale: 'locale',
   };
 
   componentNames.forEach((componentName) => {
