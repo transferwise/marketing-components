@@ -22,3 +22,5 @@ export {
   TUVApproved,
   FPXPay,
 } from './trustelements';
+export { default as AppStoreBadge } from './appstorebadge';
+export { default as GooglePlayStoreBadge } from './googleplaystorebadge';
