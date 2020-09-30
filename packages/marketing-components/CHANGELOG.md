@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@1.9.0...@transferwise/marketing-components@1.10.0) (2020-09-30)
+
+
+### Features
+
+* fpx-pay trust element ([#16](https://github.com/transferwise/marketing-components/issues/16)) ([2851117](https://github.com/transferwise/marketing-components/commit/28511175d8e91f512b2a62f36f4dcd41cef154ae))
+
+
+
+
+
 # [1.9.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@1.8.0...@transferwise/marketing-components@1.9.0) (2020-09-30)
 
 
