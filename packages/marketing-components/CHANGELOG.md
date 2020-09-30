@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@1.8.0...@transferwise/marketing-components@1.9.0) (2020-09-30)
+
+
+### Features
+
+* adding Google Play and App Store badges ([#20](https://github.com/transferwise/marketing-components/issues/20)) ([272e5b0](https://github.com/transferwise/marketing-components/commit/272e5b07d4ba08eae9a7d2195b5023ab765c4101))
+
+
+
+
+
 # [1.8.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@1.7.0...@transferwise/marketing-components@1.8.0) (2020-09-29)
 
 
