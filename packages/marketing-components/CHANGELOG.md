@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@1.10.0...@transferwise/marketing-components@1.11.0) (2020-10-05)
+
+
+### Features
+
+* Added InstaMoney trust element ([#24](https://github.com/transferwise/marketing-components/issues/24)) ([6804b68](https://github.com/transferwise/marketing-components/commit/6804b68b6a364ef81ef2041bf09bb1143f13c77d))
+
+
+
+
+
 # [1.10.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@1.9.0...@transferwise/marketing-components@1.10.0) (2020-09-30)
 
 
