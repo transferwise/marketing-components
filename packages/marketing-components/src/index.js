@@ -12,6 +12,7 @@ export {
   FCARegulated,
   FINTRACRegulated,
   FSRAApproved,
+  InstaMoney,
   JPFSARegulated,
   MASRegulated,
   Mitsui,

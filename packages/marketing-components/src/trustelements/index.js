@@ -9,6 +9,7 @@ export { default as DIARegulated } from './DIARegulated';
 export { default as FCARegulated } from './FCARegulated';
 export { default as FINTRACRegulated } from './FINTRACRegulated';
 export { default as FSRAApproved } from './FSRAApproved';
+export { default as InstaMoney } from './InstaMoney';
 export { default as JPFSARegulated } from './JPFSARegulated';
 export { default as MASRegulated } from './MASRegulated';
 export { default as Mitsui } from './Mitsui';
