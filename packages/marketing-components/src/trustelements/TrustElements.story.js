@@ -12,6 +12,7 @@ import {
   FCARegulated,
   FINTRACRegulated,
   FSRAApproved,
+  InstaMoney,
   JPFSARegulated,
   MASRegulated,
   Mitsui,
@@ -203,6 +204,20 @@ export const FSRAApprovedElement = () => {
             'Link Url',
             'https://transferwise.com/help/article/1870573/security/security-and-regulatory-information',
           )}
+        />
+      </div>
+    </div>
+  );
+};
+
+export const InstaMoneyElement = () => {
+  return (
+    <div className="row">
+      <div className="col col-xs-offset-4 col-xs-4">
+        <InstaMoney
+          title={text('Title', 'Powered by Instamoney')}
+          linkText={text('LinkText', 'Learn more')}
+          href={text('Link Url', 'https://www.instamoney.co/')}
         />
       </div>
     </div>
