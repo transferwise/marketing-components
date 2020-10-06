@@ -29,6 +29,10 @@ export default [
         title: 'Content',
         dir: 'components/content',
       },
+      {
+        title: 'TrustElements',
+        dir: 'components/trustElements',
+      },
     ],
     searchable: true,
   },
