@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.12.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@1.11.1...@transferwise/marketing-components@1.12.0) (2020-10-06)
+
+
+### Features
+
+* adding useIllustration prop to TrustElements ([#25](https://github.com/transferwise/marketing-components/issues/25)) ([075096a](https://github.com/transferwise/marketing-components/commit/075096a7cf7c4a6e12d9cfba86efdcfcba2b698b))
+
+
+
+
+
 ## [1.11.1](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@1.11.0...@transferwise/marketing-components@1.11.1) (2020-10-06)
 
 
