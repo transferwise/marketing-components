@@ -12,14 +12,6 @@ const TrustElement = ({ title, alt, linkText, href, src, shouldAnimate, useIllus
     }
   }
 
-  const Illustration = () => {
-    return shouldAnimate ? (
-      <div className="tw-trust-element__svg_container">{src}</div>
-    ) : (
-      <img className="tw-trust-element__image" src={src} alt={alt} />
-    );
-  };
-
   return (
     <div
       className={classNames('tw-trust-element callout-container text-center', {
@@ -29,7 +21,9 @@ const TrustElement = ({ title, alt, linkText, href, src, shouldAnimate, useIllus
       onMouseEnter={startAnimation}
       data-testid="trust-element-container"
     >
-      {useIllustration && <Illustration />}
+      {useIllustration && (
+        <TrustElementIllustration alt={alt} src={src} shouldAnimate={shouldAnimate} />
+      )}
 
       <div className="h4 m-t-1">{title}</div>
 
@@ -49,6 +43,20 @@ const TrustElement = ({ title, alt, linkText, href, src, shouldAnimate, useIllus
 };
 
 const isAnchorUrl = (url) => url[0] === '#';
+
+const TrustElementIllustration = ({ shouldAnimate, src, alt }) => {
+  return shouldAnimate ? (
+    <div className="tw-trust-element__svg_container">{src}</div>
+  ) : (
+    <img className="tw-trust-element__image" src={src} alt={alt} />
+  );
+};
+
+TrustElementIllustration.propTypes = {
+  src: Types.oneOfType([Types.element, Types.string]).isRequired,
+  alt: Types.string.isRequired,
+  shouldAnimate: Types.bool.isRequired,
+};
 
 TrustElement.propTypes = {
   src: Types.oneOfType([Types.element, Types.string]).isRequired,
