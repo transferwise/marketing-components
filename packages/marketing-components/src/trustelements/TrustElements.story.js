@@ -1,5 +1,5 @@
 import React from 'react';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import {
   ASICRegulated,
   BirlesikOdemeRegulated,
@@ -45,6 +45,7 @@ export const ASICRegulatedElement = () => {
             'Link Url',
             'https://transferwise.com/help/article/1870573/security/security-and-regulatory-information',
           )}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -57,6 +58,7 @@ export const BirlesikOdemeRegulatedElement = () => {
       <div className="col col-xs-offset-4 col-xs-4">
         <BirlesikOdemeRegulated
           title={text('Title', 'Transactions processed by Birlesik Ödeme Hizmetleri')}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -74,6 +76,7 @@ export const BNMApprovedElement = () => {
             'Link Url',
             'https://transferwise.com/help/articles/2932693/how-is-transferwise-regulated-in-each-country',
           )}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -88,6 +91,7 @@ export const BrazilianCorrespondentElement = () => {
           title={text('Title', 'Acting as exchange correspondents of Brazilian banks')}
           linkText={text('LinkText', 'Learn more')}
           href={text('Link Url', 'https://transferwise.com/br#br-partners')}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -105,6 +109,7 @@ export const CAndEDRegulatedElement = () => {
             'Link Url',
             'https://transferwise.com/help/articles/2932693/how-is-transferwise-regulated-in-each-country',
           )}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -122,6 +127,7 @@ export const CanstarAwardElement = () => {
             'Link Url',
             'https://transferwise.com/help/article/1870573/security/security-and-regulatory-information',
           )}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -136,6 +142,7 @@ export const CustomersElement = () => {
           title={text('Title', 'Over 8 million customers')}
           linkText={text('LinkText', 'Read on Trustpilot')}
           href={text('Link Url', 'https://www.trustpilot.com/review/transferwise.com')}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -153,6 +160,7 @@ export const DIARegulatedElement = () => {
             'Link Url',
             'https://transferwise.com/help/articles/2932693/how-is-transferwise-regulated-in-each-country',
           )}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -170,6 +178,7 @@ export const FCARegulatedElement = () => {
             'Link Url',
             'https://transferwise.com/help/article/1870573/security/security-and-regulatory-information',
           )}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -187,6 +196,7 @@ export const FINTRACRegulatedElement = () => {
             'Link Url',
             'https://transferwise.com/help/articles/2932693/how-is-transferwise-regulated-in-each-country',
           )}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -204,6 +214,7 @@ export const FSRAApprovedElement = () => {
             'Link Url',
             'https://transferwise.com/help/article/1870573/security/security-and-regulatory-information',
           )}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -213,11 +224,18 @@ export const FSRAApprovedElement = () => {
 export const InstaMoneyElement = () => {
   return (
     <div className="row">
-      <div className="col col-xs-offset-4 col-xs-4">
+      <span>
+        <b>
+          NOTE: The background color is needed to highlight the image. Not part of the component
+        </b>
+      </span>
+      <br />
+      <div className="col col-xs-offset-4 col-xs-4" style={{ background: '#b8d6cb' }}>
         <InstaMoney
           title={text('Title', 'Powered by Instamoney')}
           linkText={text('LinkText', 'Learn more')}
           href={text('Link Url', 'https://www.instamoney.co/')}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -232,6 +250,7 @@ export const JPFSARegulatedElement = () => {
           title={text('Title', 'Japanese FSA regulated')}
           linkText={text('LinkText', 'Learn more')}
           href={text('Link Url', 'https://transferwise.com/jp/terms-of-use-english')}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -249,6 +268,7 @@ export const MASRegulatedElement = () => {
             'Link Url',
             'https://transferwise.com/help/articles/2932693/how-is-transferwise-regulated-in-each-country',
           )}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -258,7 +278,13 @@ export const MASRegulatedElement = () => {
 export const MitsuiElement = () => {
   return (
     <div className="row">
-      <div className="col col-xs-offset-4 col-xs-4">
+      <span>
+        <b>
+          NOTE: The background color is needed to highlight the image. Not part of the component
+        </b>
+      </span>
+      <br />
+      <div className="col col-xs-offset-4 col-xs-4" style={{ background: '#b8d6cb' }}>
         <Mitsui
           title={text('Title', 'Mitsui & Co invested in us')}
           linkText={text('LinkText', 'Read on TechCrunch')}
@@ -266,6 +292,7 @@ export const MitsuiElement = () => {
             'Link Url',
             'https://jp.techcrunch.com/2017/11/04/20171101transferwise-280-million/',
           )}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -283,6 +310,7 @@ export const SafeElement = () => {
             'Link Url',
             'https://transferwise.com/help/articles/2932693/how-is-transferwise-regulated-in-each-country',
           )}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -292,7 +320,13 @@ export const SafeElement = () => {
 export const StraitsTimesElement = () => {
   return (
     <div className="row">
-      <div className="col col-xs-offset-4 col-xs-4">
+      <span>
+        <b>
+          NOTE: The background color is needed to highlight the image. Not part of the component
+        </b>
+      </span>
+      <br />
+      <div className="col col-xs-offset-4 col-xs-4" style={{ background: '#b8d6cb' }}>
         <StraitsTimes
           title={text('Title', 'Over 8 million customers')}
           linkText={text('LinkText', 'Read on Straits Times')}
@@ -300,6 +334,7 @@ export const StraitsTimesElement = () => {
             'Link Url',
             'https://www.sgsme.sg/news/transferwise-aims-be-next-skype-money-transfers',
           )}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -314,6 +349,7 @@ export const TrustpilotRating = () => {
           title={text('Title', '8 million customers')}
           linkText={text('LinkText', 'Read on Trustpilot')}
           href={text('Link Url', 'https://www.trustpilot.com/review/transferwise.com')}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -328,6 +364,7 @@ export const TrustpilotUSElement = () => {
           title={text('Title', 'Millions of happy customers')}
           linkText={text('LinkText', 'See what they have to say')}
           href={text('Link Url', 'https://www.trustpilot.com/review/transferwise.com')}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -342,6 +379,7 @@ export const TUVApprovedElement = () => {
           title={text('Title', 'TÜV approved')}
           linkText={text('LinkText', 'The report')}
           href={text('Link Url', 'https://transferwise.com/gb/blog/transferwise-tuv-audit-2019')}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>
@@ -365,6 +403,7 @@ export const FPXPayElement = () => {
             'Link Url',
             'https://transferwise.com/my/blog/instant-payments-with-fpx-on-transferwise',
           )}
+          useIllustration={boolean('useIllustration', true)}
         />
       </div>
     </div>

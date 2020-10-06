@@ -3,13 +3,21 @@ import Types from 'prop-types';
 import classNames from 'classnames';
 import './TrustElement.css';
 
-const TrustElement = ({ title, alt, linkText, href, src, shouldAnimate }) => {
+const TrustElement = ({ title, alt, linkText, href, src, shouldAnimate, useIllustration }) => {
   const [isAnimating, setAnimating] = useState(false);
 
   function startAnimation() {
     if (shouldAnimate) {
       setAnimating(true);
     }
+  }
+
+  function getIllustration() {
+    return shouldAnimate ? (
+      <div className="tw-trust-element__svg_container">{src}</div>
+    ) : (
+      <img className="tw-trust-element__image" src={src} alt={alt} />
+    );
   }
 
   return (
@@ -21,11 +29,7 @@ const TrustElement = ({ title, alt, linkText, href, src, shouldAnimate }) => {
       onMouseEnter={startAnimation}
       data-testid="trust-element-container"
     >
-      {shouldAnimate ? (
-        <div className="tw-trust-element__svg_container">{src}</div>
-      ) : (
-        <img className="tw-trust-element__image" src={src} alt={alt} />
-      )}
+      {useIllustration && getIllustration()}
 
       <div className="h4 m-t-1">{title}</div>
 
@@ -53,6 +57,7 @@ TrustElement.propTypes = {
   linkText: Types.string,
   href: Types.string,
   shouldAnimate: Types.bool,
+  useIllustration: Types.bool,
 };
 
 TrustElement.defaultProps = {
@@ -60,6 +65,7 @@ TrustElement.defaultProps = {
   href: null,
   alt: '',
   shouldAnimate: false,
+  useIllustration: true,
 };
 
 export default TrustElement;
