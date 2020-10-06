@@ -12,13 +12,13 @@ const TrustElement = ({ title, alt, linkText, href, src, shouldAnimate, useIllus
     }
   }
 
-  function getIllustration() {
+  const Illustration = () => {
     return shouldAnimate ? (
       <div className="tw-trust-element__svg_container">{src}</div>
     ) : (
       <img className="tw-trust-element__image" src={src} alt={alt} />
     );
-  }
+  };
 
   return (
     <div
@@ -29,7 +29,7 @@ const TrustElement = ({ title, alt, linkText, href, src, shouldAnimate, useIllus
       onMouseEnter={startAnimation}
       data-testid="trust-element-container"
     >
-      {useIllustration && getIllustration()}
+      {useIllustration && <Illustration />}
 
       <div className="h4 m-t-1">{title}</div>
 
