@@ -1,0 +1,14 @@
+import { LiveEditorBlock, GeneratePropsTable } from '../../../utils';
+import { StraitsTimesTrustElement } from '@transferwise/marketing-components';
+import code from '../../../liveEditorCode/trustElements/StraitsTimesTrustElement.code';
+
+<span>
+  <b>NOTE: The background color is needed to highlight the image. Not part of the component</b>
+</span>
+
+<LiveEditorBlock code={code} scope={{ StraitsTimesTrustElement }} />
+<GeneratePropsTable componentName="StraitsTimesTrustElement" />
+
+export const meta = {
+  name: 'StraitsTimesTrustElement',
+};
