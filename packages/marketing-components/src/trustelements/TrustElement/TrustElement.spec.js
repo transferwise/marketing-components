@@ -138,4 +138,19 @@ describe('Trust Element', () => {
 
     expect(queryByTitle('Svg as component')).toBeInTheDocument();
   });
+
+  it('does not render the illustration if useIllustration is false', () => {
+    const { queryByTitle } = render(
+      <TrustElement
+        src={SvgAsComponent}
+        title="title"
+        linkText="linkText"
+        href="#some-id"
+        shouldAnimate
+        useIllustration={false}
+      />,
+    );
+
+    expect(queryByTitle('Svg as component')).not.toBeInTheDocument();
+  });
 });

@@ -13,7 +13,7 @@ example:
     />
 ```
 
-------
+---
 
 ## Animated Svgs
 
@@ -28,5 +28,22 @@ example:
         linkText={linkText}
         href={href}
         shouldAnimate
+    />
+```
+
+## Hiding illustration
+
+There might be cases where you just want to have `TrustElement` with title and link and no illustration. In that case you can pass in `useIllustration` and set it to `false`.
+
+example:
+
+```
+    <TrustElement
+        src={YourReactComponent}
+        title={title}
+        linkText={linkText}
+        href={href}
+        shouldAnimate
+        useIllustration={false}
     />
 ```

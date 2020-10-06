@@ -1,9 +1,26 @@
 import React, { useState } from 'react';
 import Types from 'prop-types';
 import classNames from 'classnames';
+
 import './TrustElement.css';
 
-const TrustElement = ({ title, alt, linkText, href, src, shouldAnimate }) => {
+const isAnchorUrl = (url) => url[0] === '#';
+
+const TrustElementIllustration = ({ shouldAnimate, src, alt }) => {
+  return shouldAnimate ? (
+    <div className="tw-trust-element__svg_container">{src}</div>
+  ) : (
+    <img className="tw-trust-element__image" src={src} alt={alt} />
+  );
+};
+
+TrustElementIllustration.propTypes = {
+  src: Types.oneOfType([Types.element, Types.string]).isRequired,
+  alt: Types.string.isRequired,
+  shouldAnimate: Types.bool.isRequired,
+};
+
+const TrustElement = ({ title, alt, linkText, href, src, shouldAnimate, useIllustration }) => {
   const [isAnimating, setAnimating] = useState(false);
 
   function startAnimation() {
@@ -21,10 +38,8 @@ const TrustElement = ({ title, alt, linkText, href, src, shouldAnimate }) => {
       onMouseEnter={startAnimation}
       data-testid="trust-element-container"
     >
-      {shouldAnimate ? (
-        <div className="tw-trust-element__svg_container">{src}</div>
-      ) : (
-        <img className="tw-trust-element__image" src={src} alt={alt} />
+      {useIllustration && (
+        <TrustElementIllustration alt={alt} src={src} shouldAnimate={shouldAnimate} />
       )}
 
       <div className="h4 m-t-1">{title}</div>
@@ -44,8 +59,6 @@ const TrustElement = ({ title, alt, linkText, href, src, shouldAnimate }) => {
   );
 };
 
-const isAnchorUrl = (url) => url[0] === '#';
-
 TrustElement.propTypes = {
   src: Types.oneOfType([Types.element, Types.string]).isRequired,
   alt: Types.string,
@@ -53,6 +66,7 @@ TrustElement.propTypes = {
   linkText: Types.string,
   href: Types.string,
   shouldAnimate: Types.bool,
+  useIllustration: Types.bool,
 };
 
 TrustElement.defaultProps = {
@@ -60,6 +74,7 @@ TrustElement.defaultProps = {
   href: null,
   alt: '',
   shouldAnimate: false,
+  useIllustration: true,
 };
 
 export default TrustElement;
