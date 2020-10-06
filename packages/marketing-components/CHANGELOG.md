@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.1](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@1.11.0...@transferwise/marketing-components@1.11.1) (2020-10-06)
+
+
+### Bug Fixes
+
+* Removed spacing below svg container for TrustElements ([#23](https://github.com/transferwise/marketing-components/issues/23)) ([5e5bca7](https://github.com/transferwise/marketing-components/commit/5e5bca74b9486f6e01e01a40a1b7a06b4c09ddfe))
+
+
+
+
+
 # [1.11.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@1.10.0...@transferwise/marketing-components@1.11.0) (2020-10-05)
 
 
