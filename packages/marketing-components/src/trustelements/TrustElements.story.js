@@ -226,7 +226,7 @@ export const InstaMoney = () => {
     <div className="row">
       <span>
         <b>
-          NOTE: The background color is needed to highlight the image. Not part of the component
+          NOTE: The background colour is needed to highlight the image. Not part of the component
         </b>
       </span>
       <br />
@@ -280,7 +280,7 @@ export const Mitsui = () => {
     <div className="row">
       <span>
         <b>
-          NOTE: The background color is needed to highlight the image. Not part of the component
+          NOTE: The background colour is needed to highlight the image. Not part of the component
         </b>
       </span>
       <br />
@@ -322,7 +322,7 @@ export const StraitsTimes = () => {
     <div className="row">
       <span>
         <b>
-          NOTE: The background color is needed to highlight the image. Not part of the component
+          NOTE: The background colour is needed to highlight the image. Not part of the component
         </b>
       </span>
       <br />
@@ -391,7 +391,7 @@ export const FPXPay = () => {
     <div className="row">
       <span>
         <b>
-          NOTE: The background color is needed to highlight the image. Not part of the component
+          NOTE: The background colour is needed to highlight the image. Not part of the component
         </b>
       </span>
       <br />
