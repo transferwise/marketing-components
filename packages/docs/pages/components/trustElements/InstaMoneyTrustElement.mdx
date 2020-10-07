@@ -1,0 +1,14 @@
+import { LiveEditorBlock, GeneratePropsTable } from '../../../utils';
+import { InstaMoneyTrustElement } from '@transferwise/marketing-components';
+import code from '../../../liveEditorCode/trustElements/InstaMoneyTrustElement.code';
+
+<span>
+  <b>NOTE: The background color is needed to highlight the image. Not part of the component</b>
+</span>
+
+<LiveEditorBlock code={code} scope={{ InstaMoneyTrustElement }} />
+<GeneratePropsTable componentName="InstaMoneyTrustElement" />
+
+export const meta = {
+  name: 'InstaMoneyTrustElement',
+};

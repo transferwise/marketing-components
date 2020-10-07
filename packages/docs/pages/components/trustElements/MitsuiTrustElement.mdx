@@ -1,0 +1,14 @@
+import { LiveEditorBlock, GeneratePropsTable } from '../../../utils';
+import { MitsuiTrustElement } from '@transferwise/marketing-components';
+import code from '../../../liveEditorCode/trustElements/MitsuiTrustElement.code';
+
+<span>
+  <b>NOTE: The background color is needed to highlight the image. Not part of the component</b>
+</span>
+
+<LiveEditorBlock code={code} scope={{ MitsuiTrustElement }} />
+<GeneratePropsTable componentName="MitsuiTrustElement" />
+
+export const meta = {
+  name: 'MitsuiTrustElement',
+};

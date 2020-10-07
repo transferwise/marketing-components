@@ -1,0 +1,14 @@
+import { LiveEditorBlock, GeneratePropsTable } from '../../../utils';
+import { FPXPayTrustElement } from '@transferwise/marketing-components';
+import code from '../../../liveEditorCode/trustElements/FPXPayTrustElement.code';
+
+<span>
+  <b>NOTE: The background color is needed to highlight the image. Not part of the component</b>
+</span>
+
+<LiveEditorBlock code={code} scope={{ FPXPayTrustElement }} />
+<GeneratePropsTable componentName="FPXPayTrustElement" />
+
+export const meta = {
+  name: 'FPXPayTrustElement',
+};
