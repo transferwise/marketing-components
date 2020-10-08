@@ -16,14 +16,16 @@ const BirlesikOdemeRegulatedTrustElement = ({ title, linkText, href, useIllustra
 );
 
 BirlesikOdemeRegulatedTrustElement.propTypes = {
-  title: Types.string.isRequired,
-  linkText: Types.string.isRequired,
-  href: Types.string.isRequired,
+  title: Types.oneOfType([Types.element, Types.string]).isRequired,
+  linkText: Types.oneOfType([Types.element, Types.string]),
+  href: Types.string,
   useIllustration: Types.bool,
 };
 
 BirlesikOdemeRegulatedTrustElement.defaultProps = {
   useIllustration: true,
+  linkText: null,
+  href: null,
 };
 
 export default BirlesikOdemeRegulatedTrustElement;

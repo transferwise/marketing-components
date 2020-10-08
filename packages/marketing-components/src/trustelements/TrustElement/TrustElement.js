@@ -61,9 +61,9 @@ const TrustElement = ({ title, alt, linkText, href, src, shouldAnimate, useIllus
 
 TrustElement.propTypes = {
   src: Types.oneOfType([Types.element, Types.string]).isRequired,
-  alt: Types.string,
-  title: Types.string.isRequired,
-  linkText: Types.string,
+  alt: Types.oneOfType([Types.element, Types.string]),
+  title: Types.oneOfType([Types.element, Types.string]).isRequired,
+  linkText: Types.oneOfType([Types.element, Types.string]),
   href: Types.string,
   shouldAnimate: Types.bool,
   useIllustration: Types.bool,

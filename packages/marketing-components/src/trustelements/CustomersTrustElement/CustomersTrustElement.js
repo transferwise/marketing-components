@@ -14,8 +14,8 @@ const CustomersTrustElement = ({ title, linkText, href, useIllustration }) => (
 );
 
 CustomersTrustElement.propTypes = {
-  title: Types.string.isRequired,
-  linkText: Types.string.isRequired,
+  title: Types.oneOfType([Types.element, Types.string]).isRequired,
+  linkText: Types.oneOfType([Types.element, Types.string]).isRequired,
   href: Types.string.isRequired,
   useIllustration: Types.bool,
 };
