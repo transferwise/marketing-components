@@ -86,7 +86,9 @@ The rules are simple:
 - If you are fixing something, use `fix`. This will bump the patch version.
 - If you are adding a new feature, use `feat`. This will bump the minor version.
 - If you are committing a breaking change, add a ! after the type: `feat!: this is a breaking change`
-  - Also add `BREAKING CHANGE: <your breaking change>` as a description
+  - Also add `BREAKING CHANGE: <your breaking change>` in the PR description when you merge
+    <img src="https://user-images.githubusercontent.com/1204500/95431469-1c78bc00-0945-11eb-96b8-d8372e5c0802.png"
+         style="height: 200px;" />
 
 Using anything other than `fix` or `feat` without a `!` will not trigger a version bump. This is useful for changes to CI config, documentation or tests. Feel free to choose the type that best reflects the work you're doing.
 
