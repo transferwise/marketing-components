@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@2.0.0...@transferwise/marketing-components@2.0.1) (2020-10-08)
+
+
+### Bug Fixes
+
+* allow passing elements as props for trust elements ([#29](https://github.com/transferwise/marketing-components/issues/29)) ([d5ad6bd](https://github.com/transferwise/marketing-components/commit/d5ad6bd393d99fc1b6eb3e1b1bf06bacd8a66799))
+
+
+
+
+
 # [2.0.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@1.12.2...@transferwise/marketing-components@2.0.0) (2020-10-08)
 
 
