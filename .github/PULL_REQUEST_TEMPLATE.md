@@ -17,3 +17,4 @@
 - [ ] Changes meet [accessibility standards](https://github.com/transferwise/marketing-components/blob/main/ACCESSIBILITY.md) and there are no violations in the console
 - [ ] Changes work in all supported browsers (don't forget IE11)
 - [ ] You've updated the documentation if necessary
+- [ ] Change has been approved by someone outside of your team
