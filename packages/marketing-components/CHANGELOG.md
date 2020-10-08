@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@1.12.2...@transferwise/marketing-components@2.0.0) (2020-10-08)
+
+
+* feat!: bumping major version (#28) ([1c4996b](https://github.com/transferwise/marketing-components/commit/1c4996b837dd09ae64ccc7902db90835b6bd1f78)), closes [#28](https://github.com/transferwise/marketing-components/issues/28)
+
+
+### BREAKING CHANGES
+
+* Add "TrustElement" to every trust element component name
+
+
+
+
+
 ## [1.12.2](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@1.12.1...@transferwise/marketing-components@1.12.2) (2020-10-07)
 
 **Note:** Version bump only for package @transferwise/marketing-components
