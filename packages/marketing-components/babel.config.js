@@ -42,7 +42,7 @@ module.exports = {
   ],
   env: {
     test: testConfig,
-    'es-nopolyfill': esConfigNoPolyfill,
     'umd-nopolyfill': umdConfigNoPolyfill,
+    'es-nopolyfill': esConfigNoPolyfill,
   },
 };

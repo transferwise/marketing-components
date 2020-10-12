@@ -1,9 +1,8 @@
 import resolve from '@rollup/plugin-node-resolve';
-import babel from 'rollup-plugin-babel';
+import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
 import { uglify } from 'rollup-plugin-uglify';
-import json from '@rollup/plugin-json';
 
 import pkg from './package.json';
 
@@ -34,8 +33,7 @@ const plugins = [
   // Resolves modules from node_modules
   resolve(),
   babel({
-    runtimeHelpers: true,
-    exclude: [/node_modules/],
+    babelHelpers: 'runtime',
   }),
   // Convert CJ into ES6
   commonjs({ sourcemap: false, namedExports }),
@@ -44,7 +42,6 @@ const plugins = [
     extract: pkg.style,
     extensions: ['.css'],
   }),
-  json(),
   uglify(),
 ];
 
