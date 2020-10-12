@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Types from 'prop-types';
 import { DialogOverlay, DialogContent } from '@reach/dialog';
-import { useTransition, animated } from 'react-spring';
+import { useTransition, animated } from 'react-spring/web.cjs';
 import { Cross as CrossIcon } from '@transferwise/icons';
 
 import './VideoModal.css';

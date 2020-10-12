@@ -5,6 +5,7 @@
   "license": "Apache-2.0",
   "main": "./build/umd/no-polyfill/main.js",
   "module": "./build/es/no-polyfill/index.js",
+  "style": "./build/main.css",
   "sideEffects": [
     "*.css"
   ],
