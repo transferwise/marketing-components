@@ -10,18 +10,6 @@ import pkg from './package.json';
 const input = 'src/index.js';
 const file = pkg.main;
 
-// Rollup can resolve only explicit exports.
-// https://github.com/rollup/rollup/issues/2671
-// https://github.com/rollup/rollup-plugin-commonjs
-const namedExports = {
-  '../../node_modules/@transferwise/formatting/dist/formatting.js': [
-    'formatAmount',
-    'formatMoney',
-    'formatDate',
-    'formatNumber',
-  ],
-};
-
 const globals = {
   react: 'React',
   'react-dom': 'ReactDOM',
@@ -37,7 +25,7 @@ const plugins = [
     exclude: [/node_modules/],
   }),
   // Convert CJ into ES6
-  commonjs({ sourcemap: false, namedExports }),
+  commonjs({ sourcemap: false }),
   postcss({
     config: true,
     extract: pkg.style,
