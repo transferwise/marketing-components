@@ -5,6 +5,19 @@ const esConfigNoPolyfill = {
   ],
 };
 
+const umdConfigNoPolyfill = {
+  presets: [
+    [
+      '@babel/preset-env',
+      {
+        // Don't add polyfills automatically per file, and don't transform import "core-js" or import "@babel/polyfill" to individual polyfills.
+        useBuiltIns: false,
+        modules: false,
+      },
+    ],
+  ],
+};
+
 const testConfig = {
   presets: [
     [
@@ -29,6 +42,7 @@ module.exports = {
   ],
   env: {
     test: testConfig,
+    'umd-nopolyfill': umdConfigNoPolyfill,
     'es-nopolyfill': esConfigNoPolyfill,
   },
 };
