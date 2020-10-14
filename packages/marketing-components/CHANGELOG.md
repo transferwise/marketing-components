@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@2.0.1...@transferwise/marketing-components@2.1.0) (2020-10-14)
+
+
+### Features
+
+* Add UMD bundle ([da32185](https://github.com/transferwise/marketing-components/commit/da32185795085f4efefdad2cf1f894f6ea8e2290))
+
+
+
+
+
 ## [2.0.1](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@2.0.0...@transferwise/marketing-components@2.0.1) (2020-10-08)
 
 
