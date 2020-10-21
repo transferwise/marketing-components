@@ -4,7 +4,18 @@
       "allowBranch": "main",
       "conventionalCommits": true,
       "verifyAccess": false,
-      "ignoreChanges": ["**/*.md", "**/*.spec.js", "**/*.yml", "packages/docs"]
+      "ignoreChanges": [
+        "**/*.md",
+        "**/*.spec.js",
+        "**/*.yml",
+        "**/*.story.js",
+        "**/.storybook/**",
+        "**/test/**",
+        "packages/docs",
+        "lerna.json",
+        "**/CODEOWNERS",
+        "**/.gitignore"
+      ]
     }
   },
   "npmClient": "yarn",
