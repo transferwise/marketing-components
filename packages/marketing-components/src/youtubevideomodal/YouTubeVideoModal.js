@@ -7,15 +7,14 @@ import VideoModal from '../videomodal';
 const YouTubeVideoModal = ({ videoId, posterUrl, translations, isOpen, onDismiss, ...rest }) => {
   const posterFallbackUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
   const videoUrl = `https://www.youtube-nocookie.com/embed/${videoId}?enablejsapi=1&html5=1&rel=0&showinfo=0&autoplay=1&wmode=opaque`;
-  let isVideoModalOpen = false;
 
-  if (isOpen) {
-    if (hasValidConsent()) {
-      isVideoModalOpen = true;
-    } else if (typeof window !== 'undefined') {
+  if (!hasValidConsent()) {
+    if (isOpen && typeof window !== 'undefined') {
       window.open(`https://youtu.be/${videoId}`, '_blank');
       onDismiss();
     }
+
+    return null;
   }
 
   return (
@@ -23,7 +22,7 @@ const YouTubeVideoModal = ({ videoId, posterUrl, translations, isOpen, onDismiss
       {...rest}
       posterUrl={posterUrl || posterFallbackUrl}
       translations={translations}
-      isOpen={isVideoModalOpen}
+      isOpen={isOpen}
       onDismiss={onDismiss}
     >
       <iframe
