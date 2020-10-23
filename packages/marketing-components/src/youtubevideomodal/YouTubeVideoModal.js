@@ -8,12 +8,14 @@ const YouTubeVideoModal = ({ videoId, posterUrl, translations, isOpen, onDismiss
   const posterFallbackUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
   const videoUrl = `https://www.youtube-nocookie.com/embed/${videoId}?enablejsapi=1&html5=1&rel=0&showinfo=0&autoplay=1&wmode=opaque`;
 
-  if (!hasValidConsent()) {
-    if (isOpen && typeof window !== 'undefined') {
+  React.useEffect(() => {
+    if (isOpen && !hasValidConsent() && typeof window !== 'undefined') {
       window.open(`https://youtu.be/${videoId}`, '_blank');
       onDismiss();
     }
+  }, [isOpen]);
 
+  if (!hasValidConsent()) {
     return null;
   }
 
