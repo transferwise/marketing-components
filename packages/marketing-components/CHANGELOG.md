@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@2.2.0...@transferwise/marketing-components@2.2.1) (2020-10-23)
+
+
+### Bug Fixes
+
+* Remove side effects from YouTubeVideoModal render ([#34](https://github.com/transferwise/marketing-components/issues/34)) ([6d58729](https://github.com/transferwise/marketing-components/commit/6d58729c134c26a6c814cfe3fce63907d3c93f90))
+
+
+
+
+
 # [2.2.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@2.1.0...@transferwise/marketing-components@2.2.0) (2020-10-21)
 
 
