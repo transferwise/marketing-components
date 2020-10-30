@@ -30,6 +30,7 @@ lerna-debug.log
 # CSS
 dist
 *.css
+!**/_next/static/css/**
 packages/css/pages/styles
 
 # docs

@@ -3724,6 +3724,11 @@
   dependencies:
     "@babel/runtime" "^7.10.2"
 
+"@transferwise/cookie-consent@^2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@transferwise/cookie-consent/-/cookie-consent-2.8.0.tgz#75b58476a9e8fa79c824f8ffd47b75bdbea90c3d"
+  integrity sha512-3AD/unNYYmXjsMeEOL70h46pPf6UsAodGtAUgK1Fdnpmz09xg3TDzR/ImWTe608zIIYmCLgKv3Dq6QMxQDX8qQ==
+
 "@transferwise/eslint-config@^6.0.0":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@transferwise/eslint-config/-/eslint-config-6.0.0.tgz#c053282f83a456194d7441c7481b448c64ca49f1"
