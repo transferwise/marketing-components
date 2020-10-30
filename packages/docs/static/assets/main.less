@@ -1,3 +1,10 @@
+@import '@transferwise/neptune-css/dist/props/neptune-tokens.css';
+@import '@transferwise/neptune-css/dist/props/legacy-custom-props.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Typography */
 
 h1[id] + p,
@@ -174,7 +181,7 @@ img {
 
 /* Live editor */
 .live-provider {
-  margin: calc(var(--sizer) * 3) 0 0;
+  margin: calc(var(--size) * 3) 0 0;
 }
 
 .live-editor {
@@ -185,7 +192,7 @@ img {
 
 @media (min-width: 1200px) {
   .live-preview {
-    padding-left: calc(var(--sizer) * 4);
+    padding-left: calc(var(--size) * 4);
   }
 }
 
@@ -209,17 +216,17 @@ img {
 
 .docs-table > thead > tr > td,
 .docs-table > thead > tr > th {
-  padding: calc(var(--sizer) * 2) calc(var(--sizer) * 3) !important;
+  padding: calc(var(--size) * 2) calc(var(--size) * 3) !important;
 }
 
 .docs-table > tbody > tr > td,
 .docs-table > tbody > tr > th {
-  padding: calc(var(--sizer) * 3) calc(var(--sizer) * 3) !important;
+  padding: calc(var(--size) * 3) calc(var(--size) * 3) !important;
 }
 
 .docs-table .table-condensed > tbody > tr > td,
 .docs-table .table-condensed > tbody > tr > th {
-  padding: calc(var(--sizer) * 2) calc(var(--sizer) * 3) !important;
+  padding: calc(var(--size) * 2) calc(var(--size) * 3) !important;
 }
 
 .docs-table > thead {
@@ -234,7 +241,7 @@ img {
 }
 
 .docs-table ul {
-  margin-bottom: var(--sizer);
+  margin-bottom: var(--size);
   padding: 0;
 }
 
@@ -245,4 +252,32 @@ img {
 .docs-is-visible {
   color: #468847;
   background-color: #dff0d8 !important;
+}
+
+.docs-box-dashed {
+  border: 1px dashed #829ca9;
+}
+
+.docs-bg {
+  height: 400px;
+  background-attachment: scroll !important;
+}
+
+.docs-item {
+  padding: var(--size-16);
+  background-color: var(--color-background-neutral);
+  border: 1px solid var(--color-text-secondary);
+}
+
+.docs-item.docs-highlight {
+  color: white;
+  background: var(--color-text-important);
+}
+
+/* 🥚 */
+
+@media (--screen-sm-max) {
+  .order-1--mobile::after {
+    content: ' 🎉';
+  }
 }

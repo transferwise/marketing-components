@@ -1,3 +1,5 @@
+import '../../../css/dist/css/circle-backgrounds.css';
+
 Backgrounds are applied to box elements. This could be a grid column, a page width block, or
 something custom.
 
@@ -16,9 +18,9 @@ container to make sure content has a background.
 
 By default it is <strong>centered both vertically and horizontally</strong> on the box and <strong> not clipped</strong> by the edge of the box.
 
-<div class="row">
-  <div class="col-xs-4 col-sm-offset-4">
-    <div class="circle-bg circle-bg-margin">
+<div className="row">
+  <div className="col-xs-4 col-sm-offset-4">
+    <div className="circle-bg circle-bg-margin">
       <h3>Default circle</h3>
     </div>
   </div>
@@ -39,33 +41,33 @@ Example logic:
 - lg: 2 \* width
 - xl: 4 \* width
 
-<div class="row">
-  <div class="col-xs-4">
-    <div class="box-dashed circle-bg circle-bg-xs circle-bg-margin">
+<div className="row">
+  <div className="col-xs-4">
+    <div className="docs-box-dashed circle-bg circle-bg-xs circle-bg-margin">
       <h3>xs</h3>
     </div>
   </div>
-  <div class="col-xs-4">
-    <div class="box-dashed circle-bg circle-bg-sm circle-bg-margin">
+  <div className="col-xs-4">
+    <div className="docs-box-dashed circle-bg circle-bg-sm circle-bg-margin">
       <h3>sm</h3>
     </div>
   </div>
-  <div class="col-xs-4">
-    <div class="box-dashed circle-bg circle-bg-md circle-bg-margin">
+  <div className="col-xs-4">
+    <div className="docs-box-dashed circle-bg circle-bg-md circle-bg-margin">
       <h3>md</h3>
     </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-xs-4 col-xs-offset-4">
-    <div class="circle-bg circle-bg-lg circle-bg-lg-margin">
+<div className="row">
+  <div className="col-xs-4 col-xs-offset-4">
+    <div className="circle-bg circle-bg-lg circle-bg-lg-margin">
       <h3>lg</h3>
     </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-xs-4 col-xs-offset-4">
-    <div class="circle-bg circle-bg-xl circle-bg-xl-margin">
+<div className="row">
+  <div className="col-xs-4 col-xs-offset-4">
+    <div className="circle-bg circle-bg-xl circle-bg-xl-margin">
       <h3>xl</h3>
     </div>
   </div>
@@ -98,9 +100,9 @@ to choose the edge.
 
 We can also use these in x/y combinations.
 
-<div class="row">
-  <div class="col-xs-5 col-xs-offset-1">
-    <div class="box-dashed circle-bg circle-bg-sm circle-bg-sm-margin circle-bg-top-c">
+<div className="row">
+  <div className="col-xs-5 col-xs-offset-1">
+    <div className="docs-box-dashed circle-bg circle-bg-sm circle-bg-sm-margin circle-bg-top-c">
       <h3>top</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus animi a labore. Ipsam
@@ -109,8 +111,8 @@ We can also use these in x/y combinations.
       </p>
     </div>
   </div>
-  <div class="col-xs-5 col-xs-offset-1">
-    <div class="box-dashed circle-bg circle-bg-sm circle-bg-sm-margin circle-bg-right-c">
+  <div className="col-xs-5 col-xs-offset-1">
+    <div className="docs-box-dashed circle-bg circle-bg-sm circle-bg-sm-margin circle-bg-right-c">
       <h3>right</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus animi a labore. Ipsam
@@ -120,9 +122,9 @@ We can also use these in x/y combinations.
     </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-xs-5 col-xs-offset-1">
-    <div class="box-dashed circle-bg circle-bg-sm circle-bg-sm-margin circle-bg-bottom-c">
+<div className="row">
+  <div className="col-xs-5 col-xs-offset-1">
+    <div className="docs-box-dashed circle-bg circle-bg-sm circle-bg-sm-margin circle-bg-bottom-c">
       <h3>bottom</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus animi a labore. Ipsam
@@ -131,8 +133,8 @@ We can also use these in x/y combinations.
       </p>
     </div>
   </div>
-  <div class="col-xs-5 col-xs-offset-1">
-    <div class="box-dashed circle-bg circle-bg-sm circle-bg-sm-margin circle-bg-left-c">
+  <div className="col-xs-5 col-xs-offset-1">
+    <div className="docs-box-dashed circle-bg circle-bg-sm circle-bg-sm-margin circle-bg-left-c">
       <h3>left</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus animi a labore. Ipsam
@@ -157,29 +159,29 @@ We can also use these in x/y combinations.
     </div>
 
 <h2 className="m-t-4">Position (center) x/y combinations</h2>
-<div class="row">
-  <div class="col-xs-5 col-xs-offset-1 ">
-    <div class="box-dashed circle-bg circle-bg-sm circle-bg-top-c circle-bg-left-c circle-bg-sm-margin">
+<div className="row">
+  <div className="col-xs-5 col-xs-offset-1 ">
+    <div className="docs-box-dashed circle-bg circle-bg-sm circle-bg-top-c circle-bg-left-c circle-bg-sm-margin">
       <h3>top left</h3> Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur
       adipisicing elit. Minus,
     </div>
   </div>
-  <div class="col-xs-5 col-xs-offset-1 ">
-    <div class="box-dashed circle-bg circle-bg-sm circle-bg-top-c circle-bg-right-c circle-bg-sm-margin ">
+  <div className="col-xs-5 col-xs-offset-1 ">
+    <div className="docs-box-dashed circle-bg circle-bg-sm circle-bg-top-c circle-bg-right-c circle-bg-sm-margin ">
       <h3>Top Right</h3> Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur
       adipisicing elit.
     </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-xs-5 col-xs-offset-1 ">
-    <div class="box-dashed circle-bg circle-bg-sm circle-bg-bottom-c circle-bg-left-c circle-bg-sm-margin">
+<div className="row">
+  <div className="col-xs-5 col-xs-offset-1 ">
+    <div className="docs-box-dashed circle-bg circle-bg-sm circle-bg-bottom-c circle-bg-left-c circle-bg-sm-margin">
       <h3>Bottom Left</h3> Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur
       adipisicing elit.
     </div>
   </div>
-  <div class="col-xs-5 col-xs-offset-1 ">
-    <div class="box-dashed circle-bg circle-bg-sm circle-bg-bottom-c circle-bg-right-c circle-bg-sm-margin">
+  <div className="col-xs-5 col-xs-offset-1 ">
+    <div className="docs-box-dashed circle-bg circle-bg-sm circle-bg-bottom-c circle-bg-right-c circle-bg-sm-margin">
       <h3>Bottom Right</h3> Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur
       adipisicing elit.
     </div>
@@ -212,29 +214,29 @@ Modifiers:
 
 We can also use these in x/y combinations.
 
-<div class="row">
-  <div class="col-xs-4 col-xs-offset-1">
-    <div class="box-dashed circle-bg circle-bg-top circle-bg-margin">
+<div className="row">
+  <div className="col-xs-4 col-xs-offset-1">
+    <div className="docs-box-dashed circle-bg circle-bg-top circle-bg-margin">
       <h3>Top</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus</p>
     </div>
   </div>
-  <div class="col-xs-4 col-xs-offset-3">
-    <div class="box-dashed circle-bg circle-bg-right circle-bg-margin">
+  <div className="col-xs-4 col-xs-offset-3">
+    <div className="docs-box-dashed circle-bg circle-bg-right circle-bg-margin">
       <h3>Right</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus</p>
     </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-xs-4 col-xs-offset-1">
-    <div class="box-dashed circle-bg circle-bg-bottom circle-bg-margin">
+<div className="row">
+  <div className="col-xs-4 col-xs-offset-1">
+    <div className="docs-box-dashed circle-bg circle-bg-bottom circle-bg-margin">
       <h3>Bottom</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus</p>
     </div>
   </div>
-  <div class="col-xs-4 col-xs-offset-3">
-    <div class="box-dashed circle-bg circle-bg-left circle-bg-margin">
+  <div className="col-xs-4 col-xs-offset-3">
+    <div className="docs-box-dashed circle-bg circle-bg-left circle-bg-margin">
       <h3>Left</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus animi a labore. Ipsam
@@ -260,9 +262,9 @@ We can also use these in x/y combinations.
 
 <h2>Position (box edge) x/y combinations</h2>
 
-<div class="row m-b-5">
-  <div class="col-xs-4 col-xs-offset-1">
-    <div class="box-dashed circle-bg circle-bg-sm circle-bg-top circle-bg-left">
+<div className="row m-b-5">
+  <div className="col-xs-4 col-xs-offset-1">
+    <div className="docs-box-dashed circle-bg circle-bg-sm circle-bg-top circle-bg-left">
       <h3>Top Left</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus Lorem ipsum dolor sit amet,
@@ -271,8 +273,8 @@ We can also use these in x/y combinations.
       </p>
     </div>
   </div>
-  <div class="col-xs-4 col-xs-offset-3">
-    <div class="box-dashed circle-bg circle-bg-sm circle-bg-top circle-bg-right">
+  <div className="col-xs-4 col-xs-offset-3">
+    <div className="docs-box-dashed circle-bg circle-bg-sm circle-bg-top circle-bg-right">
       <h3>Top Right</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus Lorem ipsum dolor sit amet,
@@ -282,9 +284,9 @@ We can also use these in x/y combinations.
     </div>
   </div>
 </div>
-<div class="row ">
-  <div class="col-xs-4 col-xs-offset-1">
-    <div class="box-dashed circle-bg circle-bg-sm circle-bg-bottom circle-bg-left">
+<div className="row ">
+  <div className="col-xs-4 col-xs-offset-1">
+    <div className="docs-box-dashed circle-bg circle-bg-sm circle-bg-bottom circle-bg-left">
       <h3>Bottom Left</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus Lorem ipsum dolor sit amet,
@@ -293,8 +295,8 @@ We can also use these in x/y combinations.
       </p>
     </div>
   </div>
-  <div class="col-xs-4 col-xs-offset-3">
-    <div class="box-dashed circle-bg circle-bg-sm circle-bg-bottom circle-bg-right">
+  <div className="col-xs-4 col-xs-offset-3">
+    <div className="docs-box-dashed circle-bg circle-bg-sm circle-bg-bottom circle-bg-right">
       <h3>Bottom Right</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus Lorem ipsum dolor sit amet,
@@ -321,9 +323,9 @@ We can also use these in x/y combinations.
 <h2 id="circle-bg-size-pos">Size and positions</h2>
 We can use these together for different effects.
 
-<div class="row">
-  <div class="col-xs-4">
-    <div class="box-dashed circle-bg circle-bg-xs circle-bg-top circle-bg-right circle-bg-sm-margin">
+<div className="row">
+  <div className="col-xs-4">
+    <div className="docs-box-dashed circle-bg circle-bg-xs circle-bg-top circle-bg-right circle-bg-sm-margin">
       <h3>xs top right</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus animi ad omnis esse
@@ -332,8 +334,8 @@ We can use these together for different effects.
       </p>
     </div>
   </div>
-  <div class="col-xs-4">
-    <div class="box-dashed circle-bg circle-bg-sm circle-bg-bottom circle-bg-right circle-bg-sm-margin">
+  <div className="col-xs-4">
+    <div className="docs-box-dashed circle-bg circle-bg-sm circle-bg-bottom circle-bg-right circle-bg-sm-margin">
       <h3>sm bottom right</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus animi a labore. Ipsam
@@ -342,8 +344,8 @@ We can use these together for different effects.
       </p>
     </div>
   </div>
-  <div class="col-xs-4">
-    <div class="box-dashed circle-bg circle-bg-bottom circle-bg-left circle-bg-sm-margin">
+  <div className="col-xs-4">
+    <div className="docs-box-dashed circle-bg circle-bg-bottom circle-bg-left circle-bg-sm-margin">
       <h3>md bottom left</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus minus animi a labore. Ipsam
@@ -361,9 +363,9 @@ We can use these together for different effects.
 If we want to mostly cover the background of the box, but with an offset style, we could use the lg
 variant (2x width) and side positioning.
 
-<div class="row">
-  <div class="col-xs-4 col-xs-offset-4">
-    <div class="box-dashed circle-bg circle-bg-lg circle-bg-bottom circle-bg-left circle-bg-margin">
+<div className="row">
+  <div className="col-xs-4 col-xs-offset-4">
+    <div className="docs-box-dashed circle-bg circle-bg-lg circle-bg-bottom circle-bg-left circle-bg-margin">
       <h3>lg bottom left</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quisquam velit
@@ -379,9 +381,9 @@ variant (2x width) and side positioning.
       ...
     </div>
 
-<div class="row">
-  <div class="col-xs-4 col-xs-offset-4">
-    <div class="box-dashed circle-bg circle-bg-xl circle-bg-left circle-bg-xl-margin">
+<div className="row">
+  <div className="col-xs-4 col-xs-offset-4">
+    <div className="docs-box-dashed circle-bg circle-bg-xl circle-bg-left circle-bg-xl-margin">
       <h3>xl left</h3> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos consequatur
       repellat nihil eaque doloribus assumenda accusantium laborum perferendis amet suscipit. Fugiat
       fuga amet beatae id eaque sapiente, ipsa assumenda soluta, ex dolorum.
@@ -394,10 +396,10 @@ variant (2x width) and side positioning.
 <h2 id="circle-bg-clip">Clipping boxes </h2>
 Sometime we want to clip the circle, we should do this with a clipping box at a higher level.
 
-<div class="row circle-bg-clip box-dashed">
-  <div class="col-xs-6 m-t-5 m-b-5">Clip</div>
-  <div class="col-xs-6 m-t-5 m-b-5">
-    <div class="box-dashed circle-bg circle-bg-lg circle-bg-left">lg left</div>
+<div className="row circle-bg-clip box-dashed">
+  <div className="col-xs-6 m-t-5 m-b-5">Clip</div>
+  <div className="col-xs-6 m-t-5 m-b-5">
+    <div className="docs-box-dashed circle-bg circle-bg-lg circle-bg-left">lg left</div>
   </div>
 </div>
 
@@ -420,48 +422,48 @@ We need several colour modifiers for our regular background colours:
 - Dark navy blue (for use on light navy blue)
 - Light navy blue (for use on white)
 
-<div class="row">
-  <div class="col-xs-4 col-xs-offset-1">
-    <div class="row circle-bg-clip box-dashed">
-      <div class="col-xs-6 m-t-5 m-b-5">Some text</div>
-      <div class="col-xs-6 m-t-5 m-b-5">
-        <div class="box-dashed circle-bg circle-bg-lg circle-bg-left">Default color</div>
+<div className="row">
+  <div className="col-xs-4 col-xs-offset-1">
+    <div className="row circle-bg-clip box-dashed">
+      <div className="col-xs-6 m-t-5 m-b-5">Some text</div>
+      <div className="col-xs-6 m-t-5 m-b-5">
+        <div className="docs-box-dashed circle-bg circle-bg-lg circle-bg-left">Default color</div>
       </div>
     </div>
   </div>
-  <div class="col-xs-4 col-xs-offset-2">
-    <div class="row circle-bg-clip box-dashed">
-      <div class="col-xs-6 m-t-5 m-b-5">Some text</div>
-      <div class="col-xs-6 m-t-5 m-b-5">
-        <div class="circle-bg circle-bg-light-blue circle-bg-lg circle-bg-left">Light blue</div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row m-t-5">
-  <div class="col-xs-4 col-xs-offset-1">
-    <div class="row circle-bg-clip box-dashed">
-      <div class="col-xs-6 m-t-5 m-b-5">Some text</div>
-      <div class="col-xs-6 m-t-5 m-b-5">
-        <div class="circle-bg circle-bg-blue circle-bg-lg circle-bg-left">Navy blue</div>
-      </div>
-    </div>
-  </div>
-  <div class="col-xs-4 col-xs-offset-2">
-    <div class="row circle-bg-clip box-dashed">
-      <div class="col-xs-6 m-t-5 m-b-5">Some text</div>
-      <div class="col-xs-6 m-t-5 m-b-5">
-        <div class="circle-bg circle-bg-navy circle-bg-lg circle-bg-left">Dark navy blue</div>
+  <div className="col-xs-4 col-xs-offset-2">
+    <div className="row circle-bg-clip box-dashed">
+      <div className="col-xs-6 m-t-5 m-b-5">Some text</div>
+      <div className="col-xs-6 m-t-5 m-b-5">
+        <div className="circle-bg circle-bg-light-blue circle-bg-lg circle-bg-left">Light blue</div>
       </div>
     </div>
   </div>
 </div>
-<div class="row m-t-5">
-  <div class="col-xs-4 col-xs-offset-1">
-    <div class="row circle-bg-clip box-dashed bg-primary low-z-index">
-      <div class="col-xs-6 m-t-5 m-b-5">Navy blue</div>
-      <div class="col-xs-6 m-t-5 m-b-5">
-        <div class="circle-bg circle-bg-navy circle-bg-lg circle-bg-left">Dark navy blue</div>
+<div className="row m-t-5">
+  <div className="col-xs-4 col-xs-offset-1">
+    <div className="row circle-bg-clip box-dashed">
+      <div className="col-xs-6 m-t-5 m-b-5">Some text</div>
+      <div className="col-xs-6 m-t-5 m-b-5">
+        <div className="circle-bg circle-bg-blue circle-bg-lg circle-bg-left">Navy blue</div>
+      </div>
+    </div>
+  </div>
+  <div className="col-xs-4 col-xs-offset-2">
+    <div className="row circle-bg-clip box-dashed">
+      <div className="col-xs-6 m-t-5 m-b-5">Some text</div>
+      <div className="col-xs-6 m-t-5 m-b-5">
+        <div className="circle-bg circle-bg-navy circle-bg-lg circle-bg-left">Dark navy blue</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div className="row m-t-5">
+  <div className="col-xs-4 col-xs-offset-1">
+    <div className="row circle-bg-clip box-dashed bg-primary low-z-index">
+      <div className="col-xs-6 m-t-5 m-b-5">Navy blue</div>
+      <div className="col-xs-6 m-t-5 m-b-5">
+        <div className="circle-bg circle-bg-navy circle-bg-lg circle-bg-left">Dark navy blue</div>
       </div>
     </div>
   </div>
@@ -472,7 +474,7 @@ We need several colour modifiers for our regular background colours:
     <div class="circle-bg circle-bg-blue">Navy blue</div>
     <div class="circle-bg circle-bg-navy">Dark navy blue</div>
 
-<div class="alert alert-info">
+<div className="alert alert-info">
   There are available utility clases to control the vertical margin of the circle background
   element.
 </div>
