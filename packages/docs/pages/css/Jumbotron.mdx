@@ -1,0 +1,95 @@
+import '../../../css/dist/css/jumbotron.css';
+
+A lightweight, flexible component to create hero style components.
+
+<div class="jumbotron">
+  <h1>Hey wiser!</h1>
+  <p>
+    This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+    featured content or information.
+  </p>
+  <p>
+    <a class="btn btn-primary" href="#" role="button">
+      Learn more
+    </a>
+  </p>
+</div>
+
+    <div class="jumbotron">
+    ...
+    </div>
+
+To make the jumbotron full width, and without rounded corners, place it outside all <code>.container</code>s and instead add a <code>.container</code> within.
+
+    <div class="jumbotron">
+      <div class="container">
+        ...
+      </div>
+    </div>
+
+### Jumbotron with background image
+
+To provide a background image for a jumbotron unit, wrap the unit with <code> jumbotron-image</code>, you will need to specify an background image with CSS
+
+<div
+  class="jumbotron-image"
+  style={{
+    backgroundImage:
+      "url('https://daurzqvz85pz.cloudfront.net/55fabdde87a2a-testimonial_naila_background.png')",
+  }}
+>
+  <div class="jumbotron">
+    <h1>Hey wiser!</h1>
+    <p>
+      This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+      featured content or information.
+    </p>
+    <p>
+      <a class="btn btn-primary" href="#" role="button">
+        Learn more
+      </a>
+    </p>
+  </div>
+</div>
+
+    <div class="jumbotron-image" style="background-image: url('https://daurzqvz85pz.cloudfront.net/55fabdde87a2a-testimonial_naila_background.png')">
+      <div class="jumbotron">
+        ...
+      </div>
+    </div>
+
+### Jumbotron with background image inverse
+
+<div
+  class="jumbotron-image-inverse"
+  style={{
+    backgroundImage:
+      "url('https://daurzqvz85pz.cloudfront.net/55fabdde87a2a-testimonial_naila_background.png')",
+  }}
+>
+  <div class="jumbotron">
+    <h1>Hey wiser!</h1>
+    <p>
+      This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+      featured content or information.
+    </p>
+    <p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">
+        Learn more
+      </a>
+    </p>
+  </div>
+</div>
+
+    <div class="jumbotron-image-inverse" style="background-image: url('https://daurzqvz85pz.cloudfront.net/55fabdde87a2a-testimonial_naila_background.png')">
+      <div class="jumbotron">
+        ...
+      </div>
+    </div>
+
+
+
+export const meta = {
+  name: 'Jumbotron',
+  size: '1KB',
+};
