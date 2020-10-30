@@ -1,70 +1,69 @@
 import '../../../css/dist/css/grid-layout.css';
 
-<div className="container">
-  <p>
-    TW Grid layout system created for building modern web layouts easily.
-  </p>
-  <div className="grid-3 gap">
-    <ul className="m-t-4">
-      <li>
-        <a href="#general-usage">General usage</a>
-      </li>
-      <li>
-        <a href="#container">Container</a>
-      </li>
-      <li>
-        <a href="#responsive-columns">Responsive columns</a>
-      </li>
-      <li>
-        <a href="#nesting">Nesting grids</a>
-      </li>
-      <li>
-        <a href="#rows">Rows</a>
-      </li>
-      <li>
-        <a href="#gap">Gap</a>
-      </li>
-      <li>
-        <a href="#reverse">Reverse</a>
-      </li>
-      <li>
-        <a href="#order">Ordering</a>
-      </li>
-      <li>
-        <a href="#alignment">Alignment</a>
-      </li>
-      <li>
-        <a href="#common-patterns">Common patterns</a>
-      </li>
+<p>W Grid layout system created for building modern web layouts easily.</p>
+<div className="grid-3 gap">
+  <ul className="m-t-4">
+    <li>
+      <a href="#general-usage">General usage</a>
+    </li>
+    <li>
+      <a href="#container">Container</a>
+    </li>
+    <li>
+      <a href="#responsive-columns">Responsive columns</a>
+    </li>
+    <li>
+      <a href="#nesting">Nesting grids</a>
+    </li>
+    <li>
+      <a href="#rows">Rows</a>
+    </li>
+    <li>
+      <a href="#gap">Gap</a>
+    </li>
+    <li>
+      <a href="#reverse">Reverse</a>
+    </li>
+    <li>
+      <a href="#order">Ordering</a>
+    </li>
+    <li>
+      <a href="#alignment">Alignment</a>
+    </li>
+    <li>
+      <a href="#common-patterns">Common patterns</a>
+    </li>
+  </ul>
+  <div>
+    <h3>Pros</h3>
+    <ul>
+      <li>Lightweight. 4KB vs 15KB (Bootstrap grid system)</li>
+      <li>Simple to use</li>
+      <li>Custom system to our needs. Flexible</li>
+      <li>Easy reverse and ordering</li>
+      <li>Less code. Simple DOM.</li>
+      <li>Use of standard and modern code</li>
+      <li>Can be used in combination with other layout systems (Flex, cols system). It's not exclusive.</li>
     </ul>
-    <div>
-      <h3>Pros</h3>
-      <ul>
-        <li>Lightweight. 4KB vs 15KB (Bootstrap grid system)</li>
-        <li>Simple to use</li>
-        <li>Custom system to our needs. Flexible</li>
-        <li>Easy reverse and ordering</li>
-        <li>Less code. Simple DOM.</li>
-        <li>Use of standard and modern code</li>
-        <li>Can be used in combination with other layout systems (Flex, cols system). It's not exclusive.</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Cons</h3>
-      <ul>
-        <li>Not supported in IE11</li>
-      </ul>
-    </div>
   </div>
-  <p>
-  <p><span>Want to know more about grid layout? </span>
+  <div>
+    <h3>Cons</h3>
+    <ul>
+      <li>Not supported in IE11</li>
+    </ul>
+  </div>
+</div>
+<p>
+<span>Want to know more about grid layout? </span>
   <a
     href="https://css-tricks.com/snippets/css/complete-guide-grid/"
     target="_blank"
     rel="noopener noreferrer"
   >Here a complete guide</a>
-  </p>
 </p>
+
+<hr />
+
 <h2 id="general-usage">General usage</h2>
 <ul>
   <li>
@@ -82,16 +81,19 @@ import '../../../css/dist/css/grid-layout.css';
     </div>
 
 <p>Ordering is applied to the child item.</p>
+
+<hr />
+
 <h2 id="container">Container</h2>
 <h3 className="m-t-4">.container</h3>
 <p>This is the same container we use currently in Neptune.</p>
 
-      <div class="container">...</div>
+    <div class="container">...</div>
 
 <h3 className="m-t-4">.container-10</h3>
 <p>This gets the same result as tipical .col-md-10 .col-md-offset-1 from Bootstrap</p>
 
-    <div className="container-10">...</div>
+    <div class="container-10">...</div>
 
 <div className="container-10">
   <div className="docs-item">This is some content</div>
@@ -102,7 +104,7 @@ import '../../../css/dist/css/grid-layout.css';
 <h3 className="m-t-4">.container-10--md</h3>
 <p>If you need this layout only for desktop. Use this case.</p>
 
-    <div className="container-10--md">...</div>
+    <div class="container-10--md">...</div>
 
 <div className="container-10--md">
   <div className="docs-item">This is some content</div>
@@ -115,7 +117,7 @@ import '../../../css/dist/css/grid-layout.css';
 
 <h3 className="m-t-4">.container-8</h3>
 
-    <div className="container-8">...</div>
+    <div class="container-8">...</div>
 
 <div className="container-8">
   <div className="docs-item">This is some content</div>
@@ -125,7 +127,7 @@ import '../../../css/dist/css/grid-layout.css';
 
 <h3 className="m-t-4">.container-8--md</h3>
 
-    <div className="container-8--md">...</div>
+    <div class="container-8--md">...</div>
 
 <div className="container-8--md">
   <div className="docs-item">This is some content</div>
@@ -136,11 +138,13 @@ import '../../../css/dist/css/grid-layout.css';
 <h3 className="m-t-4">Example with Bootstrap grid: .col-md-8 .col-md-offset-2</h3>
 <div className="docs-item col-md-8 col-md-offset-2 pull-xs-none">This is some content</div>
 
+<hr />
+
 <h2 id="responsive-columns">Responsive columns</h2>
 <p>Basic simple system</p>
 <h3 className="m-t-4">.grid-2</h3>
 
-    <div className="grid-2">
+    <div class="grid-2">
         <div>...</div>
         <div>...</div>
     </div>
@@ -243,13 +247,16 @@ import '../../../css/dist/css/grid-layout.css';
   <div className="docs-item">Item</div>
   <div className="docs-item">Item</div>
 </div>
+
+<hr />
+
 <h2 id="nesting">Nesting grids</h2>
 <p>It's totally fine to nest grids</p>
 
-    <div className="grid-2 gap">
+    <div class="grid-2 gap">
       <div>
         ...
-        <div className="grid-2">
+        <div class="grid-2">
           <div>...</div>
           <div>...</div>
         </div>
@@ -257,7 +264,7 @@ import '../../../css/dist/css/grid-layout.css';
       <div>...</div>
     </div>
 
-<div className="grid-2 gap">
+<div className="grid-2 gap m-b-4">
   <div className="docs-item">
     Item
     <div className="grid-2">
@@ -268,10 +275,10 @@ import '../../../css/dist/css/grid-layout.css';
   <div className="docs-item">Item</div>
 </div>
 
-    <div className="container-8 grid-2">
+    <div class="container-8 grid-2">
       <div>
         ...
-        <div className="grid-2--md gap">
+        <div class="grid-2--md gap">
           <div>...</div>
           <div>...</div>
         </div>
@@ -290,17 +297,22 @@ import '../../../css/dist/css/grid-layout.css';
   <div className="docs-item">Item</div>
 </div>
 
+<hr />
+
 <h2 id="rows">Rows</h2>
 <p>The rows are autoplaced. You don´t have to do anything.</p>
 
-    <div className="grid-3">
+    <div class="grid-3">
       <div>...</div>
       <div>...</div>
       <div>...</div>
       <div>...</div>
     </div>
 
+
 <h3 className="m-t-4">.grid-3</h3>
+
+
 <div className="grid-3">
   <div className="docs-item">Item</div>
   <div className="docs-item">Item</div>
@@ -308,32 +320,37 @@ import '../../../css/dist/css/grid-layout.css';
   <div className="docs-item">Item</div>
 </div>
 
-<h2 id="gap" className="">
-  Gap
-</h2>
-<ul>
-  <li>
-    The <strong>default</strong> --gap is <strong>--size-16</strong> for mobile,
-    <strong>--size-24</strong> for desktop
-  </li>
-  <li>
-    The <strong>column</strong> --gap is <strong>1/12</strong>. Like a Bootstrap col size.
-  </li>
-</ul>
+<hr />
 
-    <div className="grid-2 gap">
+<h2 id="gap">Gap</h2>
+
+- The <strong>default</strong> --gap is <strong>--size-16</strong> for mobile,
+    <strong>--size-24</strong> for desktop
+- The <strong>column</strong> --gap is <strong>1/12</strong>. Like a Bootstrap col size.
+
+
+
+<h3 className="m-t-4">.gap</h3>
+
+<p>The default gap is for both columns and rows.</p>
+
+    <div class="grid-2 gap">
       <div>...</div>
       <div>...</div>
     </div>
 
-<h3 className="m-t-4">.gap</h3>
-<p>The default gap is for both columns and rows.</p>
-<div className="grid-2 gap">
+
+<div className="grid-2 gap m-b-4">
   <div className="docs-item">Item</div>
   <div className="docs-item">Item</div>
   <div className="docs-item">Item</div>
   <div className="docs-item">Item</div>
 </div>
+
+    <div class="grid-2 gap--32">
+      <div>...</div>
+      <div>...</div>
+    </div>
 
 <h3 className="m-t-4">.gap--32</h3>
 <div className="grid-2 gap--32">
@@ -342,19 +359,15 @@ import '../../../css/dist/css/grid-layout.css';
   <div className="docs-item">Item</div>
   <div className="docs-item">Item</div>
 </div>
+
 <h3 className="m-t-4">.gap--column</h3>
 <p>Gap only for columns. The space is 1/12</p>
 
-    :root {
-      --gap: calc(100% / 12);
-    }
-
-
-    <div className="grid-2 gap--column">
-      <div className="docs-item">...</div>
-      <div className="docs-item">...</div>
-      <div className="docs-item">...</div>
-      <div className="docs-item">...</div>
+    <div class="grid-2 gap--column">
+      <div class="docs-item">...</div>
+      <div class="docs-item">...</div>
+      <div class="docs-item">...</div>
+      <div class="docs-item">...</div>
     </div>
 
 <div className="grid-2 gap--column">
@@ -364,9 +377,9 @@ import '../../../css/dist/css/grid-layout.css';
   <div className="docs-item">Item</div>
 </div>
 
-<h2 id="reverse" className="">
-  Reverse
-</h2>
+<hr />
+
+<h2 id="reverse">Reverse</h2>
 <p>The reverse mode is only horizontal (by now).</p>
 <h3 className="m-t-4">.reverse</h3>
 
@@ -391,16 +404,18 @@ import '../../../css/dist/css/grid-layout.css';
   <span className="docs-item">4 item</span>
 </div>
 
+<hr />
+
 <h2 id="order">Ordering</h2>
 <p>
   The class must be added to the <strong>child item</strong>
 </p>
 <h3 className="m-t-4">.order-1--mobile</h3>
 
-    <div className="grid-4--md">
+    <div class="grid-4--md">
       <div>...</div>
       <div>...</div>
-      <div className="order-1--mobile">...</div>
+      <div class="order-1--mobile">...</div>
       <div>...</div>
     </div>
 
@@ -413,18 +428,18 @@ import '../../../css/dist/css/grid-layout.css';
   <span className="docs-item">4 item</span>
 </div>
 
-<h2 id="alignment" className="">
-  Alignment
-</h2>
+<hr />
+
+<h2 id="alignment">Alignment</h2>
 <p>Uses the same alignment utility classes as Flex System does</p>
 <h3 className="m-t-4">.align-items-start</h3>
 
-    <div className="grid-2 align-items-start">
-      <div className="docs-item">...</div>
-      <div className="docs-item">...</div>
+    <div class="grid-2 align-items-start">
+      <div class="docs-item">...</div>
+      <div class="docs-item">...</div>
     </div>
 
-<div className="grid-2 align-items-start">
+<div className="align-items-start grid-2">
   <div className="docs-item">This is some content</div>
   <div className="docs-item">
     This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
@@ -436,9 +451,9 @@ import '../../../css/dist/css/grid-layout.css';
 
 <h3 className="m-t-4">.align-items-center</h3>
 
-    <div className="grid-2 align-items-center">
-      <div className="docs-item">...</div>
-      <div className="docs-item">...</div>
+    <div class="grid-2 align-items-center">
+      <div class="docs-item">...</div>
+      <div class="docs-item">...</div>
     </div>
 
 <div className="grid-2 align-items-center">
@@ -453,9 +468,9 @@ import '../../../css/dist/css/grid-layout.css';
 
 <h3 className="m-t-4">.align-items-end</h3>
 
-    <div className="grid-2 align-items-end">
-      <div className="docs-item">...</div>
-      <div className="docs-item">...</div>
+    <div class="grid-2 align-items-end">
+      <div class="docs-item">...</div>
+      <div class="docs-item">...</div>
     </div>
 
 <div className="grid-2 align-items-end">
@@ -467,22 +482,25 @@ import '../../../css/dist/css/grid-layout.css';
     mattis sem lacinia vitae. Nam dignissi.
   </div>
 </div>
+
+<hr />
+
 <h1 className="m-t-4">Labs</h1>
 <h2 id="common-patterns">Common patterns</h2>
 <p>Do we have common layout patterns?</p>
 
 <h3 className="m-t-4">.grid-sidebar</h3>
 
-    <div className="grid-sidebar">
+    <div class="grid-sidebar">
       <div>...</div>
       <div>...</div>
     </div>
 
-  <div className="grid-sidebar">
-      <div className="docs-item"></div>
-      <div className="docs-item"></div>
-  </div>
+<div className="grid-sidebar">
+    <div className="docs-item"></div>
+    <div className="docs-item"></div>
 </div>
+
 
 export const meta = {
   name: 'Grid Layout',
