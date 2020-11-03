@@ -1,4 +1,3 @@
-import '../dist/css/neptune.css';
 import './app.css';
 
 import { useRouter } from 'next/router';
