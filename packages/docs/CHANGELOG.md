@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.1](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.13.0...@transferwise/marketing-docs@1.13.1) (2020-10-23)
+
+**Note:** Version bump only for package @transferwise/marketing-docs
+
+
+
+
+
+# [1.13.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.12.5...@transferwise/marketing-docs@1.13.0) (2020-10-21)
+
+
+### Features
+
+* Add cookie consent to YouTubeVideoModal ([#32](https://github.com/transferwise/marketing-components/issues/32)) ([6e1b195](https://github.com/transferwise/marketing-components/commit/6e1b195d5e4245e6ba2d151cce7e50f74b6ccfb9))
+
+
+
+
+
 ## [1.12.5](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.12.4...@transferwise/marketing-docs@1.12.5) (2020-10-14)
 
 **Note:** Version bump only for package @transferwise/marketing-docs

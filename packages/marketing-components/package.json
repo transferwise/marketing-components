@@ -1,6 +1,6 @@
 {
   "name": "@transferwise/marketing-components",
-  "version": "2.1.0",
+  "version": "2.2.1",
   "description": "TransferWise marketing components",
   "license": "Apache-2.0",
   "main": "./build/umd/no-polyfill/main.js",
@@ -70,6 +70,7 @@
   "dependencies": {
     "@babel/runtime": "^7.9.2",
     "@reach/dialog": "^0.10.5",
+    "@transferwise/cookie-consent": "^2.8.0",
     "classnames": "^2.2.6",
     "react-spring": "^8.0.27"
   },
