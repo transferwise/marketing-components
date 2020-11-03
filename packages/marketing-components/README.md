@@ -4,7 +4,7 @@
 
 Marketing Components is built by and used at TransferWise. Marketing provides a way to build high quality, consistent user experiences on the web with ease.
 
-This is the Marketing React component library. It uses [Neptune CSS](https://github.com/transferwise/neptune/tree/master/packages/css).
+This is the Marketing React component library. It uses [Neptune CSS](https://github.com/transferwise/neptune/tree/main/packages/css).
 
 ## Usage
 

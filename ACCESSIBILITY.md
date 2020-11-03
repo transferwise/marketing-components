@@ -1,12 +1,12 @@
 # Accessibility
 
-All Neptune Web components should meet at least WCAG AA standards. Read [the full list of WCAG AA standards](https://www.w3.org/WAI/WCAG21/quickref/?currentsidebar=%23col_overview&levels=aaa&technologies=flash%2Csl) on the W3 site.
+All Marketing Components components should meet at least WCAG AA standards. Read [the full list of WCAG AA standards](https://www.w3.org/WAI/WCAG21/quickref/?currentsidebar=%23col_overview&levels=aaa&technologies=flash%2Csl) on the W3 site.
 
 This repository provides a set of tools to help us meet these standards. We try to automate as many checks as possible but some of them have to be performed manually.
 
 ## Automated tests
 
-The Neptune Web repository is configured to run Eslint checks using the `eslint-plugin-jsx-a11y` plugin and rules configured in `@transferwise/eslint-config`. Eslint checks will run automatically on all staged files, when tests are run, and on CircleCI jobs.
+The Marketing Components repository is configured to run Eslint checks using the `eslint-plugin-jsx-a11y` plugin and rules configured in `@transferwise/eslint-config`. Eslint checks will run automatically on all staged files, when tests are run, and on CircleCI jobs.
 
 All our React environments spin up with `react-axe` integrated so it's possible to check for violations in the browser console. If you're running Storybook it's also possible to access axe violations in the accessibility tab on the right-hand side. Although these console messages are helpful they won't fail the build, so please ensure there are no violations before committing.
 

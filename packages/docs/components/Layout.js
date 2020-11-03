@@ -29,7 +29,7 @@ const Layout = ({ children, router: { pathname } }) => {
         </a>
       </Link>
       <ul className="Nav Nav--dark">
-        <li className="Nav__Group">Neptune</li>
+        <li className="Nav__Group">Marketing Components</li>
         {sections.map((section) => (
           <li key={section.title}>
             <Link href={getFirstPageInSection(section).path}>
