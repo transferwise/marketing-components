@@ -3782,32 +3782,6 @@
     stylelint-config-standard "^20.0.0"
     stylelint-value-no-unknown-custom-properties "^3.0.0"
 
-"@transferwise/less-config@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@transferwise/less-config/-/less-config-3.0.0.tgz#ca841b1d3b58ec06279b641a2db9bdb51a2d007b"
-  integrity sha512-AyR4c4GBAI2aOBSkK1VHwBT5kW2SqHF5cj7tOL3p/4jlCjvyyJaYi39TiYWe0kiFub4P07dIVQgl/DgOQ1/wyg==
-  dependencies:
-    "@arshaw/postcss-custom-properties" "^9.1.1"
-    autoprefixer "^9.7.6"
-    cssnano "^4.1.10"
-    gulp "^4.0.2"
-    gulp-cached "^1.1.1"
-    gulp-cssimport "^7.0.0"
-    gulp-dependents "^1.2.3"
-    gulp-filter "^6.0.0"
-    gulp-if "^3.0.0"
-    gulp-less "^4.0.1"
-    gulp-plumber "^1.2.1"
-    gulp-postcss "^8.0.0"
-    gulp-print "^5.0.2"
-    gulp-rename "^2.0.0"
-    postcss-custom-media "^7.0.8"
-    postcss-custom-properties "^9.0.2"
-    postcss-import "^12.0.1"
-    stylelint "^13.6.1"
-    stylelint-config-standard "^20.0.0"
-    stylelint-value-no-unknown-custom-properties "^3.0.0"
-
 "@transferwise/neptune-css@^4.0.5":
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/@transferwise/neptune-css/-/neptune-css-4.0.5.tgz#ff342d2b4136c3f485ec0c072980a640f9848967"
