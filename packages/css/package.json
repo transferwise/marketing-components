@@ -28,7 +28,6 @@
     "build:compile-less": "gulp compileLess --src='src/less'",
     "build:compile-deprecated": "gulp compileLess --src='src/less/deprecated' --dest='dist/css/deprecated'",
     "dev": "npm-run-all --parallel dev:*",
-    "dev:link": "node ./linkFolder.js",
     "dev:less": "gulp watchLess --src='src/less/**'",
     "dev:next": "next dev",
     "docs": "yarn build",

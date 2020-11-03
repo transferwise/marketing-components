@@ -72,8 +72,6 @@ export default function Home() {
         <span role="img" aria-label="love">
           ❤️
         </span>
-        &nbsp;by the&nbsp;<a href="https://transferwise.github.io/neptune-web/">Neptune</a>
-        &nbsp;team
       </footer>
     </div>
   );
