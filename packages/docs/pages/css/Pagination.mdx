@@ -1,0 +1,204 @@
+import '../../../css/dist/css/pagination.css';
+
+Provide pagination links for your site or app with the multi-page pagination component.
+
+<h2 id="pagination-default">Default pagination</h2>
+
+<nav>
+  <ul className="pagination">
+    <li>
+      <a href="#">1</a>
+    </li>
+    <li>
+      <a href="#">2</a>
+    </li>
+    <li>
+      <a href="#">3</a>
+    </li>
+    <li>
+      <a href="#">4</a>
+    </li>
+    <li>
+      <a href="#">5</a>
+    </li>
+  </ul>
+</nav>
+
+    <nav>
+      <ul class="pagination">
+        <li>
+          <a href="#">1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">4</a>
+        </li>
+        <li>
+          <a href="#">5</a>
+        </li>
+      </ul>
+    </nav>
+
+<h3>Disabled and active states</h3>
+<p>
+  Links are customizable for different circumstances. Use <code>.disabled</code> for unclickable
+  links and <code>.active</code> to indicate the current page.
+</p>
+
+<nav>
+  <ul className="pagination">
+    <li className="disabled">
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">
+          <i className="glyphicon glyphicon-chevron-left"></i>
+        </span>
+      </a>
+    </li>
+    <li className="active">
+      <span>
+        1 <span className="sr-only">(current)</span>
+      </span>
+    </li>
+    <li>
+      <a href="#">2</a>
+    </li>
+    <li>
+      <a href="#">3</a>
+    </li>
+    <li>
+      <a href="#">4</a>
+    </li>
+    <li>
+      <a href="#">5</a>
+    </li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">
+          <i className="glyphicon glyphicon-chevron-right"></i>
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+    <nav>
+      <ul class="pagination">
+        <li class="active">
+          <span>1 <span class="sr-only">(current)</span></span>
+        </li>
+        <li>
+          <a href="">2 <span class="sr-only">(current)</span></a>
+        </li>
+        <li>
+          <span>...</span>
+        </li>
+        <li class="active">
+          <a href="">2 </a>
+        </li>
+      </ul>
+    </nav>
+
+You can optionally swap out active or disabled anchors for <code>&lt;span&gt;</code>, or omit the anchor in the case of the previous/next arrows, to remove click functionality while retaining intended styles.
+
+<nav>
+  <ul className="pagination">
+    <li className="active">
+      <span>
+        1 <span className="sr-only">(current)</span>
+      </span>
+    </li>
+    <li>
+      <a href="">2</a>
+    </li>
+    <li>
+      <span>...</span>
+    </li>
+    <li>
+      <a href="">12</a>
+    </li>
+  </ul>
+</nav>
+
+    <nav>
+      <ul class="pagination">
+        <li class="active">
+          <span>1 <span class="sr-only">(current)</span></span>
+        </li>
+        <li>
+          <a href="">2</a>
+        </li>
+        <li>
+          <span>...</span>
+        </li>
+        <li>
+          <a href="">12</a>
+        </li>
+      </ul>
+    </nav>
+
+<h3 id="pagination-text">Pagination text</h3>
+<p>
+  Our pagination will normally be associated with <code>.pagination-text</code>
+  to describe what is visualised and the total available.
+</p>
+
+<div className="clearfix text-xs-center">
+  <div className="pagination-text pull-md-left text-md-left">
+    Showing <strong>1 &ndash; 10</strong> of <strong>120</strong>.
+  </div>
+  <nav className="pull-md-right text-md-right">
+    <ul className="pagination">
+      <li className="active">
+        <a href="#">1</a>
+      </li>
+      <li>
+        <a href="#">2</a>
+      </li>
+      <li>
+        <a href="#">3</a>
+      </li>
+      <li>
+        <span>...</span>
+      </li>
+      <li>
+        <a href="#">12</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    <div class="text-xs-center">
+      <div class="pagination-text pull-md-left text-md-left">
+        Showing <strong>1 &ndash; 10</strong> of <strong>120</strong>.
+      </div>
+      <nav class="pull-md-right text-md-right">
+        <ul class="pagination">...</ul>
+      </nav>
+    </div>
+
+<h3 id="pagination-inverse">Inverse</h3>
+<p>On grey backgrounds we invert our hover states, add <code>.pagination-inverse</code> for additional styles.</p>
+
+  <nav className="bg-default p-a-4 m-b-4">
+    <ul className="pagination pagination-inverse">
+      <li className="active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><span>...</span></li>
+      <li><a href="#">12</a></li>
+    </ul>
+  </nav>
+ 
+    <nav>
+      <ul class="pagination pagination-inverse">...</ul>
+    </nav>
+
+export const meta = {
+  name: 'Pagination',
+  size: '1KB',
+};
