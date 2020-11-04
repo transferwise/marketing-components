@@ -33,7 +33,7 @@ To embed a live code example and demo, you can use the `LiveCodeEditor`. Add the
 
 ```js
 // liveCodeEditor/button.code.js
-<Button onClick={() => alert('clicked')}>I'm a pretty buton</Button>
+<Button onClick={() => alert('clicked')}>I'm a pretty button</Button>
 ```
 
 You can then use it in your page as follows:
