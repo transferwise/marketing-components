@@ -43,7 +43,7 @@ The full list of commands available to run from the root directory are:
 - `setup` - installs dependencies and runs build in all packages
 - `build` - builds all packages
 - `clean` - removes `node_modules` and cached builds from all packages
-- `docs` - builds all packages and starts the Neptune Web docs
+- `docs` - builds all packages and starts the Marketing Components docs
 - `lint` - lints all packages
 - `test` - runs tests in all packages (includes a lint)
 - `create-component` - creates all the necessary files needed when a react component gets added to the library
