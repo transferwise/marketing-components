@@ -1,0 +1,60 @@
+{
+  "name": "@transferwise/marketing-css",
+  "description": "Marketing CSS is part of TransferWise's Design System CSS library",
+  "version": "1.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "fullname": "transferwise/marketing-components",
+    "url": "git+https://github.com/transferwise/marketing-components.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "TransferWise",
+    "url": "https://transferwise.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/transferwise/marketing-components/issues"
+  },
+  "homepage": "https://transferwise.github.io/marketing-components",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "npm-run-all build:*",
+    "build:clean": "rm -rf dist",
+    "build:copy-assets": "npm-run-all --parallel copy:*",
+    "build:compile-less": "gulp compileLess --src='src/less'",
+    "build:compile-deprecated": "gulp compileLess --src='src/less/deprecated' --dest='dist/css/deprecated'",
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:less": "gulp watchLess --src='src/less/**'",
+    "dev:next": "next dev",
+    "docs": "yarn build",
+    "copy:images": "cpx 'src/img/**' dist/img",
+    "prettier": "prettier --write src/less/*.less",
+    "lintless": "stylelint ./src/less",
+    "lintless:fix": "yarn lintless --fix"
+  },
+  "dependencies": {
+    "prism-react-renderer": "^1.1.1",
+    "svgo": "1.3.2"
+  },
+  "devDependencies": {
+    "@next/mdx": "^9.0.5",
+    "@zeit/next-css": "^1.0.1",
+    "next": "^9.3.2",
+    "prop-types": "^15.7.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "yargs": "^15.3.1"
+  },
+  "peerDependencies": {
+    "@transferwise/less-config": "^3.0.0",
+    "@transferwise/neptune-css": "^4.0.5"
+  },
+  "resolutions": {
+    "svgo": "1.3.2",
+    "next/**/kind-of": "^6.0.3"
+  }
+}

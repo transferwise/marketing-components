@@ -1,6 +1,6 @@
 {
   "name": "@transferwise/marketing-components",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "TransferWise marketing components",
   "license": "Apache-2.0",
   "main": "./build/umd/no-polyfill/main.js",
@@ -62,7 +62,7 @@
   },
   "peerDependencies": {
     "@transferwise/icons": "^2.4.1",
-    "@transferwise/neptune-css": "^2.1.2",
+    "@transferwise/neptune-css": "^4.0.5",
     "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1"

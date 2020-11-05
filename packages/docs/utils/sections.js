@@ -36,4 +36,9 @@ export default [
     ],
     searchable: true,
   },
+
+  {
+    title: 'CSS',
+    dir: 'css',
+  },
 ];

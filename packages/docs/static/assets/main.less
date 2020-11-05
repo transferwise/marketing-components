@@ -1,4 +1,9 @@
-@import '@transferwise/neptune-css/src/less/neptune-tokens.less';
+@import '@transferwise/neptune-css/dist/props/neptune-tokens.css';
+@import '@transferwise/neptune-css/dist/props/legacy-custom-props.css';
+
+html {
+  scroll-behavior: smooth;
+}
 
 /* Typography */
 
@@ -10,8 +15,8 @@ h1.colored-dot + p {
 h2[id],
 h2.docs-heading,
 p + h2[id] {
-  margin-top: var(--space-48);
-  margin-bottom: var(--space-8);
+  margin-top: var(--size-48);
+  margin-bottom: var(--size-8);
 }
 
 /* Layout  */
@@ -36,7 +41,7 @@ p + h2[id] {
 .Logo img {
   height: 16px;
   max-width: none;
-  margin: var(--space-24);
+  margin: var(--size-24);
 }
 
 .Sidebar__Fixed {
@@ -53,7 +58,7 @@ p + h2[id] {
 }
 
 .Sidebar__Header {
-  padding: 20px var(--space-16);
+  padding: 20px var(--size-16);
 }
 
 .Sidebar__Inner {
@@ -64,7 +69,7 @@ p + h2[id] {
 }
 
 .Sidebar__Search {
-  padding: var(--space-8) var(--space-16);
+  padding: var(--size-8) var(--size-16);
 
   color: #37517e;
   border: none;
@@ -89,7 +94,7 @@ p + h2[id] {
 .Nav__Link {
   display: block;
 
-  padding: var(--space-8) var(--space-16);
+  padding: var(--size-8) var(--size-16);
 
   transition: color 0.15s;
   text-decoration: none;
@@ -117,7 +122,7 @@ p + h2[id] {
 }
 
 .Nav__Group {
-  padding: var(--space-16) var(--space-16) var(--space-8);
+  padding: var(--size-16) var(--size-16) var(--size-8);
 
   text-transform: uppercase;
 
@@ -132,7 +137,7 @@ p + h2[id] {
 }
 
 .Sidebar .Nav > .Nav__Group:not(:first-of-type) {
-  margin-top: var(--space-24);
+  margin-top: var(--size-24);
 }
 
 .Nav--dark .Nav__Link {
@@ -151,7 +156,7 @@ p + h2[id] {
 
   width: 100%;
   min-height: 100vh;
-  padding: var(--space-32);
+  padding: var(--size-32);
 
   background: #fff;
 }
@@ -159,7 +164,7 @@ p + h2[id] {
 @media (min-width: 767px) {
   .Content {
     max-width: 1012px;
-    padding: var(--space-32) var(--space-40);
+    padding: var(--size-32) var(--size-40);
   }
 }
 
@@ -176,7 +181,7 @@ img {
 
 /* Live editor */
 .live-provider {
-  margin: calc(var(--spacer) * 3) 0 0;
+  margin: var(--size-24) 0 0;
 }
 
 .live-editor {
@@ -187,7 +192,7 @@ img {
 
 @media (min-width: 1200px) {
   .live-preview {
-    padding-left: calc(var(--spacer) * 4);
+    padding-left: var(--size-32);
   }
 }
 
@@ -211,17 +216,17 @@ img {
 
 .docs-table > thead > tr > td,
 .docs-table > thead > tr > th {
-  padding: calc(var(--spacer) * 2) calc(var(--spacer) * 3) !important;
+  padding: var(--size-16) var(--size-24) !important;
 }
 
 .docs-table > tbody > tr > td,
 .docs-table > tbody > tr > th {
-  padding: calc(var(--spacer) * 3) calc(var(--spacer) * 3) !important;
+  padding: var(--size-24) var(--size-24) !important;
 }
 
 .docs-table .table-condensed > tbody > tr > td,
 .docs-table .table-condensed > tbody > tr > th {
-  padding: calc(var(--spacer) * 2) calc(var(--spacer) * 3) !important;
+  padding: var(--size-16) var(--size-24) !important;
 }
 
 .docs-table > thead {
@@ -236,7 +241,7 @@ img {
 }
 
 .docs-table ul {
-  margin-bottom: var(--spacer);
+  margin-bottom: var(--size-8);
   padding: 0;
 }
 
@@ -247,4 +252,32 @@ img {
 .docs-is-visible {
   color: #468847;
   background-color: #dff0d8 !important;
+}
+
+.docs-box-dashed {
+  border: 1px dashed #829ca9;
+}
+
+.docs-bg {
+  height: 400px;
+  background-attachment: scroll !important;
+}
+
+.docs-item {
+  padding: var(--size-16);
+  background-color: var(--color-background-neutral);
+  border: 1px solid var(--color-text-secondary);
+}
+
+.docs-item.docs-highlight {
+  color: white;
+  background: var(--color-text-important);
+}
+
+/* 🥚 */
+
+@media (--screen-sm-max) {
+  .order-1--mobile::after {
+    content: ' 🎉';
+  }
 }

@@ -51,6 +51,7 @@ const Layout = ({ children, router: { pathname } }) => {
     <div className="Content" role="main">
       {page && <h1 className="colored-dot">{page.component.meta.name}</h1>}
       {page && page.component.meta.isBeta && <span className="badge">beta</span>}
+      {page && page.component.meta.size && <p>{page.component.meta.size}</p>}
       {children}
       <a className="btn btn-default m-t-4" href={editPath}>
         Edit these docs on Github
