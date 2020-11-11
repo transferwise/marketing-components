@@ -53,6 +53,7 @@
       {
         "devDependencies": ["src/**/*.story.js", ".storybook/*.js"]
       }
-    ]
+    ],
+    "react/require-default-props": 0
   }
 }
