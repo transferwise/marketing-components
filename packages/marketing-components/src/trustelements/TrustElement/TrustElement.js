@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Types from 'prop-types';
 import classNames from 'classnames';
 
+import Link from '../../link';
 import './TrustElement.css';
 
 const isAnchorUrl = (url) => url[0] === '#';
@@ -45,15 +46,14 @@ const TrustElement = ({ title, alt, linkText, href, src, shouldAnimate, useIllus
       <div className="h4 m-t-1">{title}</div>
 
       {href && linkText && (
-        <a
+        <Link
           href={href}
           target={isAnchorUrl(href) ? '_self' : '_blank'}
           rel="noopener noreferrer"
           onFocus={() => startAnimation()}
-          className="link-callout"
         >
           {linkText}
-        </a>
+        </Link>
       )}
     </div>
   );
