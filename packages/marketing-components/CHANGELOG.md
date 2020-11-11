@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@2.2.2...@transferwise/marketing-components@2.3.0) (2020-11-11)
+
+
+### Features
+
+* add link with chevron component ([ec194e8](https://github.com/transferwise/marketing-components/commit/ec194e866e9be28a1e1caff3b34cebcaae00a424))
+
+
+
+
+
 ## [2.2.2](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@2.2.1...@transferwise/marketing-components@2.2.2) (2020-11-04)
 
 **Note:** Version bump only for package @transferwise/marketing-components
