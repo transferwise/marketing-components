@@ -13,7 +13,9 @@ describe('ClosableBlock', () => {
       value: jest.fn().mockImplementation(() => ({
         matches: false,
         addEventListener: jest.fn(),
+        addListener: jest.fn(),
         removeEventListener: jest.fn(),
+        removeListener: jest.fn(),
       })),
     });
 
@@ -38,7 +40,9 @@ describe('ClosableBlock', () => {
         value: jest.fn().mockImplementation(() => ({
           matches: false,
           addEventListener: jest.fn(),
+          addListener: jest.fn(),
           removeEventListener: jest.fn(),
+          removeListener: jest.fn(),
         })),
       });
 
@@ -70,7 +74,9 @@ describe('ClosableBlock', () => {
         value: jest.fn().mockImplementation(() => ({
           matches: true,
           addEventListener: jest.fn(),
+          addListener: jest.fn(),
           removeEventListener: jest.fn(),
+          removeListener: jest.fn(),
         })),
       });
 

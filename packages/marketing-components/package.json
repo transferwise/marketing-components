@@ -12,6 +12,11 @@
   "files": [
     "build"
   ],
+  "browserslist": [
+    "last 2 versions",
+    "last 9 Chrome versions",
+    "IE 11"
+  ],
   "repository": {
     "type": "git",
     "fullname": "transferwise/marketing-components",
@@ -75,6 +80,8 @@
     "@reach/dialog": "^0.10.5",
     "@transferwise/cookie-consent": "^2.8.0",
     "classnames": "^2.2.6",
+    "postcss-flexbugs-fixes": "^5.0.1",
+    "postcss-preset-env": "^6.7.0",
     "react-spring": "^8.0.27"
   },
   "resolutions": {

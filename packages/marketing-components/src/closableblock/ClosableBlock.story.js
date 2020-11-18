@@ -11,11 +11,19 @@ export default {
 
 export const ClosableBlock = () => {
   return (
-    <ClosableBlockComponent
-      headingLevel="h2"
-      heading="Safeguarded at leading banks"
-      body="We keep your money in low-risk financial institutions like JP Morgan Chase, Deutsche Bank, and Barclays."
-      src="https://transferwise.com/public-resources/assets/public-navigation/phone_number.svg"
-    />
+    <div className="storyCSS">
+      <ClosableBlockComponent
+        headingLevel="h2"
+        heading="Safeguarded at leading banks"
+        body="We keep your money in low-risk financial institutions like JP Morgan Chase, Deutsche Bank, and Barclays."
+        src="https://transferwise.com/public-resources/assets/public-navigation/phone_number.svg"
+      />
+      <ClosableBlockComponent
+        headingLevel="h2"
+        heading="Safeguarded at leading banks"
+        body="We keep your money in low-risk financial institutions like JP Morgan Chase, Deutsche Bank, and Barclays."
+        src="https://transferwise.com/public-resources/assets/public-navigation/phone_number.svg"
+      />
+    </div>
   );
 };

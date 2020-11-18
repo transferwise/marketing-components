@@ -24,9 +24,9 @@ export default function ContentBlock(props) {
     }
 
     const mediaQuery = window.matchMedia('(min-width: 576px)');
-    mediaQuery.addEventListener('change', handleMediaMatchChange);
+    mediaQuery.addListener(handleMediaMatchChange);
 
-    return () => mediaQuery.removeEventListener('change', handleMediaMatchChange);
+    return () => mediaQuery.removeListener(handleMediaMatchChange);
   }, []);
 
   useIsomorphicEffect(() => {
