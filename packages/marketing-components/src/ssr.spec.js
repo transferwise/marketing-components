@@ -38,6 +38,10 @@ describe('Server side rendering', () => {
     href: 'url',
     language: 'language',
     locale: 'locale',
+    src: 'src',
+    heading: 'heading',
+    headingLevel: 'h2',
+    body: 'body',
   };
 
   componentNames.forEach((componentName) => {
