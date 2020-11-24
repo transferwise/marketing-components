@@ -26,3 +26,4 @@ export {
 export { default as AppStoreBadge } from './appstorebadge';
 export { default as GooglePlayStoreBadge } from './googleplaystorebadge';
 export { default as Link } from './link';
+export { default as Slider } from './slider';
