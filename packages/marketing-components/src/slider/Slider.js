@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AwesomeDebouncePromise from 'awesome-debounce-promise';
 import Types from 'prop-types';
 import MoneySlider from './MoneySlider';
 import FeeBreakdown from './FeeBreakdown';
@@ -59,15 +60,23 @@ class Slider extends Component {
       });
   };
 
-  handleAmountChange = (e) => this.setState({ amount: parseInt(e.target.value, 0) });
+  callGetPricesAPIDebounced = () => AwesomeDebouncePromise(this.getFeesForBankTransfer(), 250);
+
+  handleAmountChange = async (newAmount) => {
+    this.setState({ amount: parseInt(newAmount, 0) });
+    await this.callGetPricesAPIDebounced();
+  };
 
   handleCurrencySwitch = () => {
-    this.setState((prevState) => {
-      return {
-        selectedSourceCurrency: prevState.selectedTargetCurrency,
-        selectedTargetCurrency: prevState.selectedSourceCurrency,
-      };
-    });
+    this.setState(
+      (prevState) => {
+        return {
+          selectedSourceCurrency: prevState.selectedTargetCurrency,
+          selectedTargetCurrency: prevState.selectedSourceCurrency,
+        };
+      },
+      () => this.getFeesForBankTransfer(),
+    );
   };
 
   handleCurrencyChange = (sourceOrTarget, currency) => {
@@ -78,9 +87,8 @@ class Slider extends Component {
       return this.handleCurrencySwitch();
     }
     return sourceOrTarget === 'source'
-      ? this.setState({ selectedSourceCurrency: currency })
-      : this.setState({ selectedTargetCurrency: currency });
-    this.getFeesForBankTransfer();
+      ? this.setState({ selectedSourceCurrency: currency }, () => this.getFeesForBankTransfer())
+      : this.setState({ selectedTargetCurrency: currency }, () => this.getFeesForBankTransfer());
   };
   render() {
     return (

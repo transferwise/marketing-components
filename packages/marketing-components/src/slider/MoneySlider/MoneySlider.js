@@ -21,13 +21,13 @@ const MoneySlider = ({
         min={100000}
         step={20000}
         max={2000000}
-        onChange={(e) => onAmountChange(e)}
+        onChange={(e) => onAmountChange(e.target.value)}
       />
       <div className="m-t-4">
         <div className="money-input">
           <MoneyInput
             amount={amount}
-            onAmountChange={() => console.log('amount changed')}
+            onAmountChange={(e) => onAmountChange(e)}
             onCurrencyChange={(currencyObject) =>
               onCurrencyChange('source', currencyObject.currency)
             }
