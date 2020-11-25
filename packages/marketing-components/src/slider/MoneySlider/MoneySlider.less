@@ -1,12 +1,20 @@
 @import (reference) '@transferwise/neptune-css/dist/less/legacy-variables.less';
 
-.money-input {
+  .money-input {
+    display: inline-block;
+}
+
+.currency-swapper {
+    display: inline-block;
+}
+
+.target-currency-select {
     display: inline-block;
 }
 
 .reverse-icon {
-    border: 1px @brand-light-blue;
-  
+  border: 1px solid @brand-light-blue;
+
     @media (--screen-lg) {
       width: inherit;
       padding-right: inherit;

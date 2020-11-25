@@ -5,6 +5,8 @@ import availableCurrencies from '../availableCurrencies';
 
 import './MoneySlider.css';
 
+// TODO: Figure out why no flags show up
+
 const MoneySlider = ({
   amount,
   sourceCurrencyData,
@@ -13,6 +15,10 @@ const MoneySlider = ({
   onCurrencySwitch,
   onCurrencyChange,
 }) => {
+  const availableCurrenciesArray = Object.keys(availableCurrencies).map((key) => {
+    return availableCurrencies[key];
+  });
+
   return (
     <>
       <input
@@ -31,16 +37,7 @@ const MoneySlider = ({
             onCurrencyChange={(currencyObject) =>
               onCurrencyChange('source', currencyObject.currency)
             }
-            currencies={[
-              {
-                header: 'Popular currencies',
-              },
-              { ...availableCurrencies.eur },
-              { ...availableCurrencies.gbp },
-              { ...availableCurrencies.usd },
-              { ...availableCurrencies.aud },
-              { ...availableCurrencies.chf },
-            ]}
+            currencies={availableCurrenciesArray}
             selectedCurrency={sourceCurrencyData}
           />
         </div>
@@ -69,16 +66,7 @@ const MoneySlider = ({
             inverse
             selected={targetCurrencyData}
             onChange={(currencyObject) => onCurrencyChange('target', currencyObject.currency)}
-            options={[
-              {
-                header: 'Popular currencies',
-              },
-              { ...availableCurrencies.eur },
-              { ...availableCurrencies.gbp },
-              { ...availableCurrencies.usd },
-              { ...availableCurrencies.aud },
-              { ...availableCurrencies.chf },
-            ]}
+            options={availableCurrenciesArray}
           />
         </div>
       </div>
@@ -88,8 +76,8 @@ const MoneySlider = ({
 
 MoneySlider.propTypes = {
   amount: Types.number.isRequired,
-  sourceCurrencyData: Types.string.isRequired,
-  targetCurrencyData: Types.string.isRequired,
+  sourceCurrencyData: Types.shape({}).isRequired,
+  targetCurrencyData: Types.shape({}).isRequired,
   onAmountChange: Types.func.isRequired,
   onCurrencySwitch: Types.func.isRequired,
   onCurrencyChange: Types.func.isRequired,

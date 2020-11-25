@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
-import AwesomeDebouncePromise from 'awesome-debounce-promise';
 import Types from 'prop-types';
 import MoneySlider from './MoneySlider';
 import FeeBreakdown from './FeeBreakdown';
 import availableCurrencies from './availableCurrencies';
 
+// TODO: Better naming
+
 class Slider extends Component {
   static propTypes = {
-    title: Types.string.isRequired,
+    translations: Types.shape({
+      title: Types.string.isRequired,
+      averageFeeCopy: Types.string.isRequired,
+      totalFeesCopy: Types.string.isRequired,
+    }).isRequired,
   };
 
   state = {
-    amount: 250000,
+    amount: 300000,
     selectedSourceCurrency: 'gbp',
     selectedTargetCurrency: 'eur',
     averageFee: null,
@@ -21,17 +26,11 @@ class Slider extends Component {
   componentDidMount() {
     this.getFeesForBankTransfer();
   }
-  // Title
-  // Slider
-  // Money input | currency switcher | currency input
-  // average fee % | Total fees
-  // Debounce
-  // Fetch fees from the api
 
-  // sourceAmount=740000&sourceCurrency=GBP&targetCurrency=CHF
   getFeesForBankTransfer = () => {
-    const upperCaseSourceCurrency = this.state.selectedSourceCurrency.toUpperCase();
-    const upperCaseTargetCurrency = this.state.selectedTargetCurrency.toUpperCase();
+    const { selectedSourceCurrency, selectedTargetCurrency } = this.state;
+    const upperCaseSourceCurrency = selectedSourceCurrency.toUpperCase();
+    const upperCaseTargetCurrency = selectedTargetCurrency.toUpperCase();
     fetch(
       `/gateway/v3/price?sourceAmount=${this.state.amount}&sourceCurrency=${upperCaseSourceCurrency}&targetCurrency=${upperCaseTargetCurrency}`,
       {
@@ -52,19 +51,14 @@ class Slider extends Component {
           averageFee: bankTransferPricing[0].variableFeePercent,
           totalFees: bankTransferPricing[0].total,
         });
-        console.log(
-          'result: ',
-          bankTransferPricing[0].variableFeePercent,
-          bankTransferPricing[0].total,
-        );
       });
   };
 
-  callGetPricesAPIDebounced = () => AwesomeDebouncePromise(this.getFeesForBankTransfer(), 250);
+  updateFeesDebounce = debounce(this.getFeesForBankTransfer, 250);
 
-  handleAmountChange = async (newAmount) => {
+  handleAmountChange = (newAmount) => {
     this.setState({ amount: parseInt(newAmount, 0) });
-    await this.callGetPricesAPIDebounced();
+    this.updateFeesDebounce();
   };
 
   handleCurrencySwitch = () => {
@@ -80,9 +74,10 @@ class Slider extends Component {
   };
 
   handleCurrencyChange = (sourceOrTarget, currency) => {
+    const { selectedSourceCurrency, selectedTargetCurrency } = this.state;
     if (
-      (sourceOrTarget === 'source' && currency === this.state.selectedTargetCurrency) ||
-      (sourceOrTarget === 'target' && currency === this.state.selectedSourceCurrency)
+      (sourceOrTarget === 'source' && currency === selectedTargetCurrency) ||
+      (sourceOrTarget === 'target' && currency === selectedSourceCurrency)
     ) {
       return this.handleCurrencySwitch();
     }
@@ -91,32 +86,52 @@ class Slider extends Component {
       : this.setState({ selectedTargetCurrency: currency }, () => this.getFeesForBankTransfer());
   };
   render() {
+    const { title, averageFeeCopy, totalFeesCopy } = this.props.translations;
+    const {
+      amount,
+      selectedSourceCurrency,
+      selectedTargetCurrency,
+      averageFee,
+      totalFees,
+    } = this.state;
+
     return (
       <>
-        <h2>{this.props.title}</h2>
-        <button onClick={() => this.getFeesForBankTransfer()} type="button">
-          Let's get the fee data with this click
-        </button>
+        <h2>{title}</h2>
         <MoneySlider
-          amount={this.state.amount}
-          sourceCurrencyData={availableCurrencies[this.state.selectedSourceCurrency]}
-          targetCurrencyData={availableCurrencies[this.state.selectedTargetCurrency]}
+          amount={amount}
+          sourceCurrencyData={availableCurrencies[selectedSourceCurrency]}
+          targetCurrencyData={availableCurrencies[selectedTargetCurrency]}
           onAmountChange={this.handleAmountChange}
           onCurrencySwitch={this.handleCurrencySwitch}
           onCurrencyChange={this.handleCurrencyChange}
         />
-        <FeeBreakdown averageFee={this.state.averageFee} totalFees={this.state.totalFees} />
+        <FeeBreakdown
+          averageFee={averageFee}
+          totalFees={totalFees}
+          selectedSourceCurrency={selectedSourceCurrency}
+          translations={{
+            averageFee: averageFeeCopy,
+            totalFees: totalFeesCopy,
+          }}
+        />
       </>
     );
   }
 }
 
-Slider.propTypes = {
-  title: Types.string,
-};
+const debounce = (func, wait) => {
+  let timeout;
 
-Slider.defaultProps = {
-  title: null,
+  return function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout);
+      func(...args);
+    };
+
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
 };
 
 export default Slider;
