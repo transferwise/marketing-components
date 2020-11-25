@@ -17,8 +17,8 @@ class Slider extends Component {
 
   state = {
     amount: 300000,
-    selectedSourceCurrency: 'gbp',
-    selectedTargetCurrency: 'eur',
+    selectedSourceCurrency: 'GBP',
+    selectedTargetCurrency: 'EUR',
     averageFee: null,
     totalFees: null,
   };
@@ -27,10 +27,23 @@ class Slider extends Component {
     this.getFeesForBankTransfer();
   }
 
+  componentDidUpdate(prevState) {
+    const amountChanged = this.state.amount !== prevState.amount;
+    const sourceCurrencyChange =
+      this.state.selectedSourceCurrency !== prevState.selectedSourceCurrency;
+    const targetCurrencyChange =
+      this.state.selectedTargetCurrency !== prevState.selectedTargetCurrency;
+    if (amountChanged) {
+      this.updateFeesDebounce();
+    } else if (sourceCurrencyChange || targetCurrencyChange) {
+      this.getFeesForBankTransfer();
+    }
+  }
+
   getFeesForBankTransfer = () => {
     const { selectedSourceCurrency, selectedTargetCurrency } = this.state;
-    const upperCaseSourceCurrency = selectedSourceCurrency.toUpperCase();
-    const upperCaseTargetCurrency = selectedTargetCurrency.toUpperCase();
+    const upperCaseSourceCurrency = selectedSourceCurrency;
+    const upperCaseTargetCurrency = selectedTargetCurrency;
     fetch(
       `/gateway/v3/price?sourceAmount=${this.state.amount}&sourceCurrency=${upperCaseSourceCurrency}&targetCurrency=${upperCaseTargetCurrency}`,
       {
@@ -44,12 +57,12 @@ class Slider extends Component {
         return null;
       })
       .then((data) => {
-        const bankTransferPricing = data.filter((obj) => {
+        const bankTransferPricing = data.find((obj) => {
           return obj.payInMethod === 'BANK_TRANSFER' && obj.payOutMethod === 'BANK_TRANSFER';
         });
         this.setState({
-          averageFee: bankTransferPricing[0].variableFeePercent,
-          totalFees: bankTransferPricing[0].total,
+          averageFee: bankTransferPricing.variableFeePercent,
+          totalFees: bankTransferPricing.total,
         });
       });
   };
@@ -58,33 +71,48 @@ class Slider extends Component {
 
   handleAmountChange = (newAmount) => {
     this.setState({ amount: parseInt(newAmount, 0) });
-    this.updateFeesDebounce();
   };
 
   handleCurrencySwitch = () => {
-    this.setState(
-      (prevState) => {
-        return {
-          selectedSourceCurrency: prevState.selectedTargetCurrency,
-          selectedTargetCurrency: prevState.selectedSourceCurrency,
-        };
-      },
-      () => this.getFeesForBankTransfer(),
-    );
+    this.setState((prevState) => {
+      return {
+        selectedSourceCurrency: prevState.selectedTargetCurrency,
+        selectedTargetCurrency: prevState.selectedSourceCurrency,
+      };
+    });
   };
 
-  handleCurrencyChange = (sourceOrTarget, currency) => {
-    const { selectedSourceCurrency, selectedTargetCurrency } = this.state;
-    if (
-      (sourceOrTarget === 'source' && currency === selectedTargetCurrency) ||
-      (sourceOrTarget === 'target' && currency === selectedSourceCurrency)
-    ) {
+  handleSourceCurrencyChange = (currency) => {
+    const { selectedTargetCurrency } = this.state;
+    const upperCaseCurrency = currency.toUpperCase();
+    if (upperCaseCurrency === selectedTargetCurrency) {
       return this.handleCurrencySwitch();
     }
-    return sourceOrTarget === 'source'
-      ? this.setState({ selectedSourceCurrency: currency }, () => this.getFeesForBankTransfer())
-      : this.setState({ selectedTargetCurrency: currency }, () => this.getFeesForBankTransfer());
+    return this.setState({ selectedSourceCurrency: upperCaseCurrency });
   };
+
+  handleTargetCurrencyChange = (currency) => {
+    const { selectedSourceCurrency } = this.state;
+    const upperCaseCurrency = currency.toUpperCase();
+    if (upperCaseCurrency === selectedSourceCurrency) {
+      return this.handleCurrencySwitch();
+    }
+    return this.setState({ selectedTargetCurrency: upperCaseCurrency });
+  };
+
+  // handleCurrencyChange = (sourceOrTarget, currency) => {
+  //   const { selectedSourceCurrency, selectedTargetCurrency } = this.state;
+  //   const upperCaseCurrency = currency.toUpperCase();
+  //   if (
+  //     (sourceOrTarget === 'source' && upperCaseCurrency === selectedTargetCurrency) ||
+  //     (sourceOrTarget === 'target' && upperCaseCurrency === selectedSourceCurrency)
+  //   ) {
+  //     return this.handleCurrencySwitch();
+  //   }
+  //   return sourceOrTarget === 'source'
+  //     ? this.setState({ selectedSourceCurrency: upperCaseCurrency })
+  //     : this.setState({ selectedTargetCurrency: upperCaseCurrency });
+  // };
   render() {
     const { title, averageFeeCopy, totalFeesCopy } = this.props.translations;
     const {
@@ -104,7 +132,8 @@ class Slider extends Component {
           targetCurrencyData={availableCurrencies[selectedTargetCurrency]}
           onAmountChange={this.handleAmountChange}
           onCurrencySwitch={this.handleCurrencySwitch}
-          onCurrencyChange={this.handleCurrencyChange}
+          onSourceCurrencyChange={this.handleSourceCurrencyChange}
+          onTargetCurrencyChange={this.handleTargetCurrencyChange}
         />
         <FeeBreakdown
           averageFee={averageFee}

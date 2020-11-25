@@ -13,7 +13,8 @@ const MoneySlider = ({
   targetCurrencyData,
   onAmountChange,
   onCurrencySwitch,
-  onCurrencyChange,
+  onSourceCurrencyChange,
+  onTargetCurrencyChange,
 }) => {
   const availableCurrenciesArray = Object.keys(availableCurrencies).map((key) => {
     return availableCurrencies[key];
@@ -34,9 +35,7 @@ const MoneySlider = ({
           <MoneyInput
             amount={amount}
             onAmountChange={(e) => onAmountChange(e)}
-            onCurrencyChange={(currencyObject) =>
-              onCurrencyChange('source', currencyObject.currency)
-            }
+            onCurrencyChange={(currencyObject) => onSourceCurrencyChange(currencyObject.currency)}
             currencies={availableCurrenciesArray}
             selectedCurrency={sourceCurrencyData}
           />
@@ -65,7 +64,7 @@ const MoneySlider = ({
           <Select
             inverse
             selected={targetCurrencyData}
-            onChange={(currencyObject) => onCurrencyChange('target', currencyObject.currency)}
+            onChange={(currencyObject) => onTargetCurrencyChange(currencyObject.currency)}
             options={availableCurrenciesArray}
           />
         </div>
@@ -80,7 +79,8 @@ MoneySlider.propTypes = {
   targetCurrencyData: Types.shape({}).isRequired,
   onAmountChange: Types.func.isRequired,
   onCurrencySwitch: Types.func.isRequired,
-  onCurrencyChange: Types.func.isRequired,
+  onSourceCurrencyChange: Types.func.isRequired,
+  onTargetCurrencyChange: Types.func.isRequired,
 };
 
 export default MoneySlider;

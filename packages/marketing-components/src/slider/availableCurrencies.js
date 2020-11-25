@@ -1,33 +1,33 @@
 export default {
-  eur: {
+  EUR: {
     value: 'EUR',
     label: 'EUR',
     note: 'Euro',
     currency: 'eur',
     searchable: 'Spain, Germany, France, Austria',
   },
-  gbp: {
+  GBP: {
     value: 'GBP',
     label: 'GBP',
     note: 'British pound',
     currency: 'gbp',
     searchable: 'England, Scotland, Wales',
   },
-  usd: {
+  USD: {
     value: 'USD',
     label: 'USD',
     note: 'US dollar',
     currency: 'usd',
     searchable: 'America',
   },
-  aud: {
+  AUD: {
     value: 'AUD',
     label: 'AUD',
     note: 'Australian dollar',
     currency: 'aud',
     searchable: 'Australia',
   },
-  chf: {
+  CHF: {
     value: 'CHF',
     label: 'CHF',
     note: 'Swiss frank',
