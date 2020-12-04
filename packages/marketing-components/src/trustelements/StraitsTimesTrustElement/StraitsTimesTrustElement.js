@@ -3,8 +3,9 @@ import Types from 'prop-types';
 
 import TrustElement from '../TrustElement';
 
-const StraitsTimesTrustElement = ({ title, linkText, href, useIllustration }) => (
+const StraitsTimesTrustElement = ({ title, linkText, href, useIllustration, ...rest }) => (
   <TrustElement
+    {...rest}
     src="https://transferwise.com/public-resources/assets/marketing-components/illustrations/straits_times.svg"
     title={title}
     linkText={linkText}

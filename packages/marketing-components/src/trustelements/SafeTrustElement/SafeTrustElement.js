@@ -4,8 +4,9 @@ import Types from 'prop-types';
 import TrustElement from '../TrustElement';
 import SecurityIllustration from '../SecurityIllustration';
 
-const SafeTrustElement = ({ title, linkText, href, useIllustration }) => (
+const SafeTrustElement = ({ title, linkText, href, useIllustration, ...rest }) => (
   <TrustElement
+    {...rest}
     src={<SecurityIllustration />}
     title={title}
     linkText={linkText}

@@ -3,8 +3,9 @@ import Types from 'prop-types';
 
 import TrustElement from '../TrustElement';
 
-const TUVApprovedTrustElement = ({ title, linkText, href, useIllustration }) => (
+const TUVApprovedTrustElement = ({ title, linkText, href, useIllustration, ...rest }) => (
   <TrustElement
+    {...rest}
     src="https://transferwise.com/public-resources/assets/marketing-components/illustrations/tuv.png"
     title={title}
     linkText={linkText}

@@ -4,8 +4,9 @@ import Types from 'prop-types';
 import TrustElement from '../TrustElement';
 import TrustpilotIllustration from './TrustpilotIllustration';
 
-const TrustpilotTrustElement = ({ title, linkText, href, useIllustration }) => (
+const TrustpilotTrustElement = ({ title, linkText, href, useIllustration, ...rest }) => (
   <TrustElement
+    {...rest}
     src={<TrustpilotIllustration />}
     title={title}
     linkText={linkText}

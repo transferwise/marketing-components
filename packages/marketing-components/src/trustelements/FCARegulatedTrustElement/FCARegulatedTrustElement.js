@@ -3,8 +3,9 @@ import Types from 'prop-types';
 
 import TrustElement from '../TrustElement';
 
-const FCARegulatedTrustElement = ({ title, linkText, href, useIllustration }) => (
+const FCARegulatedTrustElement = ({ title, linkText, href, useIllustration, ...rest }) => (
   <TrustElement
+    {...rest}
     src="https://transferwise.com/public-resources/assets/marketing-components/illustrations/FCA.svg"
     title={title}
     linkText={linkText}
