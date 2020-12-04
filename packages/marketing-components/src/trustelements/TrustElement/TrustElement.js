@@ -56,11 +56,11 @@ const TrustElement = ({
 
       {href && linkText && (
         <Link
+          {...rest}
           href={href}
           target={isAnchorUrl(href) ? '_self' : '_blank'}
           rel="noopener noreferrer"
           onFocus={() => startAnimation()}
-          {...rest}
         >
           {linkText}
         </Link>

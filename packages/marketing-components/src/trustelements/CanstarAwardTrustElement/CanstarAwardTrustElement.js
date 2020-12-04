@@ -5,12 +5,12 @@ import TrustElement from '../TrustElement';
 
 const CanstarAwardTrustElement = ({ title, linkText, href, useIllustration, ...rest }) => (
   <TrustElement
+    {...rest}
     src="https://transferwise.com/public-resources/assets/marketing-components/illustrations/canstar.png"
     title={title}
     linkText={linkText}
     href={href}
     useIllustration={useIllustration}
-    {...rest}
   />
 );
 

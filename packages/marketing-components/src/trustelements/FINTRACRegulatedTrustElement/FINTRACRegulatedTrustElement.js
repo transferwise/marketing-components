@@ -6,13 +6,13 @@ import SecurityIllustration from '../SecurityIllustration';
 
 const FINTRACRegulatedTrustElement = ({ title, linkText, href, useIllustration, ...rest }) => (
   <TrustElement
+    {...rest}
     src={<SecurityIllustration />}
     title={title}
     linkText={linkText}
     href={href}
     shouldAnimate
     useIllustration={useIllustration}
-    {...rest}
   />
 );
 

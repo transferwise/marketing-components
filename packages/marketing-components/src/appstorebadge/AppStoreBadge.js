@@ -8,7 +8,7 @@ const AppStoreBadge = ({ language, locale, alt, ...rest }) => {
   const iosURL = `https://itunes.apple.com/${appStoreLocale}/app/transferwise-money-transfer/id612261027`;
 
   return (
-    <a href={iosURL} target="_blank" rel="noopener noreferrer" {...rest}>
+    <a {...rest} href={iosURL} target="_blank" rel="noopener noreferrer">
       <img
         className="tw-app-store-badge__image"
         src={`https://transferwise.com/public-resources/assets/marketing-components/app-store-badges/${language.toLowerCase()}.svg`}

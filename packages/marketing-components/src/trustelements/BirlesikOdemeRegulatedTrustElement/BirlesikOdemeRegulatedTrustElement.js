@@ -12,13 +12,13 @@ const BirlesikOdemeRegulatedTrustElement = ({
   ...rest
 }) => (
   <TrustElement
+    {...rest}
     src={<SecurityIllustration />}
     title={title}
     linkText={linkText}
     href={href}
     shouldAnimate
     useIllustration={useIllustration}
-    {...rest}
   />
 );
 

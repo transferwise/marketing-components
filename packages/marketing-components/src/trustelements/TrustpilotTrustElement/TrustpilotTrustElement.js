@@ -6,13 +6,13 @@ import TrustpilotIllustration from './TrustpilotIllustration';
 
 const TrustpilotTrustElement = ({ title, linkText, href, useIllustration, ...rest }) => (
   <TrustElement
+    {...rest}
     src={<TrustpilotIllustration />}
     title={title}
     linkText={linkText}
     href={href}
     shouldAnimate
     useIllustration={useIllustration}
-    {...rest}
   />
 );
 
