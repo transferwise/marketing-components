@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@2.3.0...@transferwise/marketing-components@2.4.0) (2020-12-04)
+
+
+### Features
+
+* forward props to trust elements and play store badges for tracking ([#40](https://github.com/transferwise/marketing-components/issues/40)) ([42b14b1](https://github.com/transferwise/marketing-components/commit/42b14b18390466bab182a0b224eb7a04fec2870c))
+
+
+
+
+
 # [2.3.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@2.2.2...@transferwise/marketing-components@2.3.0) (2020-11-11)
 
 
