@@ -5,9 +5,9 @@ import './GooglePlayStoreBadge.css';
 
 const androidURL = 'https://play.google.com/store/apps/details?id=com.transferwise.android';
 
-const GooglePlayStoreBadge = ({ alt, language }) => {
+const GooglePlayStoreBadge = ({ alt, language, ...rest }) => {
   return (
-    <a href={androidURL} target="_blank" rel="noopener noreferrer">
+    <a href={androidURL} target="_blank" rel="noopener noreferrer" {...rest}>
       <img
         className="tw-google-play-store-badge__image"
         src={`https://transferwise.com/public-resources/assets/marketing-components/google-play-store-badges/${language.toLowerCase()}.svg`}

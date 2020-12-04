@@ -3,7 +3,7 @@ import Types from 'prop-types';
 
 import TrustElement from '../TrustElement';
 
-const FPXPayTrustElement = ({ title, linkText, href, alt, useIllustration }) => (
+const FPXPayTrustElement = ({ title, linkText, href, alt, useIllustration, ...rest }) => (
   <TrustElement
     src="https://transferwise.com/public-resources/assets/marketing-components/illustrations/fpx.png"
     title={title}
@@ -11,6 +11,7 @@ const FPXPayTrustElement = ({ title, linkText, href, alt, useIllustration }) => 
     href={href}
     alt={alt}
     useIllustration={useIllustration}
+    {...rest}
   />
 );
 

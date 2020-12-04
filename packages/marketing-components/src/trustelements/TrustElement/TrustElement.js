@@ -21,7 +21,16 @@ TrustElementIllustration.propTypes = {
   shouldAnimate: Types.bool.isRequired,
 };
 
-const TrustElement = ({ title, alt, linkText, href, src, shouldAnimate, useIllustration }) => {
+const TrustElement = ({
+  title,
+  alt,
+  linkText,
+  href,
+  src,
+  shouldAnimate,
+  useIllustration,
+  ...rest
+}) => {
   const [isAnimating, setAnimating] = useState(false);
 
   function startAnimation() {
@@ -51,6 +60,7 @@ const TrustElement = ({ title, alt, linkText, href, src, shouldAnimate, useIllus
           target={isAnchorUrl(href) ? '_self' : '_blank'}
           rel="noopener noreferrer"
           onFocus={() => startAnimation()}
+          {...rest}
         >
           {linkText}
         </Link>

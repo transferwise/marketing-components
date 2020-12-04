@@ -4,7 +4,13 @@ import Types from 'prop-types';
 import TrustElement from '../TrustElement';
 import SecurityIllustration from '../SecurityIllustration';
 
-const BirlesikOdemeRegulatedTrustElement = ({ title, linkText, href, useIllustration }) => (
+const BirlesikOdemeRegulatedTrustElement = ({
+  title,
+  linkText,
+  href,
+  useIllustration,
+  ...rest
+}) => (
   <TrustElement
     src={<SecurityIllustration />}
     title={title}
@@ -12,6 +18,7 @@ const BirlesikOdemeRegulatedTrustElement = ({ title, linkText, href, useIllustra
     href={href}
     shouldAnimate
     useIllustration={useIllustration}
+    {...rest}
   />
 );
 

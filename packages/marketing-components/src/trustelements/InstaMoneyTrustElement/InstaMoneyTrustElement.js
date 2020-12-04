@@ -3,13 +3,14 @@ import Types from 'prop-types';
 
 import TrustElement from '../TrustElement';
 
-const InstaMoneyTrustElement = ({ title, linkText, href, useIllustration }) => (
+const InstaMoneyTrustElement = ({ title, linkText, href, useIllustration, ...rest }) => (
   <TrustElement
     src="https://transferwise.com/public-resources/assets/marketing-components/illustrations/instamoney.png"
     title={title}
     linkText={linkText}
     href={href}
     useIllustration={useIllustration}
+    {...rest}
   />
 );
 

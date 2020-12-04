@@ -4,7 +4,7 @@ import Types from 'prop-types';
 import TrustElement from '../TrustElement';
 import SecurityIllustration from '../SecurityIllustration';
 
-const MASRegulatedTrustElement = ({ title, linkText, href, useIllustration }) => (
+const MASRegulatedTrustElement = ({ title, linkText, href, useIllustration, ...rest }) => (
   <TrustElement
     src={<SecurityIllustration />}
     title={title}
@@ -12,6 +12,7 @@ const MASRegulatedTrustElement = ({ title, linkText, href, useIllustration }) =>
     href={href}
     shouldAnimate
     useIllustration={useIllustration}
+    {...rest}
   />
 );
 

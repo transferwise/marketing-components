@@ -3,12 +3,12 @@ import Types from 'prop-types';
 
 import './AppStoreBadge.css';
 
-const AppStoreBadge = ({ language, locale, alt }) => {
+const AppStoreBadge = ({ language, locale, alt, ...rest }) => {
   const appStoreLocale = locale === 'us' ? 'us' : 'gb';
   const iosURL = `https://itunes.apple.com/${appStoreLocale}/app/transferwise-money-transfer/id612261027`;
 
   return (
-    <a href={iosURL} target="_blank" rel="noopener noreferrer">
+    <a href={iosURL} target="_blank" rel="noopener noreferrer" {...rest}>
       <img
         className="tw-app-store-badge__image"
         src={`https://transferwise.com/public-resources/assets/marketing-components/app-store-badges/${language.toLowerCase()}.svg`}
