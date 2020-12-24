@@ -1,32 +1,25 @@
 import * as React from 'react';
 import Types from 'prop-types';
 import { DialogOverlay, DialogContent } from '@reach/dialog';
-import { useTransition, animated } from 'react-spring/web.cjs';
 import { Cross as CrossIcon } from '@transferwise/icons';
+import { motion } from 'framer-motion';
 
 import './VideoModal.css';
 
-const AnimatedDialogOverlay = animated(DialogOverlay);
-const AnimatedDialogContent = animated(DialogContent);
+const MotionDialogOverlay = motion.custom(DialogOverlay);
+const MotionDialogContent = motion.custom(DialogContent);
 
 function VideoModalBody({
-  style,
-  isVisible,
   children,
   onDismiss,
   posterUrl,
   translations,
-  ...rest
+  modalOverlayProps,
+  modalContentProps,
 }) {
   return (
-    <AnimatedDialogOverlay style={{ opacity: style.opacity }} className="twmc-video-modal__overlay">
-      <AnimatedDialogContent
-        {...rest}
-        style={{
-          transform: style.scale.interpolate((value) => `translate(-50%, -50%) scale(${value})`),
-        }}
-        className="twmc-video-modal__content"
-      >
+    <MotionDialogOverlay className="twmc-video-modal__overlay" {...modalOverlayProps}>
+      <MotionDialogContent className="twmc-video-modal__content" {...modalContentProps}>
         <button
           className="twmc-video-modal__close-button"
           type="button"
@@ -36,9 +29,9 @@ function VideoModalBody({
           <CrossIcon size="24" />
         </button>
         <img className="twmc-video-modal__poster" src={posterUrl} alt={translations.poster.alt} />
-        {isVisible && children}
-      </AnimatedDialogContent>
-    </AnimatedDialogOverlay>
+        {children}
+      </MotionDialogContent>
+    </MotionDialogOverlay>
   );
 }
 
@@ -54,38 +47,22 @@ VideoModalBody.propTypes = {
   posterUrl: Types.string.isRequired,
   children: Types.node.isRequired,
   onDismiss: Types.func.isRequired,
-  isVisible: Types.bool.isRequired,
-  style: Types.shape({
-    opacity: Types.any,
-    scale: Types.any,
-  }).isRequired,
+  modalOverlayProps: Types.shape({}),
+  modalContentProps: Types.shape({}),
 };
 
 const VideoModal = (props) => {
-  const { isOpen, title, posterUrl, onDismiss, children, translations, ...rest } = props;
-  const [hasAnimatedIn, setAnimatedIn] = React.useState(false);
-  const transition = useTransition(isOpen, null, {
-    from: { opacity: 0, scale: 0.75 },
-    enter: { opacity: 1, scale: 1 },
-    leave: { opacity: 0, scale: 0.75 },
-    onRest: (nextHasAnimatedIn) => setAnimatedIn(nextHasAnimatedIn),
-  });
+  const { isOpen, posterUrl, onDismiss, children, translations, ...rest } = props;
 
-  return transition.map(
-    ({ item, key, props: style }) =>
-      item && (
-        <VideoModalBody
-          {...rest}
-          key={key}
-          translations={translations}
-          posterUrl={posterUrl}
-          style={style}
-          isVisible={hasAnimatedIn}
-          onDismiss={onDismiss}
-        >
-          {children}
-        </VideoModalBody>
-      ),
+  return (
+    <VideoModalBody
+      {...rest}
+      translations={translations}
+      posterUrl={posterUrl}
+      onDismiss={onDismiss}
+    >
+      {children}
+    </VideoModalBody>
   );
 };
 
