@@ -3850,10 +3850,10 @@
     "@babel/runtime" "^7.9.2"
     core-js "^3.6.5"
 
-"@transferwise/test-config@^1.0.5":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@transferwise/test-config/-/test-config-1.0.5.tgz#72b4520f605aad65d7a54df4da43336c9be13acd"
-  integrity sha512-kc8WLESNBekTNSM1cuXnmZ3nLXtgNZNQUsRKAqqG7qJNsXBLoW/zotTVG2vtA/zRcQDhb8qAlEwih5ipQdnL+g==
+"@transferwise/test-config@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@transferwise/test-config/-/test-config-2.0.0.tgz#9be83786e553b743eb9ec470ef2f9cd25453039c"
+  integrity sha512-3OAk/oYJKf5eTgM0aTW+WBUJ/VM+AGUo6oYBNvO+nEORmWbo8ZyoFreKU6u6mHSs7c4NpcR2RnLiIjqbDcSoVw==
   dependencies:
     "@testing-library/jest-dom" "^5.7.0"
     "@testing-library/react" "^10.0.4"
