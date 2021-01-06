@@ -19,7 +19,11 @@ function VideoModalBody({
   ...rest
 }) {
   return (
-    <AnimatedDialogOverlay style={{ opacity: style.opacity }} className="twmc-video-modal__overlay">
+    <AnimatedDialogOverlay
+      style={{ opacity: style.opacity }}
+      onDismiss={onDismiss}
+      className="twmc-video-modal__overlay"
+    >
       <AnimatedDialogContent
         {...rest}
         style={{

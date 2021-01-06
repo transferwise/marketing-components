@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.1](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@2.4.0...@transferwise/marketing-components@2.4.1) (2021-01-05)
+
+
+### Bug Fixes
+
+* **a11y:** [C20-1389] dismiss the overlay when user presses Esc key ([#41](https://github.com/transferwise/marketing-components/issues/41)) ([b973881](https://github.com/transferwise/marketing-components/commit/b973881cda4689e8acecafd80ef483f93b092abb))
+
+
+
+
+
 # [2.4.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@2.3.0...@transferwise/marketing-components@2.4.0) (2020-12-04)
 
 
