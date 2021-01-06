@@ -3896,9 +3896,9 @@
   integrity sha512-3AD/unNYYmXjsMeEOL70h46pPf6UsAodGtAUgK1Fdnpmz09xg3TDzR/ImWTe608zIIYmCLgKv3Dq6QMxQDX8qQ==
 
 "@transferwise/eslint-config@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@transferwise/eslint-config/-/eslint-config-6.0.0.tgz#c053282f83a456194d7441c7481b448c64ca49f1"
-  integrity sha512-Qq1/zwGWS5lDOFsczMdICeEonwRXCgx2a5IHGvJueUtmfp82dGtd/pJacLi2X3PT4D0HMM7F1qs0IidSr9OY4g==
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@transferwise/eslint-config/-/eslint-config-6.1.0.tgz#a931d2d72ea9f05d379915cf6f22fc0e15352dfe"
+  integrity sha512-2L53oVXQcUWWZ5mykkGdzSLWD+zqyTmH/Oozh6jSC1WLgjqr7HqnvpIcUmoJd0qw2VjlKKn8FTSJYWJq+zjSOw==
   dependencies:
     babel-eslint "^10.1.0"
     eslint-config-airbnb "^18.1.0"
