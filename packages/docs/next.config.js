@@ -36,11 +36,31 @@ module.exports = () =>
             env: {
               ASSET_PREFIX: assetPrefix,
             },
-            webpack: (config) => {
-              config.module.rules.push({
-                test: [/\.code.js$/, /\.txt$/],
-                use: 'raw-loader',
-              });
+            webpack: (config, options) => {
+              const { isServer } = options;
+
+              config.module.rules.push(
+                {
+                  test: [/\.code.js$/, /\.txt$/],
+                  use: 'raw-loader',
+                },
+                {
+                  test: /\.(woff(2)?|eot|ttf|otf|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                  use: [
+                    {
+                      loader: require.resolve('url-loader'),
+                      options: {
+                        limit: 8192,
+                        fallback: require.resolve('file-loader'),
+                        publicPath: `${assetPrefix}/_next/static/chunks/fonts/`,
+                        outputPath: `${isServer ? '../' : ''}static/chunks/fonts/`,
+                        name: '[name]-[hash].[ext]',
+                        esModule: false,
+                      },
+                    },
+                  ],
+                },
+              );
 
               return config;
             },
