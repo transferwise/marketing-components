@@ -1,5 +1,104 @@
-// Deprecated CSS component: We keep importing it from Bootstrap because in theory it is not meant to update. If so, replicate the code here with modern syntax.
+@import (reference) '@transferwise/neptune-css/src/less/variables/_typography.less';
 
-// variables
-@import (reference) 'bootstrap/less/variables.less';
-@import 'bootstrap/less/jumbotron.less';
+.jumbotron {
+  padding: var(--size-32) 0;
+  transition: background-color 0.2s ease-in;
+
+  p {
+    margin-bottom: var(--size-16);
+    font-weight: 200;
+  }
+
+  > hr {
+    border-top-color: var(--color-primary);
+  }
+
+  .container &,
+  .container-fluid & {
+    border-radius: var(--radius-small);
+  }
+
+  @media screen and (--screen-md) {
+    padding: var(--size-48) 0;
+
+    h1,
+    .h1 {
+      font-size: @font-size-xx-large;
+      line-height: 56px;
+    }
+
+    .lead {
+      font-size: @font-size-large;
+    }
+  }
+}
+
+.jumbotron-image {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    color: var(--color-text-control);
+  }
+
+  dd,
+  strong,
+  .strong {
+    color: var(--color-text-control);
+  }
+
+  > .jumbotron {
+    background-color: var(--color-primary);
+    color: var(--color-text-control);
+
+    @media (--screen-md) {
+      background-color: rgba(55, 81, 126, 0.9);
+    }
+    @media (--screen-lg) {
+      background-color: rgba(55, 81, 126, 0.9);
+    }
+    @media (--screen-xl) {
+      background-color: transparent;
+    }
+  }
+}
+
+.jumbotron-image-inverse {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  color: var(--color-text-secondary);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    color: var(--color-text-primary);
+  }
+
+  dd,
+  strong,
+  .strong {
+    color: var(--color-text-primary);
+  }
+}
