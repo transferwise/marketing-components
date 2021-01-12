@@ -1,7 +1,7 @@
 {
   "name": "@transferwise/marketing-css",
   "description": "Marketing CSS is part of TransferWise's Design System CSS library",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "repository": {
     "type": "git",
