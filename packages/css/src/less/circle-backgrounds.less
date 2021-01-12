@@ -1,5 +1,3 @@
-@import (reference) '@transferwise/neptune-css/dist/less/legacy-variables.less';
-
 @circle-bg-xs-diameter: 25%;
 @circle-bg-sm-diameter: 50%;
 @circle-bg-md-diameter: 120%;
@@ -24,7 +22,7 @@
     padding-bottom: @circle-bg-md-diameter;
     border-radius: 1000rem;
     position: absolute;
-    background: @gray-base;
+    background: var(--color-background-neutral);
     z-index: -1;
     top: @circle-bg-translate-to-center;
     left: @circle-bg-translate-to-center;
@@ -32,7 +30,7 @@
   }
 }
 
-/*Sizes*/
+/* Sizes */
 
 .circle-bg-xs:before {
   .circle-bg-size(@circle-bg-xs-diameter);
@@ -49,7 +47,8 @@
 .circle-bg-xl:before {
   .circle-bg-size(@circle-bg-xl-diameter);
 }
-/*Positions (center). Uses -c sufix*/
+
+/* Positions (center). Uses -c sufix */
 .circle-bg-top-c:before {
   top: 0;
 }
@@ -69,7 +68,8 @@
   bottom: 0;
   top: inherit;
 }
-/*Positions (box edge)*/
+
+/* Positions (box edge) */
 .circle-bg-top:before {
   transform: translate(-@circle-bg-translate-to-center, -@circle-bg-translate-to-edge);
   top: 0;
@@ -91,7 +91,8 @@
   bottom: 0;
   transform: translate(-@circle-bg-translate-to-center, @circle-bg-translate-to-edge);
 }
-/*Combinations*/
+
+/* Combinations */
 .circle-bg-top.circle-bg-left:before {
   transform: translate(-@circle-bg-translate-to-edge, -@circle-bg-translate-to-edge);
 }
@@ -107,7 +108,8 @@
 .circle-bg-bottom.circle-bg-right:before {
   transform: translate(@circle-bg-translate-to-edge, @circle-bg-translate-to-edge);
 }
-/*Not simetric center for big headings*/
+
+/* Not simetric center for big headings */
 .circle-bg-center:before {
   transform: translate(-@circle-bg-translate-to-center-asymmetric, 0%);
   left: 0;
@@ -118,18 +120,12 @@
 }
 
 .circle-bg-light-blue:before {
-  background: @brand-pale-blue;
+  background: var(--color-background-accent);
 }
 
 .circle-bg-blue {
   &:before {
-    background: @brand-blue;
-  }
-}
-
-.circle-bg-navy {
-  &:before {
-    background: @brand-navy-minus-20;
+    background: var(--color-primary);
   }
 }
 

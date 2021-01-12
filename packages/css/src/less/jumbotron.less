@@ -1,34 +1,34 @@
-@import (reference) '@transferwise/neptune-css/dist/less/legacy-variables.less';
+@import (reference) '@transferwise/neptune-css/src/less/variables/_typography.less';
 
 .jumbotron {
-  padding: @jumbotron-padding 0;
+  padding: var(--size-32) 0;
   transition: background-color 0.2s ease-in;
 
   p {
-    margin-bottom: (@jumbotron-padding / 2);
+    margin-bottom: var(--size-16);
     font-weight: 200;
   }
 
   > hr {
-    border-top-color: @brand-navy-minus-20;
+    border-top-color: var(--color-primary);
   }
 
   .container &,
   .container-fluid & {
-    border-radius: @border-radius-large; // Only round corners at higher resolutions if contained in a container
+    border-radius: var(--radius-small);
   }
 
-  @media screen and (min-width: @screen-md-min) {
-    padding: (@jumbotron-padding * 1.5) 0;
+  @media screen and (--screen-md) {
+    padding: var(--size-48) 0;
 
     h1,
     .h1 {
-      font-size: @jumbotron-heading-font-size;
-      line-height: @jumbotron-heading-line-height;
+      font-size: @font-size-xx-large;
+      line-height: 56px;
     }
 
     .lead {
-      font-size: @jumbotron-font-size;
+      font-size: @font-size-large;
     }
   }
 }
@@ -50,30 +50,26 @@
   .h4,
   .h5,
   .h6 {
-    color: @brand-white;
+    color: var(--color-text-control);
   }
 
   dd,
   strong,
   .strong {
-    color: @brand-white;
+    color: var(--color-text-control);
   }
 
   > .jumbotron {
-    background-color: @navbar-collapse-bg;
-    color: @jumbotron-heading-color;
+    background-color: var(--color-primary);
+    color: var(--color-text-control);
 
-    @media (min-width: @screen-md-min) {
-      background-color: @navbar-collapse-bg;
+    @media (--screen-md) {
       background-color: rgba(55, 81, 126, 0.9);
-      //background-color: rgba(46, 67, 105, .9);
     }
-    @media (min-width: @screen-lg-min) {
-      background-color: @navbar-collapse-bg;
+    @media (--screen-lg) {
       background-color: rgba(55, 81, 126, 0.9);
-      //background-color: rgba(46, 67, 105, .75);
     }
-    @media (min-width: @screen-xl-min) {
+    @media (--screen-xl) {
       background-color: transparent;
     }
   }
@@ -83,7 +79,7 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  color: @text-color;
+  color: var(--color-text-secondary);
 
   h1,
   h2,
@@ -97,12 +93,12 @@
   .h4,
   .h5,
   .h6 {
-    color: @headings-color;
+    color: var(--color-text-primary);
   }
 
   dd,
   strong,
   .strong {
-    color: @headings-color;
+    color: var(--color-text-primary);
   }
 }
