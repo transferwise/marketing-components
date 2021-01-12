@@ -60,8 +60,9 @@ VideoModalBody.propTypes = {
   onDismiss: Types.func.isRequired,
   isVisible: Types.bool.isRequired,
   style: Types.shape({
-    opacity: Types.object,
-    scale: Types.object,
+    /* eslint-disable react/forbid-prop-types */
+    opacity: Types.any,
+    scale: Types.any,
   }).isRequired,
 };
 
