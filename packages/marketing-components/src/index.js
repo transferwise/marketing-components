@@ -14,6 +14,7 @@ export {
   FSRAApprovedTrustElement,
   InstaMoneyTrustElement,
   JPFSARegulatedTrustElement,
+  JPKLFBRegulatedTrustElement,
   MASRegulatedTrustElement,
   MitsuiTrustElement,
   SafeTrustElement,
