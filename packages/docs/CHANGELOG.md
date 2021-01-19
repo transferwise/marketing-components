@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.15.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.14.3...@transferwise/marketing-docs@1.15.0) (2021-01-19)
+
+
+### Features
+
+* Add KLFB trust element ([#51](https://github.com/transferwise/marketing-components/issues/51)) ([b228b59](https://github.com/transferwise/marketing-components/commit/b228b59f0be9f23ec15057bcc9114da6aec8965a))
+
+
+
+
+
 ## [1.14.3](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.14.2...@transferwise/marketing-docs@1.14.3) (2021-01-12)
 
 **Note:** Version bump only for package @transferwise/marketing-docs
