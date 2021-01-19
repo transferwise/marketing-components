@@ -11,6 +11,7 @@ export { default as FINTRACRegulatedTrustElement } from './FINTRACRegulatedTrust
 export { default as FSRAApprovedTrustElement } from './FSRAApprovedTrustElement';
 export { default as InstaMoneyTrustElement } from './InstaMoneyTrustElement';
 export { default as JPFSARegulatedTrustElement } from './JPFSARegulatedTrustElement';
+export { default as JPKLFBRegulatedTrustElement } from './JPKLFBRegulatedTrustElement';
 export { default as MASRegulatedTrustElement } from './MASRegulatedTrustElement';
 export { default as MitsuiTrustElement } from './MitsuiTrustElement';
 export { default as SafeTrustElement } from './SafeTrustElement';

@@ -14,6 +14,7 @@ import {
   FSRAApprovedTrustElement,
   InstaMoneyTrustElement,
   JPFSARegulatedTrustElement,
+  JPKLFBRegulatedTrustElement,
   MASRegulatedTrustElement,
   MitsuiTrustElement,
   SafeTrustElement,
@@ -248,6 +249,21 @@ export const JPFSARegulated = () => {
       <div className="col col-xs-offset-5 col-xs-2">
         <JPFSARegulatedTrustElement
           title={text('Title', 'Japanese FSA regulated')}
+          linkText={text('LinkText', 'Learn more')}
+          href={text('Link Url', 'https://transferwise.com/jp/terms-of-use-english')}
+          useIllustration={boolean('useIllustration', true)}
+        />
+      </div>
+    </div>
+  );
+};
+
+export const JPKLFBRegulated = () => {
+  return (
+    <div className="row">
+      <div className="col col-xs-offset-5 col-xs-2">
+        <JPKLFBRegulatedTrustElement
+          title={text('Title', 'KLFB regulated')}
           linkText={text('LinkText', 'Learn more')}
           href={text('Link Url', 'https://transferwise.com/jp/terms-of-use-english')}
           useIllustration={boolean('useIllustration', true)}
