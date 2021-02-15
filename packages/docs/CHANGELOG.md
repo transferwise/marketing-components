@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.16.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.15.0...@transferwise/marketing-docs@1.16.0) (2021-02-15)
+
+
+### Features
+
+* C20-1477: make ios app store link market agnostic ([#57](https://github.com/transferwise/marketing-components/issues/57)) ([8ce461d](https://github.com/transferwise/marketing-components/commit/8ce461d8f84cf563904e99f95dcb580c3b620e9d))
+
+
+
+
+
 # [1.15.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.14.3...@transferwise/marketing-docs@1.15.0) (2021-01-19)
 
 
