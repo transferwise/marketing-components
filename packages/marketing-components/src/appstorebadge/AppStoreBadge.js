@@ -3,9 +3,8 @@ import Types from 'prop-types';
 
 import './AppStoreBadge.css';
 
-const AppStoreBadge = ({ language, locale, alt, ...rest }) => {
-  const appStoreLocale = locale === 'us' ? 'us' : 'gb';
-  const iosURL = `https://itunes.apple.com/${appStoreLocale}/app/transferwise-money-transfer/id612261027`;
+const AppStoreBadge = ({ language, alt, ...rest }) => {
+  const iosURL = 'https://apps.apple.com/app/id612261027';
 
   return (
     <a {...rest} href={iosURL} target="_blank" rel="noopener noreferrer">
@@ -19,7 +18,6 @@ const AppStoreBadge = ({ language, locale, alt, ...rest }) => {
 };
 
 AppStoreBadge.propTypes = {
-  locale: Types.string.isRequired,
   language: Types.string.isRequired,
   alt: Types.string.isRequired,
 };

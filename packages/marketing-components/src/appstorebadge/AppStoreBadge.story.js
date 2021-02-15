@@ -14,7 +14,6 @@ export const AppStoreBadge = () => {
     <AppStoreBadgeComponent
       language={text('Language', 'en')}
       alt={text('Alt', 'Download from the Apple App Store')}
-      locale={text('Locale', 'gb')}
     />
   );
 };
