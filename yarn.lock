@@ -3575,10 +3575,10 @@
     bootstrap "github:transferwise/bootstrap#semver:^5.20.0"
     svgo "1.3.2"
 
-"@transferwise/neptune-css@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@transferwise/neptune-css/-/neptune-css-5.1.0.tgz#a2286733b1e4136d1f0eb75e1f045cee2522f4fe"
-  integrity sha512-mF6ZMn8BXsFfpMJC5oXXpqk1DW5hMuRUSbKIC7pRs73lmZ3eXOW7OwOh/XVDo9i4ZzD8gh6zjVBdNmdjhucdqg==
+"@transferwise/neptune-css@^8.1.3":
+  version "8.1.3"
+  resolved "https://registry.yarnpkg.com/@transferwise/neptune-css/-/neptune-css-8.1.3.tgz#0287fcb7fb1c9f72e0c8432c6c7976ab8fb66fca"
+  integrity sha512-tUVPxGyn7W8Vwhce/bj/Zu7Ak22mAT1EC1a9mdTg9Uid665c2vUy9ALPW5VEafnQwC19bg4ccOUXaqc3RbUr7Q==
   dependencies:
     "@transferwise/neptune-tokens" "^1.0.0"
     bootstrap "github:transferwise/bootstrap#semver:^5.20.0"
