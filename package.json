@@ -33,7 +33,7 @@
     "@transferwise/files-scaffold": "^1.0.1",
     "@transferwise/neptune-tokens": "^1.0.0",
     "@transferwise/icons": "^2.4.1",
-    "@transferwise/neptune-css": "^5.1.0",
+    "@transferwise/neptune-css": "^9.0.1",
     "eslint": "^6.8.0",
     "eslint-config-react-app": "^5.2.1",
     "eslint-loader": "^4.0.0",
