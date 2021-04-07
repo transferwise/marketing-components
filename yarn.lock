@@ -3535,9 +3535,9 @@
   integrity sha512-L3SZvfFXi4l0gFfyqIp2npN+YsCyb466JztkloWy1/I7qmIzTp4bB20R2hadm3dBjTEKvbv4caL/JrRuM+1VGg==
 
 "@transferwise/icons@^2.4.0", "@transferwise/icons@^2.4.1":
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/@transferwise/icons/-/icons-2.6.0.tgz#f9dc80d03d351e5ec5f9d8ce8a24b6a261fd4e47"
-  integrity sha512-SLSn+1oSRMHElzVGWFfTrsB3b7sEPPIXnvkLaAXZUZfZ+HFXhY2GT1ZtjTJqJoXHQLFQUaPDElY2KsKxjneRyw==
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/@transferwise/icons/-/icons-2.7.0.tgz#72c6f704548d458dbfd282bd9e0fc24ae7bad0e8"
+  integrity sha512-Rde1Rhjwnrjg4veFlzwvhTuYKF2cpygrYH8FjhZSQHPf0RgqmTyPUuHKtWc5261AkpjNha1SFOb9IyUtjGlcCg==
 
 "@transferwise/less-config@^2.0.2":
   version "2.0.2"
