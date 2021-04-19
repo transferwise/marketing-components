@@ -5,6 +5,7 @@ export {
   BirlesikOdemeRegulatedTrustElement,
   BNMApprovedTrustElement,
   BrazilianCorrespondentTrustElement,
+  BrazilianLicenseTrustElement,
   CAndEDRegulatedTrustElement,
   CanstarAwardTrustElement,
   CustomersTrustElement,
