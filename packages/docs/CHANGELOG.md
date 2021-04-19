@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.17.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.16.0...@transferwise/marketing-docs@1.17.0) (2021-04-19)
+
+
+### Features
+
+* Add BrazilianLicenseTrustElement ([#68](https://github.com/transferwise/marketing-components/issues/68)) ([baace9c](https://github.com/transferwise/marketing-components/commit/baace9c94bcea075a34827bd809c5cbeaafa3484))
+
+
+
+
+
 # [1.16.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.15.0...@transferwise/marketing-docs@1.16.0) (2021-02-15)
 
 
