@@ -38,7 +38,7 @@
     "@mdx-js/loader": "^1.5.8",
     "@next/mdx": "^9.0.5",
     "@transferwise/marketing-components": "^2.7.0",
-    "@transferwise/neptune-css": "^5.1.0",
+    "@transferwise/neptune-css": "^9.0.2",
     "@zeit/next-css": "^1.0.1",
     "glob": "^7.1.6",
     "husky": "^4.2.5",
