@@ -2,6 +2,7 @@ export { default as ASICRegulatedTrustElement } from './ASICRegulatedTrustElemen
 export { default as BirlesikOdemeRegulatedTrustElement } from './BirlesikOdemeRegulatedTrustElement';
 export { default as BNMApprovedTrustElement } from './BNMApprovedTrustElement';
 export { default as BrazilianCorrespondentTrustElement } from './BrazilianCorrespondentTrustElement';
+export { default as BrazilianLicenseTrustElement } from './BrazilianLicenseTrustElement';
 export { default as CAndEDRegulatedTrustElement } from './CAndEDRegulatedTrustElement';
 export { default as CanstarAwardTrustElement } from './CanstarAwardTrustElement';
 export { default as CustomersTrustElement } from './CustomersTrustElement';
