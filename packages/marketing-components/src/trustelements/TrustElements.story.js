@@ -5,6 +5,7 @@ import {
   BirlesikOdemeRegulatedTrustElement,
   BNMApprovedTrustElement,
   BrazilianCorrespondentTrustElement,
+  BrazilianLicenseTrustElement,
   CAndEDRegulatedTrustElement,
   CanstarAwardTrustElement,
   CustomersTrustElement,
@@ -92,6 +93,21 @@ export const BrazilianCorrespondent = () => {
           title={text('Title', 'Acting as exchange correspondents of Brazilian banks')}
           linkText={text('LinkText', 'Learn more')}
           href={text('Link Url', 'https://transferwise.com/br#br-partners')}
+          useIllustration={boolean('useIllustration', true)}
+        />
+      </div>
+    </div>
+  );
+};
+
+export const BrazilianLicense = () => {
+  return (
+    <div className="row">
+      <div className="col col-xs-offset-5 col-xs-2">
+        <BrazilianLicenseTrustElement
+          title={text('Title', 'Licence from Brazilian Central Bank')}
+          linkText={text('LinkText', 'Learn more')}
+          href={text('Link Url', 'https://transferwise.com/help/articles/2Cp4HepKB0xemJ3GwNhRVM')}
           useIllustration={boolean('useIllustration', true)}
         />
       </div>
