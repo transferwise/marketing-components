@@ -23,7 +23,7 @@ describe('AppStoreBadge', () => {
 
     expect(getByAltText('App Store')).toHaveAttribute(
       'src',
-      'https://transferwise.com/public-resources/assets/marketing-components/app-store-badges/pt_pt.svg',
+      'https://wise.com/public-resources/assets/marketing-components/app-store-badges/pt_pt.svg',
     );
   });
 });

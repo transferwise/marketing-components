@@ -27,7 +27,7 @@ describe('GooglePlayStoreBadge', () => {
 
     expect(getByAltText('Google Play Store')).toHaveAttribute(
       'src',
-      'https://transferwise.com/public-resources/assets/marketing-components/google-play-store-badges/pt_pt.svg',
+      'https://wise.com/public-resources/assets/marketing-components/google-play-store-badges/pt_pt.svg',
     );
   });
 });
