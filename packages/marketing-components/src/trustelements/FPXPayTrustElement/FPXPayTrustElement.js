@@ -6,7 +6,7 @@ import TrustElement from '../TrustElement';
 const FPXPayTrustElement = ({ title, linkText, href, alt, useIllustration, ...rest }) => (
   <TrustElement
     {...rest}
-    src="https://transferwise.com/public-resources/assets/marketing-components/illustrations/fpx.png"
+    src="https://wise.com/public-resources/assets/marketing-components/illustrations/fpx.png"
     title={title}
     linkText={linkText}
     href={href}

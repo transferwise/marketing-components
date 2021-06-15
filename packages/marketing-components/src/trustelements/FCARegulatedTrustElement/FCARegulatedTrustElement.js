@@ -6,7 +6,7 @@ import TrustElement from '../TrustElement';
 const FCARegulatedTrustElement = ({ title, linkText, href, useIllustration, ...rest }) => (
   <TrustElement
     {...rest}
-    src="https://transferwise.com/public-resources/assets/marketing-components/illustrations/FCA.svg"
+    src="https://wise.com/public-resources/assets/marketing-components/illustrations/FCA.svg"
     title={title}
     linkText={linkText}
     href={href}

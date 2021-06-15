@@ -10,7 +10,7 @@ const AppStoreBadge = ({ language, alt, ...rest }) => {
     <a {...rest} href={iosURL} target="_blank" rel="noopener noreferrer">
       <img
         className="tw-app-store-badge__image"
-        src={`https://transferwise.com/public-resources/assets/marketing-components/app-store-badges/${language.toLowerCase()}.svg`}
+        src={`https://wise.com/public-resources/assets/marketing-components/app-store-badges/${language.toLowerCase()}.svg`}
         alt={alt}
       />
     </a>

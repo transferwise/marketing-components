@@ -10,7 +10,7 @@ const GooglePlayStoreBadge = ({ alt, language, ...rest }) => {
     <a {...rest} href={androidURL} target="_blank" rel="noopener noreferrer">
       <img
         className="tw-google-play-store-badge__image"
-        src={`https://transferwise.com/public-resources/assets/marketing-components/google-play-store-badges/${language.toLowerCase()}.svg`}
+        src={`https://wise.com/public-resources/assets/marketing-components/google-play-store-badges/${language.toLowerCase()}.svg`}
         alt={alt}
       />
     </a>
