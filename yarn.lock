@@ -3539,17 +3539,16 @@
   resolved "https://registry.yarnpkg.com/@transferwise/icons/-/icons-2.7.0.tgz#72c6f704548d458dbfd282bd9e0fc24ae7bad0e8"
   integrity sha512-Rde1Rhjwnrjg4veFlzwvhTuYKF2cpygrYH8FjhZSQHPf0RgqmTyPUuHKtWc5261AkpjNha1SFOb9IyUtjGlcCg==
 
-"@transferwise/less-config@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@transferwise/less-config/-/less-config-2.0.2.tgz#9d21ec422e8af5727e39085afd90ac6a234e49eb"
-  integrity sha512-Ci1ZjGcOgdYGcADCDXu7o8dTu6VwyTclOHg4mKeUM1OH8jYHK8BI2pHJM+BLWe3W5H45GY3Ed73JQ4howBd60A==
+"@transferwise/less-config@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@transferwise/less-config/-/less-config-3.0.1.tgz#dc9736df5300903b3388deebf08cf42e0ce7ee30"
+  integrity sha512-IYX/eufAREqtLtNAEs5IVU6xyJVm9ZdII+WInTpuuC9Mvy8JQE2Tu9FHGKz7M5Ipm/py0zgwCVseXVnB3pXNOA==
   dependencies:
     "@arshaw/postcss-custom-properties" "^9.1.1"
     autoprefixer "^9.7.6"
     cssnano "^4.1.10"
     gulp "^4.0.2"
     gulp-cached "^1.1.1"
-    gulp-changed "^4.0.2"
     gulp-cssimport "^7.0.0"
     gulp-dependents "^1.2.3"
     gulp-filter "^6.0.0"
@@ -9913,17 +9912,6 @@ gulp-cached@^1.1.1:
     lodash.defaults "^4.2.0"
     through2 "^2.0.1"
 
-gulp-changed@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/gulp-changed/-/gulp-changed-4.0.2.tgz#387c6b05a3d18519281516ebf8f49f2d5d56efd3"
-  integrity sha512-rAvQt+ByaqrMuJLwucvxC+MC02Vh8ksiJ16hoQlk4xnmlHiLJMque2aXXQMmyocQac3RIjNRcyr7iG1TNH15GA==
-  dependencies:
-    make-dir "^3.0.0"
-    plugin-error "^1.0.1"
-    replace-ext "^1.0.0"
-    through2 "^3.0.1"
-    touch "^3.1.0"
-
 gulp-cli@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/gulp-cli/-/gulp-cli-2.3.0.tgz#ec0d380e29e52aa45e47977f0d32e18fd161122f"
@@ -13851,13 +13839,6 @@ nopt@^4.0.1:
   dependencies:
     abbrev "1"
     osenv "^0.1.4"
-
-nopt@~1.0.10:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/nopt/-/nopt-1.0.10.tgz#6ddd21bd2a31417b92727dd585f8a6f37608ebee"
-  integrity sha1-bd0hvSoxQXuScn3Vhfim83YI6+4=
-  dependencies:
-    abbrev "1"
 
 normalize-html-whitespace@1.0.0:
   version "1.0.0"
@@ -18634,13 +18615,6 @@ toidentifier@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
   integrity sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
-
-touch@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/touch/-/touch-3.1.0.tgz#fe365f5f75ec9ed4e56825e0bb76d24ab74af83b"
-  integrity sha512-WBx8Uy5TLtOSRtIq+M03/sKDrXCLHxwDcquSP2c43Le03/9serjQBIztjRz6FkJez9D/hleyAXTBGLwwZUw9lA==
-  dependencies:
-    nopt "~1.0.10"
 
 tough-cookie@^2.3.3, tough-cookie@~2.5.0:
   version "2.5.0"
