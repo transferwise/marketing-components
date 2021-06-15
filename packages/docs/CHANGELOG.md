@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.17.1](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.17.0...@transferwise/marketing-docs@1.17.1) (2021-06-15)
+
+**Note:** Version bump only for package @transferwise/marketing-docs
+
+
+
+
+
 # [1.17.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.16.0...@transferwise/marketing-docs@1.17.0) (2021-04-19)
 
 

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@2.7.0...@transferwise/marketing-components@3.0.0) (2021-06-15)
+
+
+### Features
+
+* Update assets base url to wise.com ([#76](https://github.com/transferwise/marketing-components/issues/76)) ([3c5b075](https://github.com/transferwise/marketing-components/commit/3c5b075371f2d645eb651549c8c27a2023584c30))
+
+
+### BREAKING CHANGES
+
+* Update assets base url to wise.com
+
+
+
+
+
 # [2.7.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-components@2.6.0...@transferwise/marketing-components@2.7.0) (2021-04-19)
 
 
