@@ -46,6 +46,7 @@ import '../../../css/dist/css/grid-layout.css';
       <li>Easy reverse and ordering</li>
       <li>Less code. Simple DOM.</li>
       <li>Use of standard and modern code</li>
+      <li>RTL direction compatible</li>
       <li>
         Can be used in combination with other layout systems (Flex, cols system). It's not
         exclusive.
@@ -90,234 +91,246 @@ import '../../../css/dist/css/grid-layout.css';
 
 <p>Ordering is applied to the child item.</p>
 
-<hr />
 
-<h2 id="container">Container</h2>
-<h3 className="m-t-4">.container</h3>
-<p>This is the same container we use currently in Neptune.</p>
+<section className="section">
+  <h2 id="container">Container</h2>
+  <h3 className="m-t-4">.container</h3>
+  <p>This is the same container we use currently in Neptune.</p>
 
     <div class="container">...</div>
 
-<div className="container">
-  <div className="docs-item">This is some content</div>
-</div>
+  <div className="container">
+    <div className="docs-item">This is some content</div>
+  </div>
 
-<h3 className="m-t-4 m-b-2">Example to compare with Bootstrap container</h3>
-<div className="container">
-  <div className="docs-item">This is some content</div>
-</div>
+  <h3 className="m-t-4 m-b-2">Example to compare with Bootstrap container</h3>
+  <div className="container">
+    <div className="docs-item">This is some content</div>
+  </div>
 
-<h3 className="m-t-4">.container-10</h3>
-<p>Used when we need a narrower container in desktop.</p>
-<p>
-  This gets similar result as the typical .col-md-10 .col-md-offset-1 from Bootstrap, specially in
-  desktop, and can be used indenpendently, not need to be nested inside a <code>.container</code>
-  .{' '}
-</p>
+  <h3 className="m-t-4">.container-10</h3>
+  <p>Used when we need a narrower container in desktop.</p>
+  <p>
+    This gets similar result as the typical .col-md-10 .col-md-offset-1 from
+    Bootstrap, specially in desktop, and can be used indenpendently, not need to
+    be nested inside a <code>.container</code>.
+  </p>
 
     <div class="container-10">...</div>
 
-<div className="container-10">
-  <div className="docs-item">This is some content</div>
-  <div className="docs-item">This is some content</div>
-  <div className="docs-item">This is some content</div>
-</div>
+  <div className="container-10">
+    <div className="docs-item">This is some content</div>
+    <div className="docs-item">This is some content</div>
+    <div className="docs-item">This is some content</div>
+  </div>
 
-<h3 className="m-t-4 m-b-2">Example to compare with Bootstrap grid: .col-md-10 .col-md-offset-1</h3>
-<div className="container">
-  <div className="docs-item col-md-10 col-md-offset-1 pull-xs-none">This is some content</div>
-</div>
+  <h3 className="m-t-4 m-b-2">
+    Example to compare with Bootstrap grid: .col-md-10 .col-md-offset-1
+  </h3>
+  <div className="container">
+    <div className="docs-item col-md-10 col-md-offset-1 pull-xs-none">
+      This is some content
+    </div>
+  </div>
 
-<h3 className="m-t-4">.container-8</h3>
-<p>Used when we need even a narrower container in desktop.</p>
+  <h3 className="m-t-4">.container-8</h3>
+  <p>Used when we need even a narrower container in desktop.</p>
 
     <div class="container-8">...</div>
 
-<div className="container-8">
-  <div className="docs-item">This is some content</div>
-  <div className="docs-item">This is some content</div>
-  <div className="docs-item">This is some content</div>
-</div>
+  <div className="container-8">
+    <div className="docs-item">This is some content</div>
+    <div className="docs-item">This is some content</div>
+    <div className="docs-item">This is some content</div>
+  </div>
 
-<h3 className="m-t-4">Example with Bootstrap grid: .col-md-8 .col-md-offset-2</h3>
-<div className="container">
-  <div className="docs-item col-md-8 col-md-offset-2 pull-xs-none">This is some content</div>
-</div>
+  <h3 className="m-t-4">
+    Example with Bootstrap grid: .col-md-8 .col-md-offset-2
+  </h3>
+  <div className="container">
+    <div className="docs-item col-md-8 col-md-offset-2 pull-xs-none">
+      This is some content
+    </div>
+  </div>
+</section>
 
-<hr />
-
-<h2 id="responsive-columns">Responsive columns</h2>
-<p>Basic simple system</p>
-<h3 className="m-t-4">.grid-1</h3>
+<section className="section">
+  <h2 id="responsive-columns">Responsive columns</h2>
+  <p>Basic simple system</p>
+  <h3 className="m-t-4">.grid-1</h3>
 
     <div class="grid-1">
-        <div>...</div>
-        <div>...</div>
+      <div>...</div>
+      <div>...</div>
     </div>
 
-<div className="grid-1">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
-<h3 className="m-t-4">.grid-1--sm</h3>
-<div className="grid-1--sm">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
-<h3 className="m-t-4">.grid-1--md</h3>
-<div className="grid-1--md">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
-<h3 className="m-t-4">.grid-1--lg</h3>
-<div className="grid-1--lg">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
+  <div className="grid-1">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
+  <h3 className="m-t-4">.grid-1--sm</h3>
+  <div className="grid-1--sm">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
+  <h3 className="m-t-4">.grid-1--md</h3>
+  <div className="grid-1--md">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
+  <h3 className="m-t-4">.grid-1--lg</h3>
+  <div className="grid-1--lg">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
 
-<h3 className="m-t-4">.grid-2</h3>
+  <h3 className="m-t-4">.grid-2</h3>
 
     <div class="grid-2">
-        <div>...</div>
-        <div>...</div>
+      <div>...</div>
+      <div>...</div>
     </div>
 
-<div className="grid-2">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
-<h3 className="m-t-4">.grid-2--sm</h3>
-<div className="grid-2--sm">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
-<h3 className="m-t-4">.grid-2--md</h3>
-<div className="grid-2--md">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
-<h3 className="m-t-4">.grid-2--lg</h3>
-<div className="grid-2--lg">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
-<h3 className="m-t-4">.grid-3</h3>
-<div className="grid-3">
-  <div className="docs-item">
-    This is some long content. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
-    iure, commodi odio omnis, nihil beatae vero alias laboriosam necessitatibus repellendus officia
-    molestiae quisquam fugiat. Nostrum nisi optio necessitatibus beatae sint.
+  <div className="grid-2">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
   </div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
-<h3 className="m-t-4">.grid-3--sm</h3>
-<div className="grid-3--sm">
-  <div className="docs-item">
-    This is some long content. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
-    iure, commodi odio omnis, nihil beatae vero alias laboriosam necessitatibus repellendus officia
-    molestiae quisquam fugiat. Nostrum nisi optio necessitatibus beatae sint.
+  <h3 className="m-t-4">.grid-2--sm</h3>
+  <div className="grid-2--sm">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
   </div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
-<h3 className="m-t-4">.grid-3--md</h3>
-<div className="grid-3--md">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
-<h3 className="m-t-4">.grid-3--lg</h3>
-<div className="grid-3--lg">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
-<h3 className="m-t-4">.grid-4</h3>
-<div className="grid-4">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
-<h3 className="m-t-4">.grid-4--sm</h3>
-<div className="grid-4--sm">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
-<h3 className="m-t-4">.grid-4--md</h3>
-<div className="grid-4--md">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
-<h3 className="m-t-4">.grid-4--lg</h3>
-<div className="grid-4--lg">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
-
-<hr />
-
-<h2 className="m-t-4">Combined:</h2>
-<h3 className="m-t-4"> .grid-2 .grid-1--sm .grid-3--md .grid-4--lg</h3>
-<div className="grid-2 grid-1--sm grid-3--md grid-4--lg">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
-<h3 className="m-t-4">.grid-4 .grid-3--md .grid-2--lg</h3>
-<div className="grid-4 grid-3--md grid-2--lg">
-  <div className="docs-item">
-    This is some long content. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti
-    iure, commodi odio omnis, nihil beatae vero alias laboriosam necessitatibus repellendus officia
-    molestiae quisquam fugiat. Nostrum nisi optio necessitatibus beatae sint.
+  <h3 className="m-t-4">.grid-2--md</h3>
+  <div className="grid-2--md">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
   </div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
+  <h3 className="m-t-4">.grid-2--lg</h3>
+  <div className="grid-2--lg">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
+  <h3 className="m-t-4">.grid-3</h3>
+  <div className="grid-3">
+    <div className="docs-item">
+      This is some long content. Lorem ipsum, dolor sit amet consectetur
+      adipisicing elit. Corrupti iure, commodi odio omnis, nihil beatae vero
+      alias laboriosam necessitatibus repellendus officia molestiae quisquam
+      fugiat. Nostrum nisi optio necessitatibus beatae sint.
+    </div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
+  <h3 className="m-t-4">.grid-3--sm</h3>
+  <div className="grid-3--sm">
+    <div className="docs-item">
+      This is some long content. Lorem ipsum, dolor sit amet consectetur
+      adipisicing elit. Corrupti iure, commodi odio omnis, nihil beatae vero
+      alias laboriosam necessitatibus repellendus officia molestiae quisquam
+      fugiat. Nostrum nisi optio necessitatibus beatae sint.
+    </div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
+  <h3 className="m-t-4">.grid-3--md</h3>
+  <div className="grid-3--md">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
+  <h3 className="m-t-4">.grid-3--lg</h3>
+  <div className="grid-3--lg">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
+  <h3 className="m-t-4">.grid-4</h3>
+  <div className="grid-4">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
+  <h3 className="m-t-4">.grid-4--sm</h3>
+  <div className="grid-4--sm">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
+  <h3 className="m-t-4">.grid-4--md</h3>
+  <div className="grid-4--md">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
+  <h3 className="m-t-4">.grid-4--lg</h3>
+  <div className="grid-4--lg">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
+</section>
 
-<hr />
+<section className="section">
+  <h2 className="m-t-4">Combined:</h2>
+  <h3 className="m-t-4">.grid-2 .grid-1--sm .grid-3--md .grid-4--lg</h3>
+  <div className="grid-2 grid-1--sm grid-3--md grid-4--lg">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
+  <h3 className="m-t-4">.grid-4 .grid-3--md .grid-2--lg</h3>
+  <div className="grid-4 grid-3--md grid-2--lg">
+    <div className="docs-item">
+      This is some long content. Lorem ipsum, dolor sit amet consectetur
+      adipisicing elit. Corrupti iure, commodi odio omnis, nihil beatae vero
+      alias laboriosam necessitatibus repellendus officia molestiae quisquam
+      fugiat. Nostrum nisi optio necessitatibus beatae sint.
+    </div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
+</section>
 
-<h2 id="fractions">Fractions</h2>
+<section className="section">
+  <h2 id="fractions">Fractions</h2>
 
     <div className="grid-2-1">
       <div className="docs-item">Item</div>
       <div className="docs-item">Item</div>
     </div>
-<h3 className="m-t-4">.grid-2-1</h3>
-<div className="grid-2-1">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
+    
+  <h3 className="m-t-4">.grid-2-1</h3>
+  <div className="grid-2-1">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
 
-<h3 className="m-t-4">.grid-2-1--md</h3>
-<div className="grid-2-1--md">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
-<h3 className="m-t-4">.grid-1-2</h3>
-<div className="grid-1-2">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
-<h3 className="m-t-4">.grid-1-2--md</h3>
-<div className="grid-1-2--md">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
+  <h3 className="m-t-4">.grid-2-1--md</h3>
+  <div className="grid-2-1--md">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
+  <h3 className="m-t-4">.grid-1-2</h3>
+  <div className="grid-1-2">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
+  <h3 className="m-t-4">.grid-1-2--md</h3>
+  <div className="grid-1-2--md">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
+</section>
 
-<hr />
-
-<h2 id="nesting">Nesting grids</h2>
-<p>It's totally fine to nest grids</p>
+<section className="section">
+  <h2 id="nesting">Nesting grids</h2>
+  <p>It's totally fine to nest grids</p>
 
     <div class="grid-2 gap">
       <div>
@@ -330,16 +343,16 @@ import '../../../css/dist/css/grid-layout.css';
       <div>...</div>
     </div>
 
-<div className="grid-2 gap m-b-4">
-  <div className="docs-item">
-    Item
-    <div className="grid-2">
-      <div className="docs-item">Item</div>
-      <div className="docs-item">Item</div>
+  <div className="grid-2 gap m-b-4">
+    <div className="docs-item">
+      Item
+      <div className="grid-2">
+        <div className="docs-item">Item</div>
+        <div className="docs-item">Item</div>
+      </div>
     </div>
+    <div className="docs-item">Item</div>
   </div>
-  <div className="docs-item">Item</div>
-</div>
 
     <div class="container-8 grid-2">
       <div>
@@ -352,21 +365,21 @@ import '../../../css/dist/css/grid-layout.css';
       <div>...</div>
     </div>
 
-<div className="container-8 grid-2">
-  <div className="docs-item">
-    Item
-    <div className="grid-2--md gap">
-      <div className="docs-item">Item</div>
-      <div className="docs-item">Item</div>
+  <div className="container-8 grid-2">
+    <div className="docs-item">
+      Item
+      <div className="grid-2--md gap">
+        <div className="docs-item">Item</div>
+        <div className="docs-item">Item</div>
+      </div>
     </div>
+    <div className="docs-item">Item</div>
   </div>
-  <div className="docs-item">Item</div>
-</div>
+</section>
 
-<hr />
-
-<h2 id="rows">Rows</h2>
-<p>The rows are autoplaced. You don´t have to do anything.</p>
+<section className="section">
+  <h2 id="rows">Rows</h2>
+  <p>The rows are autoplaced. You don´t have to do anything.</p>
 
     <div class="grid-3">
       <div>...</div>
@@ -375,25 +388,25 @@ import '../../../css/dist/css/grid-layout.css';
       <div>...</div>
     </div>
 
-<h3 className="m-t-4">.grid-3</h3>
+  <h3 className="m-t-4">.grid-3</h3>
 
-<div className="grid-3">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
+  <div className="grid-3">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
+</section>
 
-<hr />
+<section className="section">
+  <h2 id="gap">Gap</h2>
 
-<h2 id="gap">Gap</h2>
+  <p>The <strong>default</strong> --gap is <strong>--size-16</strong> for mobile,
+  <strong>--size-24</strong> for desktop - The <strong>column</strong> --gap is
+  <strong>1/12</strong>. Like a Bootstrap col size.</p>
 
-- The <strong>default</strong> --gap is <strong>--size-16</strong> for mobile, <strong>--size-24</strong> for desktop
-- The <strong>column</strong> --gap is <strong>1/12</strong>. Like a Bootstrap col size.
-
-<h3 className="m-t-4">.gap</h3>
-
-<p>The default gap is for both columns and rows.</p>
+  <h3 className="m-t-4">.gap</h3>
+  <p>The default gap is for both columns and rows.</p>
 
     <div class="grid-2 gap">
       <div>...</div>
@@ -402,97 +415,73 @@ import '../../../css/dist/css/grid-layout.css';
       <div>...</div>
     </div>
 
-<div className="grid-2 gap m-b-4">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
+  <div className="grid-2 gap m-b-4">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
 
-<h3 className="m-t-4">.gap-8</h3>
+  <h3 className="m-t-4">.gap-8</h3>
 
-    <div class="grid-2 gap-8">
-      <div>...</div>
-      <div>...</div>
-      <div>...</div>
-      <div>...</div>
-    </div>
+  <div className="grid-2 gap-8">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
 
- <div className="grid-2 gap-8">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
+  <h3 className="m-t-4">.gap-32</h3>
 
-<h3 className="m-t-4">.gap-32</h3>
+  <div className="grid-2 gap-32">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
 
-    <div class="grid-2 gap-32">
-      <div>...</div>
-      <div>...</div>
-      <div>...</div>
-      <div>...</div>
-    </div>
+  <h3 className="m-t-4">.gap-column</h3>
+  <p>Gap only for columns. The space is 1/12</p>
 
-<div className="grid-2 gap-32">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
+  <div className="grid-2 gap--column">
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+    <div className="docs-item">Item</div>
+  </div>
+</section>
 
-
-<h3 className="m-t-4">.gap-column</h3>
-<p>Gap only for columns. The space is 1/12</p>
-
-    <div class="grid-2 gap-column">
-      <div>...</div>
-      <div>...</div>
-      <div>...</div>
-      <div>...</div>
-    </div>
-
-<div className="grid-2 gap--column">
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-  <div className="docs-item">Item</div>
-</div>
-
-<hr />
-
-<h2 id="reverse">Reverse</h2>
-<p>The reverse mode is only horizontal (by now).</p>
-<h3 className="m-t-4">.reverse</h3>
+<section className="section">
+  <h2 id="reverse">Reverse</h2>
+  <p>The reverse mode is only horizontal (by now).</p>
+  <h3 className="m-t-4">.reverse</h3>
 
     <div class="grid-n reverse">
       <div>...</div>
       <div>...</div>
     </div>
 
-<div className="grid-2 reverse">
-  <span className="docs-item">1 item</span>
-  <span className="docs-item">2 item</span>
-</div>
-<div className="grid-3 reverse m-t-4">
-  <span className="docs-item">1 item</span>
-  <span className="docs-item">2 item</span>
-  <span className="docs-item">3 item</span>
-</div>
-<div className="grid-4 reverse m-t-4">
-  <span className="docs-item">1 item</span>
-  <span className="docs-item">2 item</span>
-  <span className="docs-item">3 item</span>
-  <span className="docs-item">4 item</span>
-</div>
+  <div className="grid-2 reverse">
+    <span className="docs-item">1 item</span>
+    <span className="docs-item">2 item</span>
+  </div>
+  <div className="grid-3 reverse m-t-4">
+    <span className="docs-item">1 item</span>
+    <span className="docs-item">2 item</span>
+    <span className="docs-item">3 item</span>
+  </div>
+  <div className="grid-4 reverse m-t-4">
+    <span className="docs-item">1 item</span>
+    <span className="docs-item">2 item</span>
+    <span className="docs-item">3 item</span>
+    <span className="docs-item">4 item</span>
+  </div>
+</section>
 
-<hr />
-
-<h2 id="order">Ordering</h2>
-<p>
-  The class must be added to the <strong>child item</strong>
-</p>
-<h3 className="m-t-4">.order-1--mobile</h3>
+<section className="section">
+  <h2 id="order">Ordering</h2>
+  <p>The class must be added to the <strong>child item</strong></p>
+  <h3 className="m-t-4">.order-1--mobile</h3>
 
     <div class="grid-4--md">
       <div>...</div>
@@ -501,23 +490,24 @@ import '../../../css/dist/css/grid-layout.css';
       <div>...</div>
     </div>
 
-<div className="grid-4--md">
-  <span className="docs-item">1 item</span>
-  <span className="docs-item">2 item</span>
-  <span className="docs-item order-1--mobile docs-highlight">
-    3 item. I want to be first on mobile
-  </span>
-  <span className="docs-item">4 item</span>
-</div>
+  <div className="grid-4--md">
+    <span className="docs-item">1 item</span>
+    <span className="docs-item">2 item</span>
+    <span className="docs-item order-1--mobile docs-highlight">
+      3 item. I want to be first on mobile
+    </span>
+    <span className="docs-item">4 item</span>
+  </div>
+</section>
 
-<hr />
 
 <h2 id="alignment">Alignment</h2>
 <p>Uses the same alignment utility classes as Flex System does.</p>
 <p>Availabre <code>--md</code> utilities in alignments.</p>
 
-<h2 className="m-t-4">align-items</h2>
-<h3 className="m-t-4">.align-items-start</h3>
+<section className="section p-t-0">
+  <h2 className="m-t-4">align-items</h2>
+  <h3 className="m-t-4">.align-items-start</h3>
 
     <div class="grid-3 align-items-start">
       <div>...</div>
@@ -525,45 +515,50 @@ import '../../../css/dist/css/grid-layout.css';
       <div>...</div>
     </div>
 
-<div className="grid-3 align-items-start">
-  <div className="docs-item">This is some content</div>
-  <div className="docs-item">
-    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
-    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
-    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
-    mattis sem lacinia vitae. Nam dignissim viverra metus et tincidunt
+  <div className="grid-3 align-items-start">
+    <div className="docs-item">This is some content</div>
+    <div className="docs-item">
+      This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed tempor, lacus vel consequat viverra, tellus orci aliquet ante,
+      sed lacinia orci orci in dui. Pellentesque pellentesque ultricies ex, ut
+      faucibus orci finibus non. Phasellus blandit laoreet eros, eget mattis sem
+      lacinia vitae. Nam dignissim viverra metus et tincidunt
+    </div>
+    <div className="docs-item">This is some content</div>
   </div>
-  <div className="docs-item">This is some content</div>
-</div>
 
-<h3 className="m-t-4">.align-items-center</h3>
+  <h3 className="m-t-4">.align-items-center</h3>
 
-<div className="grid-3 align-items-center">
-  <div className="docs-item">This is some content</div>
-  <div className="docs-item">
-    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
-    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
-    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
-    mattis sem lacinia vitae. Nam dignissim viverra metus et tincidunt
+  <div className="grid-3 align-items-center">
+    <div className="docs-item">This is some content</div>
+    <div className="docs-item">
+      This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed tempor, lacus vel consequat viverra, tellus orci aliquet ante,
+      sed lacinia orci orci in dui. Pellentesque pellentesque ultricies ex, ut
+      faucibus orci finibus non. Phasellus blandit laoreet eros, eget mattis sem
+      lacinia vitae. Nam dignissim viverra metus et tincidunt
+    </div>
+    <div className="docs-item">This is some content</div>
   </div>
-  <div className="docs-item">This is some content</div>
-</div>
 
-<h3 className="m-t-4">.align-items-end</h3>
+  <h3 className="m-t-4">.align-items-end</h3>
 
-<div className="grid-3 align-items-end">
-  <div className="docs-item">This is some content</div>
-  <div className="docs-item">
-    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
-    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
-    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
-    mattis sem lacinia vitae. Nam dignissi.
+  <div className="grid-3 align-items-end">
+    <div className="docs-item">This is some content</div>
+    <div className="docs-item">
+      This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed tempor, lacus vel consequat viverra, tellus orci aliquet ante,
+      sed lacinia orci orci in dui. Pellentesque pellentesque ultricies ex, ut
+      faucibus orci finibus non. Phasellus blandit laoreet eros, eget mattis sem
+      lacinia vitae. Nam dignissi.
+    </div>
+    <div className="docs-item">This is some content</div>
   </div>
-  <div className="docs-item">This is some content</div>
-</div>
+</section>
 
-<h2 className="m-t-4">justify-items</h2>
-<h3 className="m-t-4">.justify-items-start</h3>
+<section className="section">
+  <h2 className="m-t-4">justify-items</h2>
+  <h3 className="m-t-4">.justify-items-start</h3>
 
     <div class="grid-3 justify-items-start">
       <div>...</div>
@@ -571,46 +566,51 @@ import '../../../css/dist/css/grid-layout.css';
       <div>...</div>
     </div>
 
-<div className="justify-items-start grid-3">
-  <div className="docs-item">This is some content</div>
-  <div className="docs-item">
-    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
-    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
-    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
-    mattis sem lacinia vitae. Nam dignissim viverra metus et tincidunt
+  <div className="justify-items-start grid-3">
+    <div className="docs-item">This is some content</div>
+    <div className="docs-item">
+      This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed tempor, lacus vel consequat viverra, tellus orci aliquet ante,
+      sed lacinia orci orci in dui. Pellentesque pellentesque ultricies ex, ut
+      faucibus orci finibus non. Phasellus blandit laoreet eros, eget mattis sem
+      lacinia vitae. Nam dignissim viverra metus et tincidunt
+    </div>
+    <div className="docs-item">This is some content</div>
   </div>
-  <div className="docs-item">This is some content</div>
-</div>
 
-<h3 className="m-t-4">.justify-items-center</h3>
+  <h3 className="m-t-4">.justify-items-center</h3>
 
-<div className="grid-3 justify-items-center">
-  <div className="docs-item">This is some content</div>
-  <div className="docs-item">
-    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
-    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
-    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
-    mattis sem lacinia vitae. Nam dignissim viverra metus et tincidunt
+  <div className="grid-3 justify-items-center">
+    <div className="docs-item">This is some content</div>
+    <div className="docs-item">
+      This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed tempor, lacus vel consequat viverra, tellus orci aliquet ante,
+      sed lacinia orci orci in dui. Pellentesque pellentesque ultricies ex, ut
+      faucibus orci finibus non. Phasellus blandit laoreet eros, eget mattis sem
+      lacinia vitae. Nam dignissim viverra metus et tincidunt
+    </div>
+    <div className="docs-item">This is some content</div>
   </div>
-  <div className="docs-item">This is some content</div>
-</div>
 
-<h3 className="m-t-4">.justify-items-end</h3>
+  <h3 className="m-t-4">.justify-items-end</h3>
 
-<div className="grid-3 justify-items-end">
-  <div className="docs-item">This is some content</div>
-  <div className="docs-item">
-    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
-    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
-    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
-    mattis sem lacinia vitae. Nam dignissi.
+  <div className="grid-3 justify-items-end">
+    <div className="docs-item">This is some content</div>
+    <div className="docs-item">
+      This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed tempor, lacus vel consequat viverra, tellus orci aliquet ante,
+      sed lacinia orci orci in dui. Pellentesque pellentesque ultricies ex, ut
+      faucibus orci finibus non. Phasellus blandit laoreet eros, eget mattis sem
+      lacinia vitae. Nam dignissi.
+    </div>
+    <div className="docs-item">This is some content</div>
   </div>
-  <div className="docs-item">This is some content</div>
-</div>
+</section>
 
-<h2 className="m-t-4">align-self</h2>
-<p>Align selft is applyed to child element.</p>
-<h3 className="m-t-4">.align-self-start</h3>
+<section className="section">
+  <h2 className="m-t-4">align-self</h2>
+  <p>Align selft is applyed to child element.</p>
+  <h3 className="m-t-4">.align-self-start</h3>
 
     <div class="grid-3">
       <div class="align-self-start">...</div>
@@ -618,47 +618,58 @@ import '../../../css/dist/css/grid-layout.css';
       <div>...</div>
     </div>
 
-<div className="grid-3">
-  <div className="docs-item align-self-start">This is some content with align-self</div>
-  <div className="docs-item">
-    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
-    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
-    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
-    mattis sem lacinia vitae. Nam dignissim viverra metus et tincidunt
+  <div className="grid-3">
+    <div className="docs-item align-self-start">
+      This is some content with align-self
+    </div>
+    <div className="docs-item">
+      This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed tempor, lacus vel consequat viverra, tellus orci aliquet ante,
+      sed lacinia orci orci in dui. Pellentesque pellentesque ultricies ex, ut
+      faucibus orci finibus non. Phasellus blandit laoreet eros, eget mattis sem
+      lacinia vitae. Nam dignissim viverra metus et tincidunt
+    </div>
+    <div className="docs-item">This is some content</div>
   </div>
-  <div className="docs-item">This is some content</div>
-</div>
 
-<h3 className="m-t-4">.align-self-center</h3>
+  <h3 className="m-t-4">.align-self-center</h3>
 
-<div className="grid-3">
-  <div className="docs-item align-self-center">This is some content with align-self</div>
-  <div className="docs-item">
-    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
-    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
-    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
-    mattis sem lacinia vitae. Nam dignissim viverra metus et tincidunt
+  <div className="grid-3">
+    <div className="docs-item align-self-center">
+      This is some content with align-self
+    </div>
+    <div className="docs-item">
+      This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed tempor, lacus vel consequat viverra, tellus orci aliquet ante,
+      sed lacinia orci orci in dui. Pellentesque pellentesque ultricies ex, ut
+      faucibus orci finibus non. Phasellus blandit laoreet eros, eget mattis sem
+      lacinia vitae. Nam dignissim viverra metus et tincidunt
+    </div>
+    <div className="docs-item">This is some content</div>
   </div>
-  <div className="docs-item">This is some content</div>
-</div>
 
-<h3 className="m-t-4">.align-self-end</h3>
+  <h3 className="m-t-4">.align-self-end</h3>
 
-<div className="grid-3">
-  <div className="docs-item align-self-end">This is some content with align-self</div>
-  <div className="docs-item">
-    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
-    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
-    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
-    mattis sem lacinia vitae. Nam dignissi.
+  <div className="grid-3">
+    <div className="docs-item align-self-end">
+      This is some content with align-self
+    </div>
+    <div className="docs-item">
+      This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed tempor, lacus vel consequat viverra, tellus orci aliquet ante,
+      sed lacinia orci orci in dui. Pellentesque pellentesque ultricies ex, ut
+      faucibus orci finibus non. Phasellus blandit laoreet eros, eget mattis sem
+      lacinia vitae. Nam dignissi.
+    </div>
+    <div className="docs-item">This is some content</div>
   </div>
-  <div className="docs-item">This is some content</div>
-</div>
+</section>
 
 
-<h2 className="m-t-4">justify-self</h2>
-<p>justify selft is applyed to child element.</p>
-<h3 className="m-t-4">.justify-self-start</h3>
+<section className="section">
+  <h2 className="m-t-4">justify-self</h2>
+  <p>justify selft is applyed to child element.</p>
+  <h3 className="m-t-4">.justify-self-start</h3>
 
     <div class="grid-3">
       <div class="justify-self-start">...</div>
@@ -666,43 +677,52 @@ import '../../../css/dist/css/grid-layout.css';
       <div>...</div>
     </div>
 
-<div className="grid-3">
-  <div className="docs-item justify-self-start">This is some content with justify-self</div>
-  <div className="docs-item">
-    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
-    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
-    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
-    mattis sem lacinia vitae. Nam dignissim viverra metus et tincidunt
+  <div className="grid-3">
+    <div className="docs-item justify-self-start">
+      This is some content with justify-self
+    </div>
+    <div className="docs-item">
+      This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed tempor, lacus vel consequat viverra, tellus orci aliquet ante,
+      sed lacinia orci orci in dui. Pellentesque pellentesque ultricies ex, ut
+      faucibus orci finibus non. Phasellus blandit laoreet eros, eget mattis sem
+      lacinia vitae. Nam dignissim viverra metus et tincidunt
+    </div>
+    <div className="docs-item">This is some content</div>
   </div>
-  <div className="docs-item">This is some content</div>
-</div>
 
-<h3 className="m-t-4">.justify-self-center</h3>
+  <h3 className="m-t-4">.justify-self-center</h3>
 
-<div className="grid-3">
-  <div className="docs-item justify-self-center">This is some content with justify-self</div>
-  <div className="docs-item">
-    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
-    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
-    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
-    mattis sem lacinia vitae. Nam dignissim viverra metus et tincidunt
+  <div className="grid-3">
+    <div className="docs-item justify-self-center">
+      This is some content with justify-self
+    </div>
+    <div className="docs-item">
+      This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed tempor, lacus vel consequat viverra, tellus orci aliquet ante,
+      sed lacinia orci orci in dui. Pellentesque pellentesque ultricies ex, ut
+      faucibus orci finibus non. Phasellus blandit laoreet eros, eget mattis sem
+      lacinia vitae. Nam dignissim viverra metus et tincidunt
+    </div>
+    <div className="docs-item">This is some content</div>
   </div>
-  <div className="docs-item">This is some content</div>
-</div>
 
-<h3 className="m-t-4">.justify-self-end</h3>
+  <h3 className="m-t-4">.justify-self-end</h3>
 
-<div className="grid-3">
-  <div className="docs-item justify-self-end">This is some content with justify-self</div>
-  <div className="docs-item">
-    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
-    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
-    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
-    mattis sem lacinia vitae. Nam dignissi.
+  <div className="grid-3">
+    <div className="docs-item justify-self-end">
+      This is some content with justify-self
+    </div>
+    <div className="docs-item">
+      This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Sed tempor, lacus vel consequat viverra, tellus orci aliquet ante,
+      sed lacinia orci orci in dui. Pellentesque pellentesque ultricies ex, ut
+      faucibus orci finibus non. Phasellus blandit laoreet eros, eget mattis sem
+      lacinia vitae. Nam dignissi.
+    </div>
+    <div className="docs-item">This is some content</div>
   </div>
-  <div className="docs-item">This is some content</div>
-</div>
-
+</section>
 
 <hr />
 
