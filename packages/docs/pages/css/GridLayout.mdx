@@ -43,7 +43,10 @@ import '../../../css/dist/css/grid-layout.css';
       <li>Easy reverse and ordering</li>
       <li>Less code. Simple DOM.</li>
       <li>Use of standard and modern code</li>
-      <li>Can be used in combination with other layout systems (Flex, cols system). It's not exclusive.</li>
+      <li>
+        Can be used in combination with other layout systems (Flex, cols system). It's not
+        exclusive.
+      </li>
     </ul>
   </div>
   <div>
@@ -54,12 +57,14 @@ import '../../../css/dist/css/grid-layout.css';
   </div>
 </div>
 <p>
-<span>Want to know more about grid layout? </span>
+  <span>Want to know more about grid layout? </span>
   <a
     href="https://css-tricks.com/snippets/css/complete-guide-grid/"
     target="_blank"
     rel="noopener noreferrer"
-  >Here's a complete guide</a>
+  >
+    Here's a complete guide
+  </a>
 </p>
 
 <hr />
@@ -101,7 +106,11 @@ import '../../../css/dist/css/grid-layout.css';
 
 <h3 className="m-t-4">.container-10</h3>
 <p>Used when we need a narrower container in desktop.</p>
-<p>This gets similar result as the typical .col-md-10 .col-md-offset-1 from Bootstrap, specially in desktop, and can be used indenpendently, not need to be nested inside a <code>.container</code>. </p>
+<p>
+  This gets similar result as the typical .col-md-10 .col-md-offset-1 from Bootstrap, specially in
+  desktop, and can be used indenpendently, not need to be nested inside a <code>.container</code>
+  .{' '}
+</p>
 
     <div class="container-10">...</div>
 
@@ -303,9 +312,7 @@ import '../../../css/dist/css/grid-layout.css';
       <div>...</div>
     </div>
 
-
 <h3 className="m-t-4">.grid-3</h3>
-
 
 <div className="grid-3">
   <div className="docs-item">Item</div>
@@ -319,10 +326,9 @@ import '../../../css/dist/css/grid-layout.css';
 <h2 id="gap">Gap</h2>
 
 - The <strong>default</strong> --gap is <strong>--size-16</strong> for mobile,
-    <strong>--size-24</strong> for desktop
+  {' '}
+  <strong>--size-24</strong> for desktop
 - The <strong>column</strong> --gap is <strong>1/12</strong>. Like a Bootstrap col size.
-
-
 
 <h3 className="m-t-4">.gap</h3>
 
@@ -332,7 +338,6 @@ import '../../../css/dist/css/grid-layout.css';
       <div>...</div>
       <div>...</div>
     </div>
-
 
 <div className="grid-2 gap m-b-4">
   <div className="docs-item">Item</div>
@@ -491,12 +496,12 @@ import '../../../css/dist/css/grid-layout.css';
     </div>
 
 <div className="grid-sidebar">
-    <div className="docs-item"></div>
-    <div className="docs-item"></div>
+  <div className="docs-item"></div>
+  <div className="docs-item"></div>
 </div>
-
 
 export const meta = {
   name: 'Grid Layout',
   size: '4KB',
+  fullpage: true,
 };
