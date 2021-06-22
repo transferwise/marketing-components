@@ -116,6 +116,28 @@
   }
 }
 
+/* Fractions */
+
+.grid-1-2 {
+  grid-template-columns: 1fr 2fr;
+
+  &--md {
+    @media (--screen-md) {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+}
+
+.grid-2-1 {
+  grid-template-columns: 2fr 1fr;
+
+  &--md {
+    @media (--screen-md) {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+}
+
 /* Gaps */
 
 :root {

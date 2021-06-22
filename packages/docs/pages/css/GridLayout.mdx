@@ -13,6 +13,9 @@ import '../../../css/dist/css/grid-layout.css';
       <a href="#responsive-columns">Responsive columns</a>
     </li>
     <li>
+      <a href="#fractions">Fractions</a>
+    </li>
+        <li>
       <a href="#nesting">Nesting grids</a>
     </li>
     <li>
@@ -258,6 +261,9 @@ import '../../../css/dist/css/grid-layout.css';
   <div className="docs-item">Item</div>
   <div className="docs-item">Item</div>
 </div>
+
+<hr />
+
 <h2 className="m-t-4">Combined:</h2>
 <h3 className="m-t-4"> .grid-2 .grid-1--sm .grid-3--md .grid-4--lg</h3>
 <div className="grid-2 grid-1--sm grid-3--md grid-4--lg">
@@ -274,6 +280,36 @@ import '../../../css/dist/css/grid-layout.css';
     molestiae quisquam fugiat. Nostrum nisi optio necessitatibus beatae sint.
   </div>
   <div className="docs-item">Item</div>
+  <div className="docs-item">Item</div>
+  <div className="docs-item">Item</div>
+</div>
+
+<hr />
+
+<h2 id="fractions">Fractions</h2>
+
+    <div className="grid-2-1">
+      <div className="docs-item">Item</div>
+      <div className="docs-item">Item</div>
+    </div>
+<h3 className="m-t-4">.grid-2-1</h3>
+<div className="grid-2-1">
+  <div className="docs-item">Item</div>
+  <div className="docs-item">Item</div>
+</div>
+
+<h3 className="m-t-4">.grid-2-1--md</h3>
+<div className="grid-2-1--md">
+  <div className="docs-item">Item</div>
+  <div className="docs-item">Item</div>
+</div>
+<h3 className="m-t-4">.grid-1-2</h3>
+<div className="grid-1-2">
+  <div className="docs-item">Item</div>
+  <div className="docs-item">Item</div>
+</div>
+<h3 className="m-t-4">.grid-1-2--md</h3>
+<div className="grid-1-2--md">
   <div className="docs-item">Item</div>
   <div className="docs-item">Item</div>
 </div>
@@ -478,8 +514,8 @@ import '../../../css/dist/css/grid-layout.css';
 <h3 className="m-t-4">.align-items-center</h3>
 
     <div class="grid-2 align-items-center">
-      <div class="docs-item">...</div>
-      <div class="docs-item">...</div>
+      <div>...</div>
+      <div>...</div>
     </div>
 
 <div className="grid-2 align-items-center">
