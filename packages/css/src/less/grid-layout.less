@@ -32,19 +32,20 @@
   max-width: calc(916px + var(--size-32) * 2);
 }
 
+/* Grid */
+
+.grid,
 [class^='grid-'],
 [class*=' grid-'] {
   display: grid;
 
   &::before {
-    content: none; /* Permits to use with container */
+    content: none; /* Permits to use with Bootstrap container */
   }
 }
 
 .grid-4 {
   grid-template-columns: repeat(4, 1fr);
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-columns: column 100px 100px 1fr;
 }
 
 .grid-3 {
@@ -55,54 +56,63 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-[class^='grid-'],
-[class*=' grid-'] {
-  @media all and (--screen-sm) {
-    &.grid-4--sm {
-      grid-template-columns: repeat(4, 1fr);
-    }
+.grid-1 {
+  grid-template-columns: 1fr;
+}
 
-    &.grid-3--sm {
-      grid-template-columns: repeat(3, 1fr);
-    }
+/* Responsive columns */
 
-    &.grid-2--sm {
-      grid-template-columns: repeat(2, 1fr);
-    }
+@media all and (--screen-sm) {
+  .grid-4--sm {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grid-3--sm {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-2--sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-1--sm {
+    grid-template-columns: 1fr;
   }
 }
 
-[class^='grid-'],
-[class*=' grid-'] {
-  @media all and (--screen-md) {
-    &.grid-4--md {
-      grid-template-columns: repeat(4, 1fr);
-    }
+@media all and (--screen-md) {
+  .grid-4--md {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-    &.grid-3--md {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  .grid-3--md {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    &.grid-2--md {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .grid-2--md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-1--md {
+    grid-template-columns: 1fr;
   }
 }
 
-[class^='grid-'],
-[class*=' grid-'] {
-  @media all and (--screen-lg) {
-    &.grid-4--lg {
-      grid-template-columns: repeat(4, 1fr);
-    }
+@media all and (--screen-lg) {
+  .grid-4--lg {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-    &.grid-3--lg {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  .grid-3--lg {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    &.grid-2--lg {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .grid-2--lg {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-1--lg {
+    grid-template-columns: 1fr;
   }
 }
 
