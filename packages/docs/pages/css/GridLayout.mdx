@@ -388,9 +388,7 @@ import '../../../css/dist/css/grid-layout.css';
 
 <h2 id="gap">Gap</h2>
 
-- The <strong>default</strong> --gap is <strong>--size-16</strong> for mobile,
-  {' '}
-  <strong>--size-24</strong> for desktop
+- The <strong>default</strong> --gap is <strong>--size-16</strong> for mobile, <strong>--size-24</strong> for desktop
 - The <strong>column</strong> --gap is <strong>1/12</strong>. Like a Bootstrap col size.
 
 <h3 className="m-t-4">.gap</h3>
@@ -398,6 +396,8 @@ import '../../../css/dist/css/grid-layout.css';
 <p>The default gap is for both columns and rows.</p>
 
     <div class="grid-2 gap">
+      <div>...</div>
+      <div>...</div>
       <div>...</div>
       <div>...</div>
     </div>
@@ -409,27 +409,47 @@ import '../../../css/dist/css/grid-layout.css';
   <div className="docs-item">Item</div>
 </div>
 
-    <div class="grid-2 gap--32">
+<h3 className="m-t-4">.gap-8</h3>
+
+    <div class="grid-2 gap-8">
+      <div>...</div>
+      <div>...</div>
       <div>...</div>
       <div>...</div>
     </div>
 
-<h3 className="m-t-4">.gap--32</h3>
-<div className="grid-2 gap--32">
+ <div className="grid-2 gap-8">
   <div className="docs-item">Item</div>
   <div className="docs-item">Item</div>
   <div className="docs-item">Item</div>
   <div className="docs-item">Item</div>
 </div>
 
-<h3 className="m-t-4">.gap--column</h3>
+<h3 className="m-t-4">.gap-32</h3>
+
+    <div class="grid-2 gap-32">
+      <div>...</div>
+      <div>...</div>
+      <div>...</div>
+      <div>...</div>
+    </div>
+
+<div className="grid-2 gap-32">
+  <div className="docs-item">Item</div>
+  <div className="docs-item">Item</div>
+  <div className="docs-item">Item</div>
+  <div className="docs-item">Item</div>
+</div>
+
+
+<h3 className="m-t-4">.gap-column</h3>
 <p>Gap only for columns. The space is 1/12</p>
 
-    <div class="grid-2 gap--column">
-      <div class="docs-item">...</div>
-      <div class="docs-item">...</div>
-      <div class="docs-item">...</div>
-      <div class="docs-item">...</div>
+    <div class="grid-2 gap-column">
+      <div>...</div>
+      <div>...</div>
+      <div>...</div>
+      <div>...</div>
     </div>
 
 <div className="grid-2 gap--column">
