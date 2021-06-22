@@ -513,15 +513,19 @@ import '../../../css/dist/css/grid-layout.css';
 <hr />
 
 <h2 id="alignment">Alignment</h2>
-<p>Uses the same alignment utility classes as Flex System does</p>
+<p>Uses the same alignment utility classes as Flex System does.</p>
+<p>Availabre <code>--md</code> utilities in alignments.</p>
+
+<h2 className="m-t-4">align-items</h2>
 <h3 className="m-t-4">.align-items-start</h3>
 
-    <div class="grid-2 align-items-start">
-      <div class="docs-item">...</div>
-      <div class="docs-item">...</div>
+    <div class="grid-3 align-items-start">
+      <div>...</div>
+      <div>...</div>
+      <div>...</div>
     </div>
 
-<div className="align-items-start grid-2">
+<div className="grid-3 align-items-start">
   <div className="docs-item">This is some content</div>
   <div className="docs-item">
     This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
@@ -529,16 +533,12 @@ import '../../../css/dist/css/grid-layout.css';
     pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
     mattis sem lacinia vitae. Nam dignissim viverra metus et tincidunt
   </div>
+  <div className="docs-item">This is some content</div>
 </div>
 
 <h3 className="m-t-4">.align-items-center</h3>
 
-    <div class="grid-2 align-items-center">
-      <div>...</div>
-      <div>...</div>
-    </div>
-
-<div className="grid-2 align-items-center">
+<div className="grid-3 align-items-center">
   <div className="docs-item">This is some content</div>
   <div className="docs-item">
     This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
@@ -546,16 +546,12 @@ import '../../../css/dist/css/grid-layout.css';
     pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
     mattis sem lacinia vitae. Nam dignissim viverra metus et tincidunt
   </div>
+  <div className="docs-item">This is some content</div>
 </div>
 
 <h3 className="m-t-4">.align-items-end</h3>
 
-    <div class="grid-2 align-items-end">
-      <div class="docs-item">...</div>
-      <div class="docs-item">...</div>
-    </div>
-
-<div className="grid-2 align-items-end">
+<div className="grid-3 align-items-end">
   <div className="docs-item">This is some content</div>
   <div className="docs-item">
     This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
@@ -563,7 +559,150 @@ import '../../../css/dist/css/grid-layout.css';
     pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
     mattis sem lacinia vitae. Nam dignissi.
   </div>
+  <div className="docs-item">This is some content</div>
 </div>
+
+<h2 className="m-t-4">justify-items</h2>
+<h3 className="m-t-4">.justify-items-start</h3>
+
+    <div class="grid-3 justify-items-start">
+      <div>...</div>
+      <div>...</div>
+      <div>...</div>
+    </div>
+
+<div className="justify-items-start grid-3">
+  <div className="docs-item">This is some content</div>
+  <div className="docs-item">
+    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
+    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
+    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
+    mattis sem lacinia vitae. Nam dignissim viverra metus et tincidunt
+  </div>
+  <div className="docs-item">This is some content</div>
+</div>
+
+<h3 className="m-t-4">.justify-items-center</h3>
+
+<div className="grid-3 justify-items-center">
+  <div className="docs-item">This is some content</div>
+  <div className="docs-item">
+    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
+    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
+    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
+    mattis sem lacinia vitae. Nam dignissim viverra metus et tincidunt
+  </div>
+  <div className="docs-item">This is some content</div>
+</div>
+
+<h3 className="m-t-4">.justify-items-end</h3>
+
+<div className="grid-3 justify-items-end">
+  <div className="docs-item">This is some content</div>
+  <div className="docs-item">
+    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
+    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
+    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
+    mattis sem lacinia vitae. Nam dignissi.
+  </div>
+  <div className="docs-item">This is some content</div>
+</div>
+
+<h2 className="m-t-4">align-self</h2>
+<p>Align selft is applyed to child element.</p>
+<h3 className="m-t-4">.align-self-start</h3>
+
+    <div class="grid-3">
+      <div class="align-self-start">...</div>
+      <div>...</div>
+      <div>...</div>
+    </div>
+
+<div className="grid-3">
+  <div className="docs-item align-self-start">This is some content with align-self</div>
+  <div className="docs-item">
+    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
+    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
+    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
+    mattis sem lacinia vitae. Nam dignissim viverra metus et tincidunt
+  </div>
+  <div className="docs-item">This is some content</div>
+</div>
+
+<h3 className="m-t-4">.align-self-center</h3>
+
+<div className="grid-3">
+  <div className="docs-item align-self-center">This is some content with align-self</div>
+  <div className="docs-item">
+    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
+    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
+    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
+    mattis sem lacinia vitae. Nam dignissim viverra metus et tincidunt
+  </div>
+  <div className="docs-item">This is some content</div>
+</div>
+
+<h3 className="m-t-4">.align-self-end</h3>
+
+<div className="grid-3">
+  <div className="docs-item align-self-end">This is some content with align-self</div>
+  <div className="docs-item">
+    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
+    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
+    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
+    mattis sem lacinia vitae. Nam dignissi.
+  </div>
+  <div className="docs-item">This is some content</div>
+</div>
+
+
+<h2 className="m-t-4">justify-self</h2>
+<p>justify selft is applyed to child element.</p>
+<h3 className="m-t-4">.justify-self-start</h3>
+
+    <div class="grid-3">
+      <div class="justify-self-start">...</div>
+      <div>...</div>
+      <div>...</div>
+    </div>
+
+<div className="grid-3">
+  <div className="docs-item justify-self-start">This is some content with justify-self</div>
+  <div className="docs-item">
+    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
+    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
+    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
+    mattis sem lacinia vitae. Nam dignissim viverra metus et tincidunt
+  </div>
+  <div className="docs-item">This is some content</div>
+</div>
+
+<h3 className="m-t-4">.justify-self-center</h3>
+
+<div className="grid-3">
+  <div className="docs-item justify-self-center">This is some content with justify-self</div>
+  <div className="docs-item">
+    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
+    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
+    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
+    mattis sem lacinia vitae. Nam dignissim viverra metus et tincidunt
+  </div>
+  <div className="docs-item">This is some content</div>
+</div>
+
+<h3 className="m-t-4">.justify-self-end</h3>
+
+<div className="grid-3">
+  <div className="docs-item justify-self-end">This is some content with justify-self</div>
+  <div className="docs-item">
+    This is some content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lacus
+    vel consequat viverra, tellus orci aliquet ante, sed lacinia orci orci in dui. Pellentesque
+    pellentesque ultricies ex, ut faucibus orci finibus non. Phasellus blandit laoreet eros, eget
+    mattis sem lacinia vitae. Nam dignissi.
+  </div>
+  <div className="docs-item">This is some content</div>
+</div>
+
 
 <hr />
 
