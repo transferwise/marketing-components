@@ -1,4 +1,9 @@
-.container {
+/* Container */
+
+.container,
+[class^='container-'],
+[class*=' container-'] {
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-right: var(--size-16);
@@ -13,38 +18,18 @@
     padding-right: var(--size-32);
     padding-left: var(--size-32);
   }
-
-  @media (--screen-xl) {
-    max-width: 1164px;
-  }
 }
 
-.container-10 {
-  width: 83.33333333%;
-  margin: auto;
-
-  &--md {
-    @media (--screen-md) {
-      display: grid;
-      grid-template-columns: var(--gap) 1fr var(--gap);
-
-      > * {
-        grid-column: 2;
-      }
-    }
-  }
+.container {
+  max-width: 1164px;
 }
 
 .container-8 {
-  width: 66.66666667%;
-  margin: auto;
+  max-width: calc(749px + var(--size-32) * 2);
+}
 
-  &--md {
-    @media (--screen-md) {
-      width: 66.66666667%;
-      margin: auto;
-    }
-  }
+.container-10 {
+  max-width: calc(916px + var(--size-32) * 2);
 }
 
 [class^='grid-'],
