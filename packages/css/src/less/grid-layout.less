@@ -25,11 +25,19 @@
 }
 
 .container-8 {
-  max-width: calc(749px + var(--size-32) * 2);
+  max-width: calc(733px + var(--size-32) * 2); /* Max width of col-8 adding container padding */
+
+  @media (--screen-md) {
+    width: 66.66666667%;
+  }
 }
 
 .container-10 {
-  max-width: calc(916px + var(--size-32) * 2);
+  max-width: calc(916px + var(--size-32) * 2); /* Max width of col-10 adding container padding */
+
+  @media (--screen-md) {
+    width: 83.33333333%;
+  }
 }
 
 /* Grid */
