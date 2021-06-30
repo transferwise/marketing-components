@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.18.0](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.17.1...@transferwise/marketing-docs@1.18.0) (2021-06-30)
+
+
+### Features
+
+* Improve grid layout system and documentation ([#79](https://github.com/transferwise/marketing-components/issues/79)) ([7f998ba](https://github.com/transferwise/marketing-components/commit/7f998ba948199cfab02fbc37eda7c7533e9bbafc))
+
+
+
+
+
 ## [1.17.1](https://github.com/transferwise/marketing-components/compare/@transferwise/marketing-docs@1.17.0...@transferwise/marketing-docs@1.17.1) (2021-06-15)
 
 **Note:** Version bump only for package @transferwise/marketing-docs
