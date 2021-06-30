@@ -49,11 +49,7 @@ const Layout = ({ children, router: { pathname } }) => {
 
   const thirdContent = (
     <div
-      className={`Content ${
-        page && page.component.meta.fullpage && page.component.meta.fullpage === true
-          ? 'fullpage'
-          : ''
-      }`}
+      className={`Content ${page?.component?.meta?.fullpage === true ? 'fullpage' : ''}`}
       role="main"
     >
       {page && <h1 className="colored-dot">{page.component.meta.name}</h1>}
