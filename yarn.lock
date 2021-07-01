@@ -3504,9 +3504,9 @@
     react-transition-group "^4.2.1"
 
 "@transferwise/cookie-consent@^2.8.0":
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/@transferwise/cookie-consent/-/cookie-consent-2.10.0.tgz#084aac4ec05d991bf4d606c57267b792c4237b09"
-  integrity sha512-kjVjG6PaJk2kpBx1t4Cyp42DIsJThIjCADlSLtw4KVYkOQoZPk9Dfgp4/raUpkvREW+xj+ztb4v5Uo/aoXrpqQ==
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/@transferwise/cookie-consent/-/cookie-consent-2.11.0.tgz#c835fcbcc66974e58ed16c70ced316fe01dfe3b5"
+  integrity sha512-X6GYzG+VuZbdkYYiH7iG4bkROOUzFxkTYSLCWwHKCJQSmHqA1PebIgaGxg71chDmwgqR5/v8FAhV0P8RPuKZgg==
 
 "@transferwise/eslint-config@^6.0.0":
   version "6.1.0"
