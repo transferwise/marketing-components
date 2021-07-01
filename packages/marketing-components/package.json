@@ -54,7 +54,7 @@
     "@storybook/react": "^5.3.18",
     "@transferwise/components": "^30.5.0",
     "@transferwise/less-config": "^3.0.2",
-    "@transferwise/test-config": "^1.0.5",
+    "@transferwise/test-config": "^3.0.7",
     "babel-loader": "^8.1.0",
     "babel-preset-minify": "^0.5.1",
     "mock-raf": "^1.0.1",
