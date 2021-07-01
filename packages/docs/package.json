@@ -1,6 +1,6 @@
 {
   "name": "@transferwise/marketing-docs",
-  "version": "1.18.1",
+  "version": "1.18.2",
   "description": "TransferWise Marketing Components",
   "main": "index.js",
   "private": true,
@@ -37,7 +37,7 @@
     "@mapbox/rehype-prism": "^0.4.0",
     "@mdx-js/loader": "^1.5.8",
     "@next/mdx": "^9.0.5",
-    "@transferwise/marketing-components": "^3.0.0",
+    "@transferwise/marketing-components": "^3.0.1",
     "@transferwise/neptune-css": "^9.2.1",
     "@zeit/next-css": "^1.0.1",
     "glob": "^7.1.6",
